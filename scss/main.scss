@@ -1,0 +1,13 @@
+// VARIABLE
+@import "./components/variable";
+
+// DEFAULT
+@import "./base";
+
+// PAGES
+@import "./pages/index";
+@import "./pages/search";
+
+// COMPONENTS
+@import "./components/header";
+@import "./components/footer";

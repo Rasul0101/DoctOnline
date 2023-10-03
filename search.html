@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <title>DoctOnline | Search Results</title>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header>
+      <nav class="nav">
+        <div class="container">
+          <div class="nav-center">
+            <div class="nav-start">
+              <img class="bars" src="./icons/bars.svg" alt="bars" />
+              <a class="logo" href="./index.html">
+                <img src="./icons/Logo1.svg" alt="logo" />
+              </a>
+            </div>
+            <div class="nav-end">
+              <a class="language-box" href="">
+                <span>Az</span>
+                <img class="lang-icon" src="./icons/lang-icon.svg" alt="" />
+              </a>
+              <a class="login-btn" href=""> Daxil olun </a>
+              <a class="register-btn" href=""> Qeydiyyat </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <main>
+      <!-- Search Start -->
+      <section class="search">
+        <div class="container">
+          <div class="search-in">
+            <div class="search-head">
+              <h1 class="title">Digər axtarışı edin</h1>
+              <a href="" class="filter">
+                <img src="./icons/filter.svg" alt="" />
+                <span>Filterlə</span>
+              </a>
+            </div>
+            <div class="search-input">
+              <input type="text" placeholder="Stomotoloq" />
+              <img src="./icons/search.svg" alt="" />
+            </div>
+            <h1 class="search-result">Stomotoloq • 138 həkim</h1>
+            <div class="info-bar">
+              <div class="info">
+                <a class="day" href="">
+                  Bu gün <i class="fa-solid fa-xmark"></i>
+                </a>
+                <div class="number">+2</div>
+                <img src="./icons/chevron-down.svg" alt="" />
+              </div>
+              <div onclick="toggleMenu()" class="select-country">
+                <div class="form-group">
+                  <div class="select-box">
+                    Ölkəni seçin
+                    <img src="./icons/chevron-down.svg" alt="" />
+                  </div>
+                  <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                      <h3 class="sub-menu-title">Ölkələr</h3>
+                      <div class="country">
+                        <input type="checkbox" id="Aze" />
+                        <label for="Aze">Azərbaycan</label>
+                      </div>
+                      <div class="country">
+                        <input type="checkbox" id="Tr" />
+                        <label for="Tr">Türkiyə</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="video">
+                <input type="checkbox" id="checkbox" />
+                <label for="checkbox" class="text">Video görüş</label>
+                <img src="./icons/camera-gray.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Search End -->
+
+      <!-- Reservation Start -->
+      <section class="reservation">
+        <div class="container">
+          <div class="reserve-box">
+            <div class="doctor">
+              <div class="doctor-left">
+                <img class="doctor-img" src="./images/famous1.svg" alt="" />
+                <span class="heart"><i class="fa-regular fa-heart"></i></span>
+                <a class="profile" href="">
+                  <img src="./icons/user-circle.svg" alt="" />
+                  <span> Profilə bax </span>
+                </a>
+              </div>
+              <div class="doctor-info">
+                <p class="work">Stomotoloq</p>
+                <p class="name">Azər Həsənov</p>
+                <p class="hospital">Bakı • Elmed Medical Center • ₼₼₼</p>
+                <div class="rating">
+                  <img src="./icons/star.svg" alt="" />
+                  <span class="point">4.86</span>
+                  <p class="value">(254 dəyərləndirmə)</p>
+                </div>
+                <p class="text">Ürək damar • İnfeksiya • Beyin</p>
+                <div class="meet">
+                  <div class="clinic">
+                    <div class="icon-box">
+                      <img
+                        class="left-icon"
+                        src="./icons/meet-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="info-icon"
+                        src="./icons/info-circle.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p>Klinikada görüş</p>
+                  </div>
+                  <div class="video">
+                    <div class="icon-box">
+                      <img
+                        class="left-icon"
+                        src="./icons/video-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="info-icon"
+                        src="./icons/info-circle.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p>Video görüş</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="table">
+              <div class="day-head">
+                <div class="day">
+                  <p class="num">8 okt</p>
+                  <span class="name">bazar.e</span>
+                </div>
+                <div class="day">
+                  <p class="num">9 okt</p>
+                  <span class="name">dünən</span>
+                </div>
+                <div class="day-active">
+                  <p class="num">10 okt</p>
+                  <span class="name">bu gün</span>
+                </div>
+                <div class="day">
+                  <p class="num">11 okt</p>
+                  <span class="name">sabah</span>
+                </div>
+                <div class="day">
+                  <p class="num">12 okt</p>
+                  <span class="name">cümə</span>
+                </div>
+              </div>
+              <div class="table-hours">
+                <div class="column">
+                  <div class="hour">09:00</div>
+                  <div class="hour">11:00</div>
+                  <div class="hour">13:00</div>
+                  <div class="hour">15:30</div>
+                </div>
+                <div class="column">
+                  <div class="hour">09:30</div>
+                  <div class="hour">11:30</div>
+                  <div class="hour">13:30</div>
+                  <div class="hour">16:00</div>
+                </div>
+                <div class="column">
+                  <div class="hour">10:00</div>
+                  <div class="hour">12:00</div>
+                  <div class="hour">14:00</div>
+                  <div class="hour">16:30</div>
+                </div>
+                <div class="column">
+                  <div class="hour">10:30</div>
+                  <div class="hour">13:00</div>
+                  <div class="hour">14:30</div>
+                </div>
+                <div class="column">
+                  <div class="hour">11:00</div>
+                  <div class="hour">12:00</div>
+                  <div class="hour">15:00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Reservation End -->
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer style="padding-top: 300px">
+      <div class="footer-main">
+        <div class="container">
+          <div class="footer-in">
+            <div class="footer-left">
+              <a class="footer-logo" href="./index.html">
+                <img src="./icons/footer-logo.svg" alt="" />
+              </a>
+              <div class="app">
+                <a href="">
+                  <img src="./icons/app-store.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="./icons/google-play.svg" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="footer-right">
+              <ul class="links">
+                <h5 class="title">Linklər</h5>
+                <li class="item"><a href=""> Daxil ol </a></li>
+                <li class="item"><a href=""> Qeydiyyatdan keç </a></li>
+                <li class="item"><a href=""> Dəstək (FAQ) </a></li>
+                <li class="item"><a href=""> Həkim qeydiyyatı </a></li>
+              </ul>
+              <ul class="contact">
+                <h5 class="title">Əlaqə</h5>
+                <li class="item"><a href="">+994 (50) 831 31 16</a></li>
+                <li class="item"><a href="">Xan Şuşinski küç 21</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="bottom-in">
+            <div class="social">
+              <a class="icon" href="https://www.facebook.com/" target="_blank">
+                <img src="./icons/facebook.svg" alt="" />
+              </a>
+              <a class="icon" href="https://www.instagram.com/" target="_blank">
+                <img src="./icons/instagram.svg" alt="" />
+              </a>
+              <a class="icon" href="https://twitter.com/" target="_blank">
+                <img src="./icons/twitter.svg" alt="" />
+              </a>
+            </div>
+            <p class="copyright">© 2020 Doctonline - Bütün hüquqlar qorunur.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/46a0505f50.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- My JS -->
+    <script src="./js/dropdown.js"></script>
+  </body>
+</html>

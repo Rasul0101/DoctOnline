@@ -1,0 +1,542 @@
+// Main Start
+
+// Search Start
+.search {
+  padding: 32px 0;
+  border-bottom: 1px solid $border;
+  .container {
+    .search-in {
+      width: 66%;
+      .search-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+        .title {
+          font-size: 34px;
+          font-weight: 400;
+          line-height: 40px;
+          color: $fontColor;
+        }
+        .filter {
+          display: flex;
+          align-items: center;
+          display: none;
+          img {
+            width: 20px;
+            height: 20px;
+          }
+          span {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: $greenBtn;
+          }
+        }
+      }
+      .search-input {
+        position: relative;
+        margin-bottom: 16px;
+        input {
+          width: 100%;
+          padding: 12px 16px 12px 48px;
+          outline: none;
+          border: 1px solid $border;
+          border-radius: 8px;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          color: $fontColor;
+          transition: all 0.3s ease-in-out;
+          &::placeholder {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: rgba(132, 139, 152, 1);
+          }
+          &:focus {
+            border: 1px solid $greenBtn;
+          }
+        }
+        img {
+          width: 24px;
+          height: 24px;
+          position: absolute;
+          left: 16px;
+          top: 12px;
+        }
+      }
+      .search-result {
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 56px;
+        color: rgba(183, 187, 194, 1);
+        margin-bottom: 24px;
+      }
+      .info-bar {
+        display: flex;
+        align-items: center;
+        .info {
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+          border: 1px solid $border;
+          border-radius: 8px;
+          padding: 4px;
+          margin-right: 8px;
+          .day {
+            padding: 8px 16px 8px 12px;
+            margin-right: 4px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #fff;
+            background-color: $greenBtn;
+            border-radius: 8px;
+            i {
+              font-size: 13px;
+              margin-left: 6px;
+            }
+          }
+          .number {
+            padding: 8px 12px;
+            margin-right: 20px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #fff;
+            background-color: $greenBtn;
+            border-radius: 8px;
+          }
+          img {
+            cursor: pointer;
+            height: 8px;
+            margin-left: 33px;
+            padding: 0 12px;
+          }
+        }
+        .select-country {
+          cursor: pointer;
+          padding: 12px 16px;
+          border: 1px solid $border;
+          border-radius: 8px;
+          margin-right: 8px;
+          background-color: #fff;
+          position: relative;
+          .form-group {
+            display: flex;
+            flex-direction: column;
+            .select-box {
+              width: 100%;
+              transition: 0.4s ease-in-out;
+              background-color: #fff;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+              &:focus {
+                border-color: $greenBtn;
+              }
+              img {
+                height: 8px;
+                margin-left: 100px;
+                padding-left: 5px;
+              }
+            }
+            .sub-menu-wrap {
+              z-index: 10;
+              position: absolute;
+              left: 0;
+              top: 100%;
+              min-width: 100%;
+              max-height: 0px;
+              overflow: hidden;
+              transition: max-height 0.5s;
+              box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.05);
+              border-radius: 8px;
+              .sub-menu {
+                width: 100%;
+                background-color: #fff;
+                padding: 16px;
+                border: 1px solid $border;
+                .sub-menu-title {
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 20px;
+                  text-transform: uppercase;
+                  color: rgba(183, 187, 194, 1);
+                  margin-bottom: 8px;
+                }
+                .country {
+                  display: flex;
+                  align-items: center;
+                  &:nth-child(2) {
+                    margin-bottom: 8px;
+                  }
+                  input {
+                    appearance: none;
+                    border-radius: 2px;
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 8px;
+                    border: 1px solid rgba(176, 183, 195, 1);
+                    transition: 0.3s;
+                    &::after {
+                      content: "";
+                      display: block;
+                      position: absolute;
+                      top: 1.5px;
+                      left: 5px;
+                      width: 4px;
+                      height: 8px;
+                      border: 1px solid #fff;
+                      border-width: 0 3px 3px 0;
+                      transform: rotate(40deg);
+                    }
+                  }
+                  input:checked {
+                    appearance: none;
+                    margin: 0;
+                    font: inherit;
+                    background-color: $greenBtn;
+                    width: 16px;
+                    height: 16px;
+                    border: none;
+                    border-radius: 2px;
+                    transform: translateY(-0);
+                    margin-right: 8px;
+                  }
+                  label {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: $fontColor;
+                  }
+                }
+              }
+            }
+            .open-menu {
+              max-height: 400px;
+            }
+          }
+        }
+        .video {
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+          border: 1px solid $border;
+          border-radius: 8px;
+          padding: 12px 40px 12px 18px;
+          input {
+            appearance: none;
+            border-radius: 2px;
+            display: block;
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
+            border: 1px solid rgba(176, 183, 195, 1);
+            transition: 0.3s;
+            &::after {
+              content: "";
+              display: block;
+              position: absolute;
+              top: 1.5px;
+              left: 5px;
+              width: 4px;
+              height: 8px;
+              border: 1px solid #fff;
+              border-width: 0 3px 3px 0;
+              transform: rotate(40deg);
+            }
+          }
+          input:checked {
+            appearance: none;
+            margin: 0;
+            font: inherit;
+            background-color: $greenBtn;
+            width: 16px;
+            height: 16px;
+            border: none;
+            border-radius: 2px;
+            transform: translateY(-0);
+            margin-right: 10px;
+          }
+          .text {
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: $fontColor;
+            margin-right: 8px;
+          }
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+// Search End
+
+// Reservation Start
+.reservation {
+  padding: 32px 0;
+  .container {
+    .reserve-box {
+      border: 1px solid $border;
+      border-radius: 8px;
+      background-color: #fff;
+      padding: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .doctor {
+        display: flex;
+        .doctor-left {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          .doctor-img {
+            width: 104px;
+            height: 104px;
+            margin-bottom: 13px;
+          }
+          .heart {
+            position: absolute;
+            background-color: #fff;
+            top: -7px;
+            left: -7px;
+            width: 40px;
+            height: 40px;
+            border: 1px solid $border;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 2px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              border: none;
+              background-color: $greenBtn;
+              i {
+                color: #fff;
+              }
+            }
+            i {
+              transition: all 0.3s ease-in-out;
+              color: rgba(132, 139, 152, 1);
+              font-weight: 300;
+              font-size: 18px;
+            }
+          }
+          .profile {
+            display: flex;
+            align-items: center;
+            img {
+              margin-right: 4px;
+            }
+            span {
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 20px;
+              color: $greenBtn;
+            }
+          }
+        }
+        .doctor-info {
+          padding: 0 24px;
+          .work {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+            color: rgba(132, 139, 152, 1);
+            margin-bottom: 4px;
+          }
+          .name {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            color: #000;
+            margin-bottom: 8px;
+          }
+          .hospital {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: $listItemColor;
+            margin-bottom: 8px;
+          }
+          .rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            img {
+              width: 20px;
+              height: 20px;
+              margin-right: 4px;
+            }
+            .point {
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 24px;
+              color: rgba(255, 173, 13, 1);
+              margin-right: 8px;
+            }
+            .value {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+              color: $listItemColor;
+            }
+          }
+          .text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgba(183, 187, 194, 1);
+            margin-bottom: 12px;
+          }
+          .meet {
+            display: flex;
+            align-items: center;
+            .clinic {
+              cursor: pointer;
+              margin-right: 8px;
+              border: 1px solid $border;
+              border-radius: 8px;
+              background-color: #fff;
+              padding: 8px;
+              transition: all 0.3s ease-in-out;
+              &:hover {
+                border: 1px solid rgba(76, 177, 71, 1);
+                background-color: rgb(242, 250, 242);
+              }
+              .icon-box {
+                display: flex;
+                justify-content: space-between;
+                align-items: self-start;
+                margin-bottom: 4px;
+                .left-icon {
+                  width: 32px;
+                  height: 32px;
+                  margin-right: 48px;
+                }
+                .info-icon {
+                  width: 16px;
+                  height: 16px;
+                }
+              }
+              p {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16px;
+                color: $fontColor;
+              }
+            }
+            .video {
+              cursor: pointer;
+              border: 1px solid $border;
+              border-radius: 8px;
+              background-color: #fff;
+              padding: 8px;
+              transition: all 0.3s ease-in-out;
+              &:hover {
+                border: 1px solid rgba(212, 90, 90, 1);
+                background-color: rgb(250, 236, 236);
+              }
+              .icon-box {
+                display: flex;
+                justify-content: space-between;
+                align-items: self-start;
+                margin-bottom: 4px;
+                .left-icon {
+                  width: 32px;
+                  height: 32px;
+                  margin-right: 48px;
+                }
+                .info-icon {
+                  width: 16px;
+                  height: 16px;
+                }
+              }
+              p {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16px;
+                color: $fontColor;
+              }
+            }
+          }
+        }
+      }
+      .table {
+        .day-head {
+          display: flex;
+          align-items: center;
+          margin-bottom: 16px;
+          .day {
+            cursor: pointer;
+            width: 64px;
+            padding: 2px 0;
+            border: 1px solid $border;
+            border-radius: 7px;
+            margin-left: 8px;
+            text-align: center;
+            transition: all 0.4s ease-in-out;
+            &:hover {
+              border: 1px solid $greenBtn;
+              background-color: rgba(76, 177, 71, 1);
+              .num,
+              .name {
+                color: #fff;
+              }
+            }
+            .num {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 20px;
+              color: $fontColor;
+            }
+            .name {
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 16px;
+              color: rgba(183, 187, 194, 1);
+            }
+          }
+          .day-active {
+            cursor: pointer;
+            width: 64px;
+            padding: 2px 0;
+            border: 1px solid $greenBtn;
+            border-radius: 7px;
+            margin-left: 8px;
+            text-align: center;
+            background-color: rgba(76, 177, 71, 1);
+            .num {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 20px;
+              color: #fff;
+            }
+            .name {
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 16px;
+              color: #fff;
+            }
+          }
+        }
+        .table-hours {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+// Reservation End
+
+// Main End

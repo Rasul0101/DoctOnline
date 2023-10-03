@@ -1,0 +1,892 @@
+// Main Start
+
+// Hero Start
+.hero {
+  width: 100%;
+  height: 500px;
+  background-image: url(/images/Hero.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid $border;
+  .container {
+    .hero-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 100px 0;
+      .hero-title {
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 40px;
+        color: $fontColor;
+        margin-bottom: 24px;
+      }
+      .hero-search {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 16px;
+        .search-input {
+          width: 66%;
+          padding: 12px 16px 12px 48px;
+          outline: none;
+          border: 1px solid $border;
+          border-radius: 8px;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          color: $fontColor;
+          transition: all 0.3s ease-in-out;
+          &::placeholder {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: rgba(132, 139, 152, 1);
+          }
+          &:focus {
+            border: 1px solid $greenBtn;
+          }
+        }
+        img {
+          position: absolute;
+          left: 18.5%;
+          top: 24%;
+          cursor: pointer;
+        }
+      }
+      .hero-nav-list {
+        width: 66%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 24px;
+        .list-title {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          a {
+            color: $listItemColor;
+          }
+        }
+        .list-item {
+          cursor: pointer;
+          font-weight: 400;
+          line-height: 20px;
+          font-size: 14px;
+          a {
+            transition: all 0.3s ease-in-out;
+            color: $listItemColor;
+            &:hover {
+              text-decoration: underline;
+            }
+            img {
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Hero End
+
+// First Info Start
+.first-info {
+  padding-top: 56px;
+  .container {
+    .info-slider {
+      position: relative;
+      .swiper {
+        .swiper-wrapper {
+          .swiper-slide {
+            padding-bottom: 23px;
+            .slide-card {
+              background-color: #fff;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              border: 1px solid $border;
+              border-radius: 8px;
+              transition: all 0.3s ease-in-out;
+              &:hover {
+                box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.05);
+              }
+              .card-content {
+                padding: 24px;
+                display: flex;
+                flex-direction: column;
+                .card-title {
+                  font-size: 24px;
+                  font-weight: 500;
+                  line-height: 32px;
+                  color: $fontColor;
+                  margin-bottom: 16px;
+                }
+                .card-btn {
+                  width: fit-content;
+                  font-size: 14px;
+                  font-weight: 500;
+                  line-height: 20px;
+                  color: #fff;
+                  background-color: $greenBtn;
+                  padding: 5px 16px 6px;
+                  border-radius: 8px;
+                  margin-bottom: 44px;
+                }
+                .card-date {
+                  font-size: 16px;
+                  font-weight: 500;
+                  line-height: 24px;
+                  color: rgba(132, 139, 152, 1);
+                  margin-bottom: 52px;
+                }
+                .card-more {
+                  font-size: 16px;
+                  font-weight: 500;
+                  line-height: 24px;
+                  color: $fontColor;
+                  margin-top: 44px;
+                }
+              }
+              .card-img {
+                border-left: 1px solid $border;
+              }
+            }
+          }
+        }
+      }
+      .swiper-button-prev {
+        position: absolute;
+        left: -20px;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 100%;
+        border: 1px solid $border;
+        transition: all 0.3s ease-in-out;
+        &::after {
+          transition: all 0.3s ease-in-out;
+          font-size: 14px;
+          color: rgba(183, 187, 194, 1);
+        }
+        &:hover {
+          border: none;
+          background-color: $greenBtn;
+          &::after {
+            color: #fff;
+          }
+        }
+      }
+      .swiper-button-next {
+        position: absolute;
+        right: -20px;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 100%;
+        border: 1px solid $border;
+        transition: all 0.3s ease-in-out;
+        &::after {
+          transition: all 0.3s ease-in-out;
+          font-size: 14px;
+          color: rgba(183, 187, 194, 1);
+        }
+        &:hover {
+          border: none;
+          background-color: $greenBtn;
+          &::after {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+// First Info End
+
+// Famous doctor Start
+.famous-doctor {
+  padding: 23px 0 0;
+  .container {
+    .famous-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      .title {
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 40px;
+        color: $fontColor;
+      }
+      .famous-link {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: rgba(183, 187, 194, 1);
+        transition: all 0.3s ease-in-out;
+        i {
+          font-size: 14px;
+        }
+        &:hover {
+          color: $greenBtn;
+        }
+      }
+    }
+    .famous-slider {
+      position: relative;
+      .swiper {
+        .swiper-wrapper {
+          .swiper-slide {
+            padding: 24px 0;
+            .famous-card {
+              background-color: #fff;
+              display: flex;
+              flex-direction: column;
+              border: 1px solid $border;
+              border-radius: 8px;
+              transition: all 0.3s ease-in-out;
+              &:hover {
+                box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.05);
+              }
+              .card-content {
+                padding: 24px 24px 12px;
+                .doctor {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 14px;
+                  .doctor-img {
+                    position: relative;
+                    img {
+                      width: 72px;
+                      height: 72px;
+                    }
+                    span {
+                      position: absolute;
+                      left: -7px;
+                      top: -7px;
+                      background-color: #fff;
+                      width: 32px;
+                      height: 32px;
+                      border: 1px solid $border;
+                      border-radius: 100%;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      padding-top: 2px;
+                      transition: all 0.3s ease-in-out;
+                      &:hover {
+                        border: none;
+                        background-color: $greenBtn;
+                        i {
+                          color: #fff;
+                        }
+                      }
+                      i {
+                        transition: all 0.3s ease-in-out;
+                        color: rgba(132, 139, 152, 1);
+                        font-weight: 300;
+                      }
+                    }
+                  }
+                  .doctor-info {
+                    margin-left: 16px;
+                    .work {
+                      font-size: 16px;
+                      font-weight: 400;
+                      line-height: 24px;
+                      color: rgba(132, 139, 152, 1);
+                    }
+                    .name {
+                      font-size: 20px;
+                      font-weight: 400;
+                      line-height: 28px;
+                      color: $fontColor;
+                      img {
+                        margin-left: 4px;
+                      }
+                    }
+                    .location {
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 20px;
+                      color: rgba(183, 187, 194, 1);
+                    }
+                  }
+                }
+                .hospital {
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 24px;
+                  color: rgba(39, 49, 66, 1);
+                  margin-bottom: 8px;
+                }
+                .rating {
+                  display: flex;
+                  align-items: center;
+                  img {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 4px;
+                  }
+                  .point {
+                    color: rgba(255, 173, 13, 1);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    margin-right: 8px;
+                  }
+                  .value {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: $listItemColor;
+                  }
+                }
+              }
+              .card-bottom {
+                padding: 12px 24px;
+                border-top: 1px solid $border;
+                .text {
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 20px;
+                  color: rgba(183, 187, 194, 1);
+                }
+              }
+            }
+          }
+        }
+      }
+      .swiper-button-prev {
+        position: absolute;
+        left: -20px;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 100%;
+        border: 1px solid $border;
+        transition: all 0.3s ease-in-out;
+        &::after {
+          transition: all 0.3s ease-in-out;
+          font-size: 14px;
+          color: rgba(183, 187, 194, 1);
+        }
+        &:hover {
+          border: none;
+          background-color: $greenBtn;
+          &::after {
+            color: #fff;
+          }
+        }
+      }
+      .swiper-button-next {
+        position: absolute;
+        right: -20px;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 100%;
+        border: 1px solid $border;
+        transition: all 0.3s ease-in-out;
+        &::after {
+          transition: all 0.3s ease-in-out;
+          font-size: 14px;
+          color: rgba(183, 187, 194, 1);
+        }
+        &:hover {
+          border: none;
+          background-color: $greenBtn;
+          &::after {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+// Famous doctor End
+
+// New doctor Start
+.new-doctor {
+  padding: 23px 0 56px;
+  .container {
+    .new-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      .title {
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 40px;
+        color: $fontColor;
+      }
+      .new-link {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: rgba(183, 187, 194, 1);
+        transition: all 0.3s ease-in-out;
+        i {
+          font-size: 14px;
+        }
+        &:hover {
+          color: $greenBtn;
+        }
+      }
+    }
+    .new-slider {
+      position: relative;
+      .swiper {
+        .swiper-wrapper {
+          .swiper-slide {
+            padding: 24px 0;
+            .new-card {
+              background-color: #fff;
+              display: flex;
+              flex-direction: column;
+              border: 1px solid $border;
+              border-radius: 8px;
+              transition: all 0.3s ease-in-out;
+              &:hover {
+                box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.05);
+              }
+              .card-content {
+                padding: 24px 24px 12px;
+                .doctor {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 10px;
+                  .doctor-img {
+                    position: relative;
+                    img {
+                      width: 72px;
+                      height: 72px;
+                    }
+                    span {
+                      position: absolute;
+                      left: -7px;
+                      top: -7px;
+                      background-color: #fff;
+                      width: 32px;
+                      height: 32px;
+                      border: 1px solid $border;
+                      border-radius: 100%;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      padding-top: 2px;
+                      transition: all 0.3s ease-in-out;
+                      &:hover {
+                        border: none;
+                        background-color: $greenBtn;
+                        i {
+                          color: #fff;
+                        }
+                      }
+                      i {
+                        transition: all 0.3s ease-in-out;
+                        color: rgba(132, 139, 152, 1);
+                        font-weight: 300;
+                      }
+                    }
+                  }
+                  .doctor-info {
+                    margin-left: 16px;
+                    .work {
+                      font-size: 16px;
+                      font-weight: 400;
+                      line-height: 24px;
+                      color: rgba(132, 139, 152, 1);
+                    }
+                    .name {
+                      font-size: 20px;
+                      font-weight: 400;
+                      line-height: 28px;
+                      color: $fontColor;
+                      img {
+                        margin-left: 4px;
+                      }
+                    }
+                    .location {
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 20px;
+                      color: rgba(183, 187, 194, 1);
+                    }
+                  }
+                }
+                .hospital {
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 24px;
+                  color: rgba(39, 49, 66, 1);
+                  // margin-bottom: 8px;
+                }
+              }
+              .card-bottom {
+                padding: 12px 24px;
+                border-top: 1px solid $border;
+                .text {
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 20px;
+                  color: rgba(183, 187, 194, 1);
+                }
+              }
+            }
+          }
+        }
+      }
+      .swiper-button-prev {
+        position: absolute;
+        left: -20px;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 100%;
+        border: 1px solid $border;
+        transition: all 0.3s ease-in-out;
+        &::after {
+          transition: all 0.3s ease-in-out;
+          font-size: 14px;
+          color: rgba(183, 187, 194, 1);
+        }
+        &:hover {
+          border: none;
+          background-color: $greenBtn;
+          &::after {
+            color: #fff;
+          }
+        }
+      }
+      .swiper-button-next {
+        position: absolute;
+        right: -20px;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 100%;
+        border: 1px solid $border;
+        transition: all 0.3s ease-in-out;
+        &::after {
+          transition: all 0.3s ease-in-out;
+          font-size: 14px;
+          color: rgba(183, 187, 194, 1);
+        }
+        &:hover {
+          border: none;
+          background-color: $greenBtn;
+          &::after {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+// New doctor End
+
+// Categories Start
+.categories {
+  padding: 56px 0;
+  background-color: #fff;
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+  .container {
+    .title {
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 40px;
+      color: $fontColor;
+      margin-bottom: 40px;
+    }
+    .category-main {
+      display: flex;
+      align-items: center;
+      .category-item {
+        text-align: center;
+        padding: 0 16px;
+        margin-right: 8px;
+        .category-img {
+          cursor: pointer;
+          width: 80px;
+          height: 80px;
+          margin-bottom: 12px;
+        }
+        .text {
+          cursor: pointer;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          color: $fontColor;
+        }
+      }
+    }
+  }
+}
+// Categories End
+
+// Famous doctor Start
+.suggestion-doctor {
+  padding: 56px 0 23px;
+  .container {
+    .suggestion-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      .title {
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 40px;
+        color: $fontColor;
+      }
+      .suggestion-link {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: rgba(183, 187, 194, 1);
+        transition: all 0.3s ease-in-out;
+        i {
+          font-size: 14px;
+        }
+        &:hover {
+          color: $greenBtn;
+        }
+      }
+    }
+    .suggestion-slider {
+      position: relative;
+      .swiper {
+        .swiper-wrapper {
+          .swiper-slide {
+            padding: 24px 0;
+            .suggestion-card {
+              background-color: #fff;
+              display: flex;
+              flex-direction: column;
+              border: 1px solid $border;
+              border-radius: 8px;
+              transition: all 0.3s ease-in-out;
+              &:hover {
+                box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.05);
+              }
+              .card-content {
+                padding: 24px 24px 12px;
+                .doctor {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 14px;
+                  .doctor-img {
+                    position: relative;
+                    img {
+                      width: 72px;
+                      height: 72px;
+                    }
+                    span {
+                      position: absolute;
+                      left: -7px;
+                      top: -7px;
+                      background-color: #fff;
+                      width: 32px;
+                      height: 32px;
+                      border: 1px solid $border;
+                      border-radius: 100%;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      padding-top: 2px;
+                      transition: all 0.3s ease-in-out;
+                      &:hover {
+                        border: none;
+                        background-color: $greenBtn;
+                        i {
+                          color: #fff;
+                        }
+                      }
+                      i {
+                        transition: all 0.3s ease-in-out;
+                        color: rgba(132, 139, 152, 1);
+                        font-weight: 300;
+                      }
+                    }
+                  }
+                  .doctor-info {
+                    margin-left: 16px;
+                    .work {
+                      font-size: 16px;
+                      font-weight: 400;
+                      line-height: 24px;
+                      color: rgba(132, 139, 152, 1);
+                    }
+                    .name {
+                      font-size: 20px;
+                      font-weight: 400;
+                      line-height: 28px;
+                      color: $fontColor;
+                      img {
+                        margin-left: 4px;
+                      }
+                    }
+                    .location {
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 20px;
+                      color: rgba(183, 187, 194, 1);
+                    }
+                  }
+                }
+                .hospital {
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 24px;
+                  color: rgba(39, 49, 66, 1);
+                  margin-bottom: 8px;
+                }
+                .rating {
+                  display: flex;
+                  align-items: center;
+                  img {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 4px;
+                  }
+                  .point {
+                    color: rgba(255, 173, 13, 1);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    margin-right: 8px;
+                  }
+                  .value {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: $listItemColor;
+                  }
+                }
+              }
+              .card-bottom {
+                padding: 12px 24px;
+                border-top: 1px solid $border;
+                .text {
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 20px;
+                  color: rgba(183, 187, 194, 1);
+                }
+              }
+            }
+          }
+        }
+      }
+      .swiper-button-prev {
+        position: absolute;
+        left: -20px;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 100%;
+        border: 1px solid $border;
+        transition: all 0.3s ease-in-out;
+        &::after {
+          transition: all 0.3s ease-in-out;
+          font-size: 14px;
+          color: rgba(183, 187, 194, 1);
+        }
+        &:hover {
+          border: none;
+          background-color: $greenBtn;
+          &::after {
+            color: #fff;
+          }
+        }
+      }
+      .swiper-button-next {
+        position: absolute;
+        right: -20px;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 100%;
+        border: 1px solid $border;
+        transition: all 0.3s ease-in-out;
+        &::after {
+          transition: all 0.3s ease-in-out;
+          font-size: 14px;
+          color: rgba(183, 187, 194, 1);
+        }
+        &:hover {
+          border: none;
+          background-color: $greenBtn;
+          &::after {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+// Famous doctor End
+
+// Connect Start
+.connect {
+  padding: 23px 0 60px;
+  .container {
+    .title {
+      text-align: center;
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 40px;
+      color: $fontColor;
+      margin-bottom: 24px;
+    }
+    .connect-cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .card {
+        border: 1px solid $border;
+        border-radius: 8px;
+        margin: 0 16px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.05);
+        }
+        .card-img {
+          object-fit: cover;
+          width: 456px;
+          height: 198px;
+        }
+        .card-content {
+          padding: 18px 20px;
+          .card-title {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: $fontColor;
+            margin-bottom: 8px;
+          }
+          .card-link {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            color: rgba(132, 139, 152, 1);
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              color: $greenBtn;
+            }
+            i {
+              margin-left: 4px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Connect End
+
+// Main End

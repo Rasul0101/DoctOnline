@@ -1,0 +1,33 @@
+// GOOGLE FONTS
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+// START RESET CODES
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Hanken Grotesk", sans-serif;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &::selection {
+    background-color: $greenBtn;
+    color: #fff;
+  }
+}
+
+body {
+  background-color: rgba(252, 252, 253, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+// BASE CONTAINER
+.container {
+  width: 1144px;
+  margin: 0 auto;
+}

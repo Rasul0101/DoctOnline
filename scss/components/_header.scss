@@ -1,0 +1,71 @@
+// Header Start
+header {
+  background-color: #fff;
+  .nav {
+    padding: 16px 0;
+    border-bottom: 1px solid $border;
+    .container {
+      .nav-center {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .nav-start {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 16px;
+          .bars {
+            cursor: pointer;
+          }
+          .logo {
+            margin-top: 4px;
+          }
+        }
+        .nav-end {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          .language-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid $border;
+            border-radius: 8px;
+            padding: 10px 12px;
+            gap: 6px;
+            span {
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 20px;
+              color: $fontColor;
+              text-transform: uppercase;
+            }
+            .lang-icon {
+              margin-top: 1px;
+            }
+          }
+          .login-btn {
+            border: 1px solid $border;
+            padding: 10px 24px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            color: $fontColor;
+            border-radius: 8px;
+          }
+          .register-btn {
+            padding: 10px 24px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            color: #fff;
+            background-color: $greenBtn;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+// Header End
