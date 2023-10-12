@@ -1,0 +1,844 @@
+// Main Start
+
+// Doctor Profile Start
+.doctor-profile {
+  padding: 32px 0;
+  .container {
+    .profile {
+      position: relative;
+      .doctor-left {
+        display: flex;
+        .doctor-img {
+          position: relative;
+          img {
+            width: 144px;
+            height: 144px;
+          }
+          .heart {
+            position: absolute;
+            background-color: #fff;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 40px;
+            border: 1px solid $border;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 2px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              border: none;
+              background-color: $greenBtn;
+              i {
+                color: #fff;
+              }
+            }
+            i {
+              transition: all 0.3s ease-in-out;
+              color: rgba(132, 139, 152, 1);
+              font-weight: 300;
+              font-size: 18px;
+            }
+          }
+        }
+        .doctor-info {
+          padding: 0 24px;
+          .work {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 28px;
+            color: $greenBtn;
+            margin-bottom: 4px;
+          }
+          .name {
+            font-size: 34px;
+            font-weight: 500;
+            line-height: 40px;
+            color: $fontColor;
+            margin-bottom: 4px;
+          }
+          .hospital {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: $listItemColor;
+            margin-bottom: 8px;
+          }
+          .text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgba(132, 139, 152, 1);
+          }
+        }
+      }
+      .select-meet {
+        z-index: 99;
+        top: 24px;
+        right: 0;
+        position: absolute;
+        .meet-box {
+          border: 1px solid $border;
+          border-radius: 8px;
+          background-color: #fff;
+          padding: 32px;
+          .title {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            color: $fontColor;
+            margin-bottom: 4px;
+          }
+          .text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgba(132, 139, 152, 1);
+            margin-bottom: 16px;
+          }
+          .call {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+            .video {
+              cursor: pointer;
+              border: 1px solid $border;
+              border-radius: 8px;
+              background-color: #fff;
+              padding: 12px;
+              transition: all 0.3s ease-in-out;
+              margin-right: 8px;
+              &:hover {
+                border: 1px solid rgba(212, 90, 90, 1);
+                background-color: rgb(250, 236, 236);
+              }
+              .icon-box {
+                display: flex;
+                justify-content: space-between;
+                align-items: self-start;
+                margin-bottom: 4px;
+                .left-icon {
+                  width: 32px;
+                  height: 32px;
+                  margin-right: 98px;
+                }
+                .info-icon {
+                  width: 16px;
+                  height: 16px;
+                }
+              }
+              p {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                color: $fontColor;
+              }
+            }
+            .clinic {
+              cursor: pointer;
+              margin-right: 8px;
+              border: 1px solid $border;
+              border-radius: 8px;
+              background-color: #fff;
+              padding: 12px;
+              transition: all 0.3s ease-in-out;
+              &:hover {
+                border: 1px solid rgba(76, 177, 71, 1);
+                background-color: rgb(242, 250, 242);
+              }
+              .icon-box {
+                display: flex;
+                justify-content: space-between;
+                align-items: self-start;
+                margin-bottom: 4px;
+                .left-icon {
+                  width: 32px;
+                  height: 32px;
+                  margin-right: 98px;
+                }
+                .info-icon {
+                  width: 16px;
+                  height: 16px;
+                }
+              }
+              p {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                color: $fontColor;
+              }
+            }
+          }
+          .location {
+            border: 1px solid $border;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            padding: 18px 16px;
+            margin-bottom: 8px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              border: 1px solid rgba(76, 177, 71, 1);
+              background-color: rgb(242, 250, 242);
+            }
+            input {
+              appearance: none;
+              display: block;
+              width: 16px;
+              height: 16px;
+              border-radius: 100%;
+              border: 1px solid rgba(176, 183, 195, 1);
+              transition: 0.3s;
+              &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 1.5px;
+                left: 5px;
+                width: 4px;
+                height: 8px;
+                border: 1px solid #fff;
+                border-width: 0 3px 3px 0;
+                transform: rotate(40deg);
+              }
+            }
+            input:checked {
+              appearance: none;
+              margin: 0;
+              font: inherit;
+              background-color: $greenBtn;
+              width: 16px;
+              height: 16px;
+              border: none;
+              border-radius: 100%;
+              transform: translateY(-0);
+            }
+            .location-text {
+              cursor: pointer;
+              margin-left: 10px;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 20px;
+              color: $listItemColor;
+            }
+          }
+          .table {
+            padding-top: 8px;
+            margin-bottom: 16px;
+            .day-head {
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 16px;
+              .day {
+                cursor: pointer;
+                width: 64px;
+                padding: 2px 0;
+                border: 1px solid $border;
+                border-radius: 7px;
+                // margin-right: 8px;
+                text-align: center;
+                transition: all 0.4s ease-in-out;
+                &:hover {
+                  border: 1px solid rgba(201, 206, 214, 1);
+                  background-color: rgba(251, 251, 252, 1);
+                }
+                .num {
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 20px;
+                  color: $fontColor;
+                }
+                .name {
+                  font-size: 12px;
+                  font-weight: 400;
+                  line-height: 16px;
+                  color: rgba(183, 187, 194, 1);
+                }
+              }
+              .day-active {
+                cursor: pointer;
+                width: 64px;
+                padding: 2px 0;
+                border: 1px solid $greenBtn;
+                border-radius: 7px;
+                // margin-right: 8px;
+                text-align: center;
+                background-color: rgba(76, 177, 71, 1);
+                .num {
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 20px;
+                  color: #fff;
+                }
+                .name {
+                  font-size: 12px;
+                  font-weight: 400;
+                  line-height: 16px;
+                  color: #fff;
+                }
+              }
+            }
+            .table-hours {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              .column {
+                .hour {
+                  cursor: pointer;
+                  background-color: $border;
+                  text-align: center;
+                  padding: 5px 0;
+                  width: 64px;
+                  height: 30px;
+                  margin-bottom: 8px;
+                  border-radius: 7px;
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 20px;
+                  color: $fontColor;
+                  transition: all 0.4s ease-in-out;
+                  &:hover {
+                    background-color: rgba(76, 177, 71, 1);
+                    color: #fff;
+                  }
+                }
+              }
+            }
+          }
+          .continue-btn {
+            display: block;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            background-color: $greenBtn;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+// Doctor Profile End
+
+// Doctor About Start
+.doctor-about {
+  padding-bottom: 60px;
+  .about-nav {
+    background-color: #fff;
+    border-top: 1px solid $border;
+    border-bottom: 1px solid $border;
+    .container {
+      .list {
+        display: flex;
+        align-items: center;
+        .list-item {
+          margin-right: 32px;
+          transition: all 0.3s ease-in-out;
+          &:nth-child(1) {
+            border-bottom: 2px solid $greenBtn;
+          }
+          a {
+            padding: 14px 0;
+            display: block;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: rgba(132, 139, 152, 1);
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              color: $listItemColor;
+            }
+          }
+        }
+      }
+    }
+  }
+  .about-main {
+    padding-top: 32px;
+    .container {
+      .about {
+        padding-bottom: 24px;
+        width: fit-content;
+        .title {
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 32px;
+          color: $fontColor;
+          margin-bottom: 16px;
+        }
+        .rating {
+          margin-bottom: 16px;
+          .title {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: $fontColor;
+            margin-bottom: 8px;
+          }
+          .row {
+            display: flex;
+            align-items: center;
+            img {
+              width: 20px;
+              height: 20px;
+              margin-right: 8px;
+            }
+            span {
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 24px;
+              color: rgba(255, 173, 13, 1);
+              margin-right: 8px;
+            }
+            p {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+              color: $listItemColor;
+              margin-right: 8px;
+            }
+            a {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+              color: $greenBtn;
+            }
+          }
+        }
+        .contact {
+          .title {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: $fontColor;
+            margin-bottom: 8px;
+          }
+          .phone {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            img {
+              width: 32px;
+              height: 32px;
+              margin-right: 8px;
+            }
+            .text {
+              cursor: pointer;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+              color: $listItemColor;
+            }
+          }
+          .email {
+            display: flex;
+            align-items: center;
+            img {
+              width: 32px;
+              height: 32px;
+              margin-right: 8px;
+            }
+            .text {
+              cursor: pointer;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+              color: $listItemColor;
+            }
+          }
+        }
+      }
+      .education {
+        padding: 24px 0;
+        width: 640px;
+        .title {
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 32px;
+          color: $fontColor;
+          margin-bottom: 16px;
+        }
+        .university {
+          margin-bottom: 16px;
+          .title {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: rgba(132, 139, 152, 1);
+            margin-bottom: 4px;
+          }
+          .text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: $fontColor;
+          }
+        }
+        .specialization {
+          margin-bottom: 16px;
+          .title {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: rgba(132, 139, 152, 1);
+            margin-bottom: 4px;
+          }
+          .text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: $fontColor;
+          }
+        }
+        .type {
+          margin-bottom: 16px;
+          .title {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: rgba(132, 139, 152, 1);
+            margin-bottom: 4px;
+          }
+          .text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: $fontColor;
+          }
+        }
+        .note {
+          .title {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: rgba(132, 139, 152, 1);
+            margin-bottom: 4px;
+          }
+          .text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: $fontColor;
+          }
+        }
+      }
+      .work-hour {
+        width: 654px;
+        padding: 24px 0;
+        .title {
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 32px;
+          color: $fontColor;
+          margin-bottom: 8px;
+        }
+        .text {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          color: $listItemColor;
+          margin-bottom: 16px;
+        }
+        .work-table {
+          border: 1px solid $border;
+          border-radius: 8px;
+          .weekdays {
+            padding: 24px 24px 0px;
+            border-bottom: 1px solid $border;
+            .day {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 12px;
+              .name {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: rgba(132, 139, 152, 1);
+              }
+              .hour {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                color: $fontColor;
+              }
+            }
+          }
+          .weekend {
+            padding: 0px 24px 24px;
+            .day {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .name {
+                margin-top: 12px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: rgba(132, 139, 152, 1);
+              }
+              .hour {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                color: $fontColor;
+              }
+            }
+          }
+        }
+      }
+      .location {
+        width: 654px;
+        padding: 24px 0;
+        .head {
+          margin-bottom: 8px;
+          display: flex;
+          justify-content: space-between;
+          .title {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 32px;
+            color: $fontColor;
+          }
+          .buttons {
+            display: flex;
+            align-items: center;
+            .prev,
+            .next {
+              width: 40px;
+              height: 40px;
+              border: 1px solid $border;
+              border-radius: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #fff;
+              transition: all 0.3s ease-in-out;
+              &:hover {
+                background-color: $greenBtn;
+                i {
+                  color: #fff;
+                }
+              }
+              i {
+                transition: all 0.3s ease-in-out;
+                font-size: 14px;
+                color: rgba(183, 187, 194, 1);
+              }
+            }
+            .number {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+              color: rgba(132, 139, 152, 1);
+              margin: 0 8px;
+            }
+          }
+        }
+        .text {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          color: $listItemColor;
+          margin-bottom: 16px;
+        }
+        .map {
+          height: 360px;
+          iframe {
+            height: 360px;
+            width: 100%;
+            border-radius: 8px;
+          }
+        }
+      }
+      .courses {
+        width: 35%;
+        padding: 24px 0;
+        .title {
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 32px;
+          color: $fontColor;
+          margin-bottom: 16px;
+        }
+        .course {
+          margin-bottom: 24px;
+          .title {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: rgba(132, 139, 152, 1);
+            margin-bottom: 4px;
+          }
+          .text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: $fontColor;
+          }
+        }
+        .congress {
+          .title {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: rgba(132, 139, 152, 1);
+            margin-bottom: 4px;
+          }
+          .text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: $fontColor;
+          }
+        }
+      }
+      .insurance {
+        width: 654px;
+        padding: 24px 0;
+        .title {
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 32px;
+          color: $fontColor;
+          margin-bottom: 16px;
+        }
+        .pasha {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border: 1px solid $border;
+          border-radius: 8px;
+          padding: 12px 24px;
+          background-color: rgb(251, 251, 252);
+          margin-bottom: 8px;
+          .text {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: $fontColor;
+          }
+          img {
+            width: 84px;
+            height: 32px;
+          }
+        }
+        .xalg {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border: 1px solid $border;
+          border-radius: 8px;
+          padding: 12px 24px;
+          background-color: rgb(251, 251, 252);
+          .text {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: $fontColor;
+          }
+          img {
+            width: 92px;
+            height: 32px;
+          }
+        }
+      }
+      .comments {
+        padding-top: 24px;
+        width: 654px;
+        .title {
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 32px;
+          color: $fontColor;
+          margin-bottom: 16px;
+        }
+        .common {
+          display: flex;
+          align-items: center;
+          margin-bottom: 16px;
+          .text {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: $fontColor;
+            margin-right: 16px;
+          }
+          .stars {
+            display: flex;
+            align-items: center;
+            margin-right: 8px;
+            img {
+              width: 24px;
+              height: 24px;
+            }
+          }
+          span {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: rgba(255, 173, 13, 1);
+          }
+        }
+        .person-comment {
+          margin-bottom: 32px;
+          &:nth-child(5) {
+            margin-bottom: 24px;
+          }
+          .text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: $fontColor;
+            margin-bottom: 8px;
+          }
+          .person-rate {
+            display: flex;
+            align-items: center;
+            .person {
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 20px;
+              color: rgba(132, 139, 152, 1);
+            }
+            .dot {
+              margin: 0px 8px;
+              color: rgba(132, 139, 152, 1);
+            }
+            .stars {
+              display: flex;
+              align-items: center;
+              img {
+                width: 20px;
+                height: 20px;
+              }
+            }
+            .date {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 20px;
+              color: rgba(132, 139, 152, 1);
+            }
+          }
+        }
+        .more-btn {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          color: $greenBtn;
+        }
+      }
+    }
+  }
+}
+
+// Doctor About End
+
+// Main End

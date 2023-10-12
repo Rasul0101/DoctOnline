@@ -3,8 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./scss/main.css" />
+
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
     <title>DoctOnline | Search Results</title>
+    <link rel="stylesheet" href="./scss/main.css" />
   </head>
   <body>
     <!-- Header Start -->
@@ -93,6 +100,245 @@
       <!-- Reservation Start -->
       <section class="reservation">
         <div class="container">
+          <div class="reserve-box">
+            <div class="doctor">
+              <div class="doctor-left">
+                <img class="doctor-img" src="./images/doctor-1.svg" alt="" />
+                <span class="heart"><i class="fa-regular fa-heart"></i></span>
+                <a class="profile" href="">
+                  <img src="./icons/user-circle.svg" alt="" />
+                  <span> Profilə bax </span>
+                </a>
+              </div>
+              <div class="doctor-info">
+                <p class="work">Cərrah</p>
+                <p class="name">Kənan Hacıyev</p>
+                <p class="hospital">Bakı • İstanbul NS • ₼₼₼</p>
+                <div class="rating">
+                  <img src="./icons/star.svg" alt="" />
+                  <span class="point">4.12</span>
+                  <p class="value">(89 dəyərləndirmə)</p>
+                </div>
+                <p class="text">Uşaq ağrısı • Baş ağrısı • Bədən</p>
+                <div class="meet">
+                  <div class="clinic">
+                    <div class="icon-box">
+                      <img
+                        class="left-icon"
+                        src="./icons/meet-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="info-icon"
+                        src="./icons/info-circle.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p>Klinikada görüş</p>
+                  </div>
+                  <div class="video">
+                    <div class="icon-box">
+                      <img
+                        class="left-icon"
+                        src="./icons/video-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="info-icon"
+                        src="./icons/info-circle.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p>Video görüş</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="table-carousel">
+              <!-- Slider main container -->
+              <div class="swiper table">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="table">
+                      <div class="day-head">
+                        <div class="day">
+                          <p class="num">8 okt</p>
+                          <span class="name">bazar.e</span>
+                        </div>
+                        <div class="day">
+                          <p class="num">9 okt</p>
+                          <span class="name">dünən</span>
+                        </div>
+                        <div class="day-active">
+                          <p class="num">10 okt</p>
+                          <span class="name">bu gün</span>
+                        </div>
+                        <div class="day">
+                          <p class="num">11 okt</p>
+                          <span class="name">sabah</span>
+                        </div>
+                        <div class="day">
+                          <p class="num">12 okt</p>
+                          <span class="name">cümə</span>
+                        </div>
+                      </div>
+                      <div class="table-hours">
+                        <div class="column">
+                          <div class="hour">09:00</div>
+                          <div class="hour">11:00</div>
+                          <div class="hour">13:00</div>
+                          <div class="hour">15:30</div>
+                        </div>
+                        <div class="column">
+                          <div class="hour">09:30</div>
+                          <div class="hour">11:30</div>
+                          <div class="hour">13:30</div>
+                          <div class="hour">16:00</div>
+                        </div>
+                        <div class="column">
+                          <div class="hour">10:00</div>
+                          <div class="hour">12:00</div>
+                          <div class="hour">14:00</div>
+                          <div class="hour">16:30</div>
+                        </div>
+                        <div class="column">
+                          <div class="hour">10:30</div>
+                          <div class="hour">13:00</div>
+                          <div class="hour">14:30</div>
+                        </div>
+                        <div class="column">
+                          <div class="hour">11:00</div>
+                          <div class="hour">12:00</div>
+                          <div class="hour">15:00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="table">
+                      <div class="day-head">
+                        <div class="day">
+                          <p class="num">8 okt</p>
+                          <span class="name">bazar.e</span>
+                        </div>
+                        <div class="day">
+                          <p class="num">9 okt</p>
+                          <span class="name">dünən</span>
+                        </div>
+                        <div class="day-active">
+                          <p class="num">10 okt</p>
+                          <span class="name">bu gün</span>
+                        </div>
+                        <div class="day">
+                          <p class="num">11 okt</p>
+                          <span class="name">sabah</span>
+                        </div>
+                        <div class="day">
+                          <p class="num">12 okt</p>
+                          <span class="name">cümə</span>
+                        </div>
+                      </div>
+                      <div class="table-hours">
+                        <div class="column">
+                          <div class="hour">09:00</div>
+                          <div class="hour">11:00</div>
+                          <div class="hour">13:00</div>
+                          <div class="hour">15:30</div>
+                        </div>
+                        <div class="column">
+                          <div class="hour">09:30</div>
+                          <div class="hour">11:30</div>
+                          <div class="hour">13:30</div>
+                          <div class="hour">16:00</div>
+                        </div>
+                        <div class="column">
+                          <div class="hour">10:00</div>
+                          <div class="hour">12:00</div>
+                          <div class="hour">14:00</div>
+                          <div class="hour">16:30</div>
+                        </div>
+                        <div class="column">
+                          <div class="hour">10:30</div>
+                          <div class="hour">13:00</div>
+                          <div class="hour">14:30</div>
+                        </div>
+                        <div class="column">
+                          <div class="hour">11:00</div>
+                          <div class="hour">12:00</div>
+                          <div class="hour">15:00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="table">
+                      <div class="day-head">
+                        <div class="day">
+                          <p class="num">8 okt</p>
+                          <span class="name">bazar.e</span>
+                        </div>
+                        <div class="day">
+                          <p class="num">9 okt</p>
+                          <span class="name">dünən</span>
+                        </div>
+                        <div class="day-active">
+                          <p class="num">10 okt</p>
+                          <span class="name">bu gün</span>
+                        </div>
+                        <div class="day">
+                          <p class="num">11 okt</p>
+                          <span class="name">sabah</span>
+                        </div>
+                        <div class="day">
+                          <p class="num">12 okt</p>
+                          <span class="name">cümə</span>
+                        </div>
+                      </div>
+                      <div class="table-hours">
+                        <div class="column">
+                          <div class="hour">09:00</div>
+                          <div class="hour">11:00</div>
+                          <div class="hour">13:00</div>
+                          <div class="hour">15:30</div>
+                        </div>
+                        <div class="column">
+                          <div class="hour">09:30</div>
+                          <div class="hour">11:30</div>
+                          <div class="hour">13:30</div>
+                          <div class="hour">16:00</div>
+                        </div>
+                        <div class="column">
+                          <div class="hour">10:00</div>
+                          <div class="hour">12:00</div>
+                          <div class="hour">14:00</div>
+                          <div class="hour">16:30</div>
+                        </div>
+                        <div class="column">
+                          <div class="hour">10:30</div>
+                          <div class="hour">13:00</div>
+                          <div class="hour">14:30</div>
+                        </div>
+                        <div class="column">
+                          <div class="hour">11:00</div>
+                          <div class="hour">12:00</div>
+                          <div class="hour">15:00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev table-prev">
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+              <div class="swiper-button-next table-next">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
           <div class="reserve-box">
             <div class="doctor">
               <div class="doctor-left">
@@ -202,6 +448,111 @@
               </div>
             </div>
           </div>
+          <div class="reserve-box">
+            <div class="doctor">
+              <div class="doctor-left">
+                <img class="doctor-img" src="./images/new1.svg" alt="" />
+                <span class="heart"><i class="fa-regular fa-heart"></i></span>
+                <a class="profile" href="">
+                  <img src="./icons/user-circle.svg" alt="" />
+                  <span> Profilə bax </span>
+                </a>
+              </div>
+              <div class="doctor-info">
+                <p class="work">Stomotoloq</p>
+                <p class="name">Kənan Hacıyev</p>
+                <p class="hospital">Naxçıvan • İstanbul NS • ₼₼₼</p>
+                <div class="rating">
+                  <img src="./icons/star.svg" alt="" />
+                  <span class="point">4.12</span>
+                  <p class="value">(89 dəyərləndirmə)</p>
+                </div>
+                <p class="text">Ödkisə ağrısı • Bel ağrısı</p>
+                <div class="meet">
+                  <div class="clinic">
+                    <div class="icon-box">
+                      <img
+                        class="left-icon"
+                        src="./icons/meet-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="info-icon"
+                        src="./icons/info-circle.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p>Klinikada görüş</p>
+                  </div>
+                  <div class="video">
+                    <div class="icon-box">
+                      <img
+                        class="left-icon"
+                        src="./icons/video-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="info-icon"
+                        src="./icons/info-circle.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p>Video görüş</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="table">
+              <div class="day-head">
+                <div class="day">
+                  <p class="num">8 okt</p>
+                  <span class="name">bazar.e</span>
+                </div>
+                <div class="day">
+                  <p class="num">9 okt</p>
+                  <span class="name">dünən</span>
+                </div>
+                <div class="day-active">
+                  <p class="num">10 okt</p>
+                  <span class="name">bu gün</span>
+                </div>
+                <div class="day">
+                  <p class="num">11 okt</p>
+                  <span class="name">sabah</span>
+                </div>
+                <div class="day">
+                  <p class="num">12 okt</p>
+                  <span class="name">cümə</span>
+                </div>
+              </div>
+              <div class="empty-box">
+                <p class="info">
+                  Axtarılan vaxt üçün həkimin boş saatı tapılmadı
+                </p>
+                <div class="link">
+                  <a href="./search.html"
+                    >Uyğun vaxta keçid et
+                    <i class="fa-solid fa-arrow-right-long"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagination">
+            <div class="page-box">
+              <div class="item-arrow">
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+              <a href="" class="item">1</a>
+              <a href="./doctor-profile.html" class="item">2</a>
+              <a href="./doctor-profile.html" class="item">3</a>
+              <a href="./doctor-profile.html" class="item">4</a>
+              <a href="./doctor-profile.html" class="item">5</a>
+              <div class="item-arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Reservation End -->
@@ -209,7 +560,7 @@
     <!-- Main End -->
 
     <!-- Footer Start -->
-    <footer style="padding-top: 300px">
+    <footer>
       <div class="footer-main">
         <div class="container">
           <div class="footer-in">
@@ -264,6 +615,9 @@
     </footer>
     <!-- Footer End -->
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
     <!-- FontAwesome -->
     <script
       src="https://kit.fontawesome.com/46a0505f50.js"
@@ -271,6 +625,7 @@
     ></script>
 
     <!-- My JS -->
+    <script src="./js/swiper.js"></script>
     <script src="./js/dropdown.js"></script>
   </body>
 </html>

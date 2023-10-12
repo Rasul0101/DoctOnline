@@ -290,8 +290,9 @@
       background-color: #fff;
       padding: 32px;
       display: flex;
-      align-items: center;
+      align-items: self-start;
       justify-content: space-between;
+      margin-bottom: 16px;
       .doctor {
         display: flex;
         .doctor-left {
@@ -471,6 +472,178 @@
           }
         }
       }
+      .table-carousel {
+        width: 360px;
+        position: relative;
+        .swiper {
+          .swiper-wrapper {
+            .swiper-slide {
+              .table {
+                .day-head {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 16px;
+                  .day {
+                    cursor: pointer;
+                    width: 64px;
+                    padding: 2px 0;
+                    border: 1px solid $border;
+                    border-radius: 7px;
+                    margin-left: 8px;
+                    text-align: center;
+                    transition: all 0.4s ease-in-out;
+                    &:hover {
+                      border: 1px solid rgba(201, 206, 214, 1);
+                      background-color: rgba(251, 251, 252, 1);
+                    }
+                    .num {
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 20px;
+                      color: $fontColor;
+                    }
+                    .name {
+                      font-size: 12px;
+                      font-weight: 400;
+                      line-height: 16px;
+                      color: rgba(183, 187, 194, 1);
+                    }
+                  }
+                  .day-active {
+                    cursor: pointer;
+                    width: 64px;
+                    padding: 2px 0;
+                    border: 1px solid $greenBtn;
+                    border-radius: 7px;
+                    margin-left: 8px;
+                    text-align: center;
+                    background-color: rgba(76, 177, 71, 1);
+                    .num {
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 20px;
+                      color: #fff;
+                    }
+                    .name {
+                      font-size: 12px;
+                      font-weight: 400;
+                      line-height: 16px;
+                      color: #fff;
+                    }
+                  }
+                }
+                .table-hours {
+                  display: flex;
+                  .column {
+                    margin-left: 8px;
+                    .hour {
+                      cursor: pointer;
+                      background-color: $border;
+                      text-align: center;
+                      padding: 5px 0;
+                      width: 64px;
+                      height: 30px;
+                      margin-bottom: 8px;
+                      border-radius: 7px;
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 20px;
+                      color: $fontColor;
+                      transition: all 0.4s ease-in-out;
+                      &:hover {
+                        background-color: rgba(76, 177, 71, 1);
+                        color: #fff;
+                      }
+                    }
+                  }
+                }
+                .empty-box {
+                  border: 1px solid $border;
+                  border-radius: 8px;
+                  margin-left: 8px;
+                  .info {
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    color: $fontColor;
+                    padding: 16px;
+                    border-bottom: 1px solid $border;
+                  }
+                  .link {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 12px 0;
+                    a {
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 20px;
+                      color: $greenBtn;
+                      i {
+                        margin-left: 4px;
+                        font-size: 14px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .swiper-button-prev {
+          position: absolute;
+          top: 30px;
+          left: -8px;
+          width: 32px;
+          height: 32px;
+          background-color: #fff;
+          border-radius: 100%;
+          border: 1px solid $border;
+          transition: all 0.3s ease-in-out;
+          &::after {
+            display: none;
+          }
+          &:hover {
+            border: none;
+            background-color: $greenBtn;
+            i {
+              color: #fff;
+            }
+          }
+          i {
+            transition: all 0.3s ease-in-out;
+            color: #000;
+            font-size: 13px;
+          }
+        }
+        .swiper-button-next {
+          position: absolute;
+          top: 30px;
+          right: -15px;
+          width: 32px;
+          height: 32px;
+          background-color: #fff;
+          border-radius: 100%;
+          border: 1px solid $border;
+          transition: all 0.3s ease-in-out;
+          &::after {
+            display: none;
+          }
+          &:hover {
+            border: none;
+            background-color: $greenBtn;
+            i {
+              color: #fff;
+            }
+          }
+          i {
+            transition: all 0.3s ease-in-out;
+            color: #000;
+            font-size: 13px;
+          }
+        }
+      }
       .table {
         .day-head {
           display: flex;
@@ -486,12 +659,8 @@
             text-align: center;
             transition: all 0.4s ease-in-out;
             &:hover {
-              border: 1px solid $greenBtn;
-              background-color: rgba(76, 177, 71, 1);
-              .num,
-              .name {
-                color: #fff;
-              }
+              border: 1px solid rgba(201, 206, 214, 1);
+              background-color: rgba(251, 251, 252, 1);
             }
             .num {
               font-size: 14px;
@@ -531,12 +700,102 @@
         }
         .table-hours {
           display: flex;
+          .column {
+            margin-left: 8px;
+            .hour {
+              cursor: pointer;
+              background-color: $border;
+              text-align: center;
+              padding: 5px 0;
+              width: 64px;
+              height: 30px;
+              margin-bottom: 8px;
+              border-radius: 7px;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 20px;
+              color: $fontColor;
+              transition: all 0.4s ease-in-out;
+              &:hover {
+                background-color: rgba(76, 177, 71, 1);
+                color: #fff;
+              }
+            }
+          }
+        }
+        .empty-box {
+          border: 1px solid $border;
+          border-radius: 8px;
+          margin-left: 8px;
+          .info {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: $fontColor;
+            padding: 16px;
+            border-bottom: 1px solid $border;
+          }
+          .link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 0;
+            a {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 20px;
+              color: $greenBtn;
+              i {
+                margin-left: 4px;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .pagination {
+      display: flex;
+      justify-content: center;
+      padding: 40px 0;
+      margin-bottom: 20px;
+      .page-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $border;
+        border-radius: 8px;
+        width: fit-content;
+        .item-arrow {
+          cursor: pointer;
+          padding: 12px 16px;
+          font-size: 18px;
+          color: rgba(176, 183, 195, 1);
+          transition: all 0.3s ease-in-out;
+        }
+        .item {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          color: $listItemColor;
+          padding: 12px 19px;
+          border-right: 1px solid $border;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            background-color: $greenBtn;
+            color: #fff;
+          }
+          &:nth-child(2) {
+            color: #fff;
+            border-right: 1px solid $border;
+            background-color: $greenBtn;
+          }
         }
       }
     }
   }
 }
-
 // Reservation End
 
 // Main End

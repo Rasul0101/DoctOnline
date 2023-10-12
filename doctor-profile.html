@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DoctOnline | Doctor Profile</title>
+    <link rel="stylesheet" href="./scss/main.css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header>
+      <nav class="nav">
+        <div class="container">
+          <div class="nav-center">
+            <div class="nav-start">
+              <img class="bars" src="./icons/bars.svg" alt="bars" />
+              <a class="logo" href="./index.html">
+                <img src="./icons/Logo1.svg" alt="logo" />
+              </a>
+            </div>
+            <div class="nav-end">
+              <a class="language-box" href="">
+                <span>Az</span>
+                <img class="lang-icon" src="./icons/lang-icon.svg" alt="" />
+              </a>
+              <a class="login-btn" href=""> Daxil olun </a>
+              <a class="register-btn" href=""> Qeydiyyat </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <main>
+      <!-- Doctor Profile Start -->
+      <section class="doctor-profile">
+        <div class="container">
+          <div class="profile">
+            <div class="doctor-left">
+              <div class="doctor-img">
+                <img src="./images/famous1.svg" alt="" />
+                <span class="heart"><i class="fa-regular fa-heart"></i></span>
+              </div>
+              <div class="doctor-info">
+                <p class="work">Stomotoloq</p>
+                <p class="name">Azər Həsənov</p>
+                <p class="hospital">Bakı • Elmed Medical Center • ₼₼₼</p>
+                <p class="text">Ürək damar • İnfeksiya • Beyin</p>
+              </div>
+            </div>
+            <div class="select-meet">
+              <div class="meet-box">
+                <h1 class="title">Görüş götür</h1>
+                <p class="text">Görüş tipini və tarixi seçərək davam edin</p>
+                <div class="call">
+                  <div class="video">
+                    <div class="icon-box">
+                      <img
+                        class="left-icon"
+                        src="./icons/video-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="info-icon"
+                        src="./icons/info-circle.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p>Video görüş</p>
+                  </div>
+                  <div class="clinic">
+                    <div class="icon-box">
+                      <img
+                        class="left-icon"
+                        src="./icons/meet-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="info-icon"
+                        src="./icons/info-circle.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p>Klinikada görüş</p>
+                  </div>
+                </div>
+                <div class="location">
+                  <input type="checkbox" id="1st" />
+                  <label class="location-text" for="1st">
+                    Ege Hospital - 38 Academician Hasan
+                  </label>
+                </div>
+                <div class="location">
+                  <input type="checkbox" id="2nd" />
+                  <label class="location-text" for="2nd"
+                    >İstanbul NS - Nizami Cəfərov 15 b</label
+                  >
+                </div>
+                <div class="table">
+                  <div class="day-head">
+                    <div class="day">
+                      <p class="num">8 okt</p>
+                      <span class="name">bazar.e</span>
+                    </div>
+                    <div class="day">
+                      <p class="num">9 okt</p>
+                      <span class="name">dünən</span>
+                    </div>
+                    <div class="day-active">
+                      <p class="num">10 okt</p>
+                      <span class="name">bu gün</span>
+                    </div>
+                    <div class="day">
+                      <p class="num">11 okt</p>
+                      <span class="name">sabah</span>
+                    </div>
+                    <div class="day">
+                      <p class="num">12 okt</p>
+                      <span class="name">cümə</span>
+                    </div>
+                  </div>
+                  <div class="table-hours">
+                    <div class="column">
+                      <div class="hour">09:00</div>
+                      <div class="hour">11:00</div>
+                      <div class="hour">13:00</div>
+                      <div class="hour">15:30</div>
+                    </div>
+                    <div class="column">
+                      <div class="hour">09:30</div>
+                      <div class="hour">11:30</div>
+                      <div class="hour">13:30</div>
+                      <div class="hour">16:00</div>
+                    </div>
+                    <div class="column">
+                      <div class="hour">10:00</div>
+                      <div class="hour">12:00</div>
+                      <div class="hour">14:00</div>
+                      <div class="hour">16:30</div>
+                    </div>
+                    <div class="column">
+                      <div class="hour">10:30</div>
+                      <div class="hour">13:00</div>
+                      <div class="hour">14:30</div>
+                    </div>
+                    <div class="column">
+                      <div class="hour">11:00</div>
+                      <div class="hour">12:00</div>
+                      <div class="hour">15:00</div>
+                    </div>
+                  </div>
+                </div>
+                <a href="" class="continue-btn"> Davam et </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Doctor Profile End -->
+
+      <!-- About Doctor Start -->
+      <section class="doctor-about">
+        <nav class="about-nav">
+          <div class="container">
+            <ul class="list">
+              <li class="list-item">
+                <a href="#about">Haqqında</a>
+              </li>
+              <li class="list-item">
+                <a href="#education">Təhsil</a>
+              </li>
+              <li class="list-item">
+                <a href="#work-hour">İş saatı</a>
+              </li>
+              <li class="list-item">
+                <a href="#location">Ünvan</a>
+              </li>
+              <li class="list-item">
+                <a href="#courses">Kurs və konqreslər</a>
+              </li>
+              <li class="list-item">
+                <a href="#insurance">Sığorta</a>
+              </li>
+              <li class="list-item">
+                <a href="#comments">Rəylər</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="about-main">
+          <div class="container">
+            <div class="about" id="about">
+              <h1 class="title">Haqqında</h1>
+              <div class="rating">
+                <h4 class="title">Reyting</h4>
+                <div class="row">
+                  <img src="./icons/star.svg" alt="" />
+                  <span>4.12</span>
+                  <p>(89 dəyərləndirmə)</p>
+                  <a href="./doctor-profile.html">hamısına bax</a>
+                </div>
+              </div>
+              <div class="contact">
+                <h4 class="title">Əlaqə</h4>
+                <div class="phone">
+                  <img src="./icons/phone-icon.svg" alt="" />
+                  <p class="text">+994 (55) 850 11 15</p>
+                </div>
+                <div class="email">
+                  <img src="./icons/email-icon.svg" alt="" />
+                  <p class="text">azerhasanov@gmail.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="education" id="education">
+              <h1 class="title">Təhsil</h1>
+              <div class="university">
+                <h4 class="title">Universitet</h4>
+                <p class="text">Azərbaycan Tibb Universiteti</p>
+              </div>
+              <div class="specialization">
+                <h4 class="title">İxtisas</h4>
+                <p class="text">Müalicə işi</p>
+              </div>
+              <div class="type">
+                <h4 class="title">Təhsil növü</h4>
+                <p class="text">Bakalavr</p>
+              </div>
+              <div class="note">
+                <h4 class="title">Əlavə qeyd</h4>
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                  cursus hac ut sit tempor et fames. Malesuada mattis amet arcu
+                  elementum vitae. Egestas bibendum lorem tempor augue cursus
+                  laoreet placerat lacus. Interdum et scelerisque non accumsan
+                  venenatis mattis. Aliquam nulla egestas non, ac.
+                </p>
+              </div>
+            </div>
+            <div class="work-hour" id="work-hour">
+              <h1 class="title">İş saatı</h1>
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="work-table">
+                <div class="weekdays">
+                  <div class="day">
+                    <p class="name">Bazar etrəsi</p>
+                    <p class="hour">08:00 - 18:00</p>
+                  </div>
+                  <div class="day">
+                    <p class="name">Çərşənbə axşamı</p>
+                    <p class="hour">08:00 - 18:00</p>
+                  </div>
+                  <div class="day">
+                    <p class="name">Çərşənbə</p>
+                    <p class="hour">08:00 - 18:00</p>
+                  </div>
+                  <div class="day">
+                    <p class="name">Cümə axşamı</p>
+                    <p class="hour">08:00 - 18:00</p>
+                  </div>
+                  <div class="day">
+                    <p class="name">Cümə</p>
+                    <p class="hour">08:00 - 18:00</p>
+                  </div>
+                </div>
+                <div class="weekend">
+                  <div class="day">
+                    <p class="name">Şənbə</p>
+                    <p class="hour">08:00 - 18:00</p>
+                  </div>
+                  <div class="day">
+                    <p class="name">Bazar</p>
+                    <p class="hour">qeyri-iş günü</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="location" id="location">
+              <div class="head">
+                <h1 class="title">Ünvan</h1>
+                <div class="buttons">
+                  <div class="prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </div>
+                  <p class="number">2 dən 1</p>
+                  <div class="next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="text">Ege Hospital - 38 Academician Hasan Aliyev St</p>
+              <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22249.31802823852!2d49.84580283264943!3d40.39914710803707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2saz!4v1696949393669!5m2!1sen!2saz"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+            <div class="courses" id="courses">
+              <h1 class="title">Kurs və konqresslər</h1>
+              <div class="course">
+                <h4 class="title">Kurs</h4>
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Egestas bibendum lorem tempor augue cursus laoreet Aliquam
+                  nulla egestas non, ac.
+                </p>
+              </div>
+              <div class="congress">
+                <h4 class="title">Konqresslər</h4>
+                <p class="text">
+                  Egestas bibendum lorem tempor augue cursus laoreet Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit. Aliquam nulla
+                  egestas non, ac.
+                </p>
+              </div>
+            </div>
+            <div class="insurance" id="insurance">
+              <h1 class="title">Sığortalar</h1>
+              <div class="pasha">
+                <div class="text">Paşa Sığorta</div>
+                <img src="./images/pasha.svg" alt="" />
+              </div>
+              <div class="xalg">
+                <div class="text">Xalq Sığorta</div>
+                <img src="./images/xalq.svg" alt="" />
+              </div>
+            </div>
+            <div class="comments" id="comments">
+              <h1 class="title">Rəylər</h1>
+              <div class="common">
+                <p class="text">Ümumilikdə 485 rəy</p>
+                <div class="stars">
+                  <img src="./icons/comment-star.svg" alt="" />
+                  <img src="./icons/comment-star.svg" alt="" />
+                  <img src="./icons/comment-star.svg" alt="" />
+                  <img src="./icons/comment-star.svg" alt="" />
+                  <img src="./icons/comment-star-empty.svg" alt="" />
+                </div>
+                <span>(4.12)</span>
+              </div>
+              <div class="person-comment">
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                  cursus hac ut sit tempor et fames. Malesuada mattis amet arcu
+                  elementum vitae. Egestas bibendum lorem tempor augue cursus
+                  laoreet placerat lacus. Interdum et scelerisque non accumsan
+                  venenatis mattis. Aliquam nulla egestas non, ac.
+                </p>
+                <div class="person-rate">
+                  <p class="person">Vilayat Muslumzada</p>
+                  <span class="dot">•</span>
+                  <div class="stars">
+                    <img src="./icons/comment-star.svg" alt="" />
+                    <img src="./icons/comment-star.svg" alt="" />
+                    <img src="./icons/comment-star.svg" alt="" />
+                    <img src="./icons/comment-star.svg" alt="" />
+                    <img src="./icons/comment-star-empty.svg" alt="" />
+                  </div>
+                  <span class="dot">•</span>
+                  <p class="date">25 iyun 2020 - 23:09</p>
+                </div>
+              </div>
+              <div class="person-comment">
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                  cursus hac ut sit tempor et fames. Malesuada mattis amet arcu
+                  elementum vitae.
+                </p>
+                <div class="person-rate">
+                  <p class="person">Vilayat Muslumzada</p>
+                  <span class="dot">•</span>
+                  <div class="stars">
+                    <img src="./icons/comment-star.svg" alt="" />
+                    <img src="./icons/comment-star-empty.svg" alt="" />
+                    <img src="./icons/comment-star-empty.svg" alt="" />
+                    <img src="./icons/comment-star-empty.svg" alt="" />
+                    <img src="./icons/comment-star-empty.svg" alt="" />
+                  </div>
+                  <span class="dot">•</span>
+                  <p class="date">5 iyun 2020 - 12:45</p>
+                </div>
+              </div>
+              <div class="person-comment">
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <div class="person-rate">
+                  <p class="person">Vilayat Muslumzada</p>
+                  <span class="dot">•</span>
+                  <div class="stars">
+                    <img src="./icons/comment-star.svg" alt="" />
+                    <img src="./icons/comment-star.svg" alt="" />
+                    <img src="./icons/comment-star.svg" alt="" />
+                    <img src="./icons/comment-star-empty.svg" alt="" />
+                    <img src="./icons/comment-star-empty.svg" alt="" />
+                  </div>
+                  <span class="dot">•</span>
+                  <p class="date">16 iyun 2020 - 18:47</p>
+                </div>
+              </div>
+              <a class="more-btn" href="./schedule.html">Daha çox</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Doctor End-->
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="footer-main">
+        <div class="container">
+          <div class="footer-in">
+            <div class="footer-left">
+              <a class="footer-logo" href="./index.html">
+                <img src="./icons/footer-logo.svg" alt="" />
+              </a>
+              <div class="app">
+                <a href="">
+                  <img src="./icons/app-store.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="./icons/google-play.svg" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="footer-right">
+              <ul class="links">
+                <h5 class="title">Linklər</h5>
+                <li class="item"><a href=""> Daxil ol </a></li>
+                <li class="item"><a href=""> Qeydiyyatdan keç </a></li>
+                <li class="item"><a href=""> Dəstək (FAQ) </a></li>
+                <li class="item"><a href=""> Həkim qeydiyyatı </a></li>
+              </ul>
+              <ul class="contact">
+                <h5 class="title">Əlaqə</h5>
+                <li class="item"><a href="">+994 (50) 831 31 16</a></li>
+                <li class="item"><a href="">Xan Şuşinski küç 21</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="bottom-in">
+            <div class="social">
+              <a class="icon" href="https://www.facebook.com/" target="_blank">
+                <img src="./icons/facebook.svg" alt="" />
+              </a>
+              <a class="icon" href="https://www.instagram.com/" target="_blank">
+                <img src="./icons/instagram.svg" alt="" />
+              </a>
+              <a class="icon" href="https://twitter.com/" target="_blank">
+                <img src="./icons/twitter.svg" alt="" />
+              </a>
+            </div>
+            <p class="copyright">© 2020 Doctonline - Bütün hüquqlar qorunur.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/46a0505f50.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

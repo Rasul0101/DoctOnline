@@ -66,4 +66,19 @@ const swiper4 = new Swiper(".fourth", {
   spaceBetween: 32,
 });
 
+// Suggestion Swiper
+const table = new Swiper(".table", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
 
+  // Navigation arrows
+  navigation: {
+    nextEl: ".table-next",
+    prevEl: ".table-prev",
+  },
+
+  // Default parameters
+  slidesPerView: 1,
+  spaceBetween: 32,
+});
