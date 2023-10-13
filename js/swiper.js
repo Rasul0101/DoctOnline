@@ -82,3 +82,20 @@ const table = new Swiper(".table", {
   slidesPerView: 1,
   spaceBetween: 32,
 });
+
+// Suggestion Swiper
+const schedule = new Swiper(".schedule", {
+  // Optional parameters
+  direction: "vertical",
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".schedule-next-btn",
+    prevEl: ".schedule-prev-btn",
+  },
+
+  // Default parameters
+  slidesPerView: 1,
+  spaceBetween: 32,
+});
