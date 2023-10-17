@@ -86,13 +86,30 @@ const table = new Swiper(".table", {
 // Suggestion Swiper
 const schedule = new Swiper(".schedule", {
   // Optional parameters
-  direction: "vertical",
+  direction: "horizontal",
   loop: true,
 
   // Navigation arrows
   navigation: {
-    nextEl: ".schedule-next-btn",
-    prevEl: ".schedule-prev-btn",
+    nextEl: ".schedule-next",
+    prevEl: ".schedule-prev",
+  },
+
+  // Default parameters
+  slidesPerView: 1,
+  spaceBetween: 32,
+});
+
+// Question Swiper
+const question = new Swiper(".question", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".question-next",
+    prevEl: ".question-prev",
   },
 
   // Default parameters

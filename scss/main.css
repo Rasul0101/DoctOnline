@@ -2584,52 +2584,52 @@ html {
 }
 
 .schedule-meet {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 0;
+}
+.schedule-meet .container .meet-in {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
-.schedule-meet .select-meet-carousel {
-  width: 558px;
+.schedule-meet .container .meet-in .select-meet-carousel {
   position: relative;
+  width: 560px;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box {
   border: 1px solid rgb(237, 240, 244);
   border-radius: 8px;
   background-color: #fff;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-up {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-up {
   border-bottom: 1px solid rgb(237, 240, 244);
   padding: 24px 32px;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-up .doctor {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-up .doctor {
   display: flex;
   align-items: center;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-up .doctor img {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-up .doctor img {
   width: 88px;
   height: 88px;
   margin-right: 16px;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-up .doctor .doctor-info .work {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-up .doctor .doctor-info .work {
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: -0.150000006px;
   color: rgb(132, 139, 152);
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-up .doctor .doctor-info .name {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-up .doctor .doctor-info .name {
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0px;
   color: rgb(16, 24, 37);
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom {
   padding: 24px 32px 32px 32px;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .title {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .title {
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
@@ -2637,12 +2637,12 @@ html {
   color: rgb(16, 24, 37);
   margin-bottom: 16px;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call .clinic {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call .clinic {
   width: 242px;
   display: flex;
   align-items: center;
@@ -2655,31 +2655,31 @@ html {
   padding: 12px 16px;
   transition: all 0.3s ease-in-out;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call .clinic:hover {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call .clinic:hover {
   border: 1px solid rgb(76, 177, 71);
   background-color: rgb(242, 250, 242);
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call .clinic .box-in {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call .clinic .box-in {
   display: flex;
   align-items: center;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call .clinic .box-in .icon {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call .clinic .box-in .icon {
   width: 32px;
   height: 32px;
   margin-right: 8px;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call .clinic .box-in p {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call .clinic .box-in p {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: -0.1000000015px;
   color: rgb(16, 24, 37);
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call .clinic .info-icon {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call .clinic .info-icon {
   width: 16px;
   height: 16px;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call .video {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call .video {
   width: 242px;
   display: flex;
   align-items: center;
@@ -2691,31 +2691,31 @@ html {
   padding: 12px 16px;
   transition: all 0.3s ease-in-out;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call .video:hover {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call .video:hover {
   border: 1px solid rgb(76, 177, 71);
   background-color: rgb(242, 250, 242);
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call .video .box-in {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call .video .box-in {
   display: flex;
   align-items: center;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call .video .box-in .icon {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call .video .box-in .icon {
   width: 32px;
   height: 32px;
   margin-right: 8px;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call .video .box-in p {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call .video .box-in p {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: -0.1000000015px;
   color: rgb(16, 24, 37);
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call .video .info-icon {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .call .video .info-icon {
   width: 16px;
   height: 16px;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .location {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .location {
   cursor: pointer;
   border: 1px solid rgb(237, 240, 244);
   border-radius: 8px;
@@ -2725,11 +2725,11 @@ html {
   margin-bottom: 8px;
   transition: all 0.3s ease-in-out;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .location:hover {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .location:hover {
   border: 1px solid rgb(76, 177, 71);
   background-color: rgb(242, 250, 242);
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .location input {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .location input {
   cursor: pointer;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -2741,19 +2741,19 @@ html {
   border: 1px solid rgb(176, 183, 195);
   transition: 0.3s;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .location input::after {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .location input::after {
   content: "";
   display: block;
   position: absolute;
   top: 1.5px;
-  left: 5px;
+  left: 4.5px;
   width: 4px;
   height: 8px;
   border: 1px solid #fff;
   border-width: 0 3px 3px 0;
   transform: rotate(40deg);
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .location input:checked {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .location input:checked {
   cursor: pointer;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -2767,25 +2767,25 @@ html {
   border-radius: 100%;
   transform: translateY(0);
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .location .location-text {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .location .location-text {
   margin-left: 10px;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   color: rgb(39, 49, 66);
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .table {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .table {
   padding-top: 8px;
   margin-bottom: 16px;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .table .day-head {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .table .day-head {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 16px;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .table .day-head .day {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .table .day-head .day {
   cursor: pointer;
   width: 92px;
   padding: 2px 0;
@@ -2794,23 +2794,23 @@ html {
   text-align: center;
   transition: all 0.4s ease-in-out;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .table .day-head .day:hover {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .table .day-head .day:hover {
   border: 1px solid rgb(201, 206, 214);
   background-color: rgb(251, 251, 252);
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .table .day-head .day .num {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .table .day-head .day .num {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   color: rgb(16, 24, 37);
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .table .day-head .day .name {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .table .day-head .day .name {
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
   color: rgb(183, 187, 194);
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .table .day-head .day-active {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .table .day-head .day-active {
   cursor: pointer;
   width: 92px;
   padding: 2px 0;
@@ -2819,24 +2819,24 @@ html {
   text-align: center;
   background-color: rgb(76, 177, 71);
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .table .day-head .day-active .num {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .table .day-head .day-active .num {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   color: #fff;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .table .day-head .day-active .name {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .table .day-head .day-active .name {
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
   color: #fff;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .table .table-hours {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .table .table-hours {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .table .table-hours .column .hour {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .table .table-hours .column .hour {
   cursor: pointer;
   background-color: rgb(237, 240, 244);
   text-align: center;
@@ -2849,11 +2849,11 @@ html {
   color: rgb(16, 24, 37);
   transition: all 0.4s ease-in-out;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .table .table-hours .column .hour:hover {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .table .table-hours .column .hour:hover {
   background-color: rgb(76, 177, 71);
   color: #fff;
 }
-.schedule-meet .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .continue-btn {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper .swiper-wrapper .swiper-slide .meet-box .box-bottom .continue-btn {
   display: block;
   font-size: 14px;
   font-weight: 400;
@@ -2864,7 +2864,7 @@ html {
   background-color: rgb(76, 177, 71);
   border-radius: 8px;
 }
-.schedule-meet .select-meet-carousel .swiper-button-prev {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper-button-prev {
   position: absolute;
   top: 22px;
   left: -48px;
@@ -2875,20 +2875,16 @@ html {
   border: 1px solid rgb(237, 240, 244);
   transition: all 0.3s ease-in-out;
 }
-.schedule-meet .select-meet-carousel .swiper-button-prev::after {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper-button-prev::after {
   transition: all 0.3s ease-in-out;
   font-size: 12px;
   font-weight: 900;
+  color: rgb(176, 183, 195);
+}
+.schedule-meet .container .meet-in .select-meet-carousel .swiper-button-prev:hover::after {
   color: #000;
 }
-.schedule-meet .select-meet-carousel .swiper-button-prev:hover {
-  border: none;
-  background-color: rgb(76, 177, 71);
-}
-.schedule-meet .select-meet-carousel .swiper-button-prev:hover::after {
-  color: #fff;
-}
-.schedule-meet .select-meet-carousel .swiper-button-next {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper-button-next {
   position: absolute;
   top: 22px;
   right: -48px;
@@ -2899,18 +2895,258 @@ html {
   border: 1px solid rgb(237, 240, 244);
   transition: all 0.3s ease-in-out;
 }
-.schedule-meet .select-meet-carousel .swiper-button-next::after {
+.schedule-meet .container .meet-in .select-meet-carousel .swiper-button-next::after {
   transition: all 0.3s ease-in-out;
   font-size: 12px;
   font-weight: 900;
+  color: rgb(176, 183, 195);
+}
+.schedule-meet .container .meet-in .select-meet-carousel .swiper-button-next:hover::after {
   color: #000;
 }
-.schedule-meet .select-meet-carousel .swiper-button-next:hover {
-  border: none;
-  background-color: rgb(76, 177, 71);
+
+.header-question {
+  position: relative;
+  background-color: #fff;
 }
-.schedule-meet .select-meet-carousel .swiper-button-next:hover::after {
+.header-question .nav {
+  border-bottom: 1px solid rgb(237, 240, 244);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-question .nav .nav-start {
+  display: flex;
+  align-items: center;
+}
+.header-question .nav .nav-start .logo {
+  padding: 20px 0 20px 32px;
+  border-bottom: 1px solid rgb(76, 177, 71);
+}
+.header-question .nav .nav-start .logo a {
+  display: block;
+  margin-right: 78px;
+  width: 154px;
+  height: 40px;
+}
+.header-question .nav .nav-start .meet-information {
+  position: relative;
+  padding: 18px 0;
+  padding-right: 72px;
+  border-bottom: 1px solid rgb(76, 177, 71);
+}
+.header-question .nav .nav-start .meet-information .top {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.150000006px;
+  color: rgb(16, 24, 37);
+}
+.header-question .nav .nav-start .meet-information .bottom {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.25px;
+  color: rgb(132, 139, 152);
+}
+.header-question .nav .nav-start .meet-information .number {
+  position: absolute;
+  bottom: -12px;
+  background-color: rgb(76, 177, 71);
+  border: 1px solid rgb(76, 177, 71);
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  padding-top: 1px;
+  padding-right: 1px;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.1000000015px;
   color: #fff;
+}
+.header-question .nav .nav-start .questions {
+  padding: 18px 0;
+  position: relative;
+}
+.header-question .nav .nav-start .questions .top {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.150000006px;
+  color: rgb(76, 177, 71);
+}
+.header-question .nav .nav-start .questions .bottom {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.25px;
+  color: rgb(132, 139, 152);
+}
+.header-question .nav .nav-start .questions .number {
+  position: absolute;
+  bottom: -12px;
+  background-color: #fff;
+  border: 1px solid rgb(76, 177, 71);
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  padding-top: 1px;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.1000000015px;
+  color: rgb(76, 177, 71);
+}
+.header-question .nav .nav-end {
+  padding: 22px 32px 22px 0;
+}
+.header-question .nav .nav-end a {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background-color: rgb(237, 240, 244);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doctor-question {
+  padding-top: 32px;
+}
+.doctor-question .container .question-in {
+  display: flex;
+  justify-content: center;
+}
+.doctor-question .container .question-in .question-carousel {
+  position: relative;
+  width: 560px;
+}
+.doctor-question .container .question-in .question-carousel .swiper .swiper-wrapper .swiper-slide .question-box {
+  border: 1px solid rgb(237, 240, 244);
+  border-radius: 8px;
+  background-color: #fff;
+}
+.doctor-question .container .question-in .question-carousel .swiper .swiper-wrapper .swiper-slide .question-box .box-up {
+  border-bottom: 1px solid rgb(237, 240, 244);
+  padding: 24px 32px;
+}
+.doctor-question .container .question-in .question-carousel .swiper .swiper-wrapper .swiper-slide .question-box .box-up .doctor {
+  display: flex;
+  align-items: center;
+}
+.doctor-question .container .question-in .question-carousel .swiper .swiper-wrapper .swiper-slide .question-box .box-up .doctor img {
+  width: 88px;
+  height: 88px;
+  margin-right: 16px;
+}
+.doctor-question .container .question-in .question-carousel .swiper .swiper-wrapper .swiper-slide .question-box .box-up .doctor .doctor-info .work {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.150000006px;
+  color: rgb(132, 139, 152);
+}
+.doctor-question .container .question-in .question-carousel .swiper .swiper-wrapper .swiper-slide .question-box .box-up .doctor .doctor-info .name {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  color: rgb(16, 24, 37);
+}
+.doctor-question .container .question-in .question-carousel .swiper .swiper-wrapper .swiper-slide .question-box .box-bottom {
+  padding: 24px 32px 32px;
+}
+.doctor-question .container .question-in .question-carousel .swiper .swiper-wrapper .swiper-slide .question-box .box-bottom .title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.150000006px;
+  color: rgb(16, 24, 37);
+  margin-bottom: 16px;
+}
+.doctor-question .container .question-in .question-carousel .swiper .swiper-wrapper .swiper-slide .question-box .box-bottom .complaint {
+  margin-bottom: 16px;
+}
+.doctor-question .container .question-in .question-carousel .swiper .swiper-wrapper .swiper-slide .question-box .box-bottom .complaint .title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.25px;
+  color: rgb(132, 139, 152);
+  margin-bottom: 4px;
+}
+.doctor-question .container .question-in .question-carousel .swiper .swiper-wrapper .swiper-slide .question-box .box-bottom .complaint .select-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(237, 240, 244);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+.doctor-question .container .question-in .question-carousel .swiper .swiper-wrapper .swiper-slide .question-box .box-bottom .complaint .select-box p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.1000000015px;
+  color: rgb(39, 49, 66);
+}
+.doctor-question .container .question-in .question-carousel .swiper .swiper-wrapper .swiper-slide .question-box .box-bottom .continue-btn {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  background-color: rgb(76, 177, 71);
+  border-radius: 8px;
+}
+.doctor-question .container .question-in .question-carousel .swiper-button-prev {
+  position: absolute;
+  top: 22px;
+  left: -48px;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid rgb(237, 240, 244);
+  transition: all 0.3s ease-in-out;
+}
+.doctor-question .container .question-in .question-carousel .swiper-button-prev::after {
+  transition: all 0.3s ease-in-out;
+  font-size: 12px;
+  font-weight: 900;
+  color: rgb(176, 183, 195);
+}
+.doctor-question .container .question-in .question-carousel .swiper-button-prev:hover::after {
+  color: #000;
+}
+.doctor-question .container .question-in .question-carousel .swiper-button-next {
+  position: absolute;
+  top: 22px;
+  right: -48px;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid rgb(237, 240, 244);
+  transition: all 0.3s ease-in-out;
+}
+.doctor-question .container .question-in .question-carousel .swiper-button-next::after {
+  transition: all 0.3s ease-in-out;
+  font-size: 12px;
+  font-weight: 900;
+  color: rgb(176, 183, 195);
+}
+.doctor-question .container .question-in .question-carousel .swiper-button-next:hover::after {
+  color: #000;
 }
 
 header {
