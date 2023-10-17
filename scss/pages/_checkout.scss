@@ -1,0 +1,153 @@
+// Header Start
+.header-checkout {
+  position: relative;
+  background-color: #fff;
+  .nav {
+    border-bottom: 1px solid $border;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .nav-start {
+      display: flex;
+      align-items: center;
+      .logo {
+        padding: 20px 0 20px 32px;
+        border-bottom: 1px solid $greenBtn;
+        a {
+          display: block;
+          margin-right: 78px;
+          width: 154px;
+          height: 40px;
+        }
+      }
+      .meet-information {
+        position: relative;
+        padding: 18px 0;
+        padding-right: 72px;
+        border-bottom: 1px solid $greenBtn;
+        .top {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: -0.15000000596046448px;
+          color: $fontColor;
+        }
+        .bottom {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: -0.25px;
+          color: rgba(132, 139, 152, 1);
+        }
+        .number {
+          position: absolute;
+          bottom: -12px;
+          background-color: $greenBtn;
+          border: 1px solid $greenBtn;
+          width: 24px;
+          height: 24px;
+          border-radius: 100%;
+          padding-top: 1px;
+          padding-right: 1px;
+          display: flex;
+          justify-content: center;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: -0.10000000149011612px;
+          color: #fff;
+        }
+      }
+      .questions {
+        position: relative;
+        padding: 18px 0;
+        padding-right: 72px;
+        border-bottom: 1px solid $greenBtn;
+        .top {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: -0.15000000596046448px;
+          color: $fontColor;
+        }
+        .bottom {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: -0.25px;
+          color: rgba(132, 139, 152, 1);
+        }
+        .number {
+          position: absolute;
+          bottom: -12px;
+          background-color: $greenBtn;
+          border: 1px solid $greenBtn;
+          width: 24px;
+          height: 24px;
+          border-radius: 100%;
+          padding-top: 1px;
+          display: flex;
+          justify-content: center;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: -0.10000000149011612px;
+          color: #fff;
+        }
+      }
+      .payment {
+        position: relative;
+        padding: 18px 0;
+        .top {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: -0.15000000596046448px;
+          color: $greenBtn;
+        }
+        .bottom {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: -0.25px;
+          color: rgba(132, 139, 152, 1);
+        }
+        .number {
+          position: absolute;
+          bottom: -12px;
+          background-color: #fff;
+          border: 1px solid $greenBtn;
+          width: 24px;
+          height: 24px;
+          border-radius: 100%;
+          padding-top: 1px;
+          display: flex;
+          justify-content: center;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: -0.10000000149011612px;
+          color: $greenBtn;
+        }
+      }
+    }
+    .nav-end {
+      padding: 22px 32px 22px 0;
+      a {
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background-color: rgba(237, 240, 244, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+// Header End
+
+// Main Start
+
+// Main End

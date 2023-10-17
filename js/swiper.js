@@ -91,14 +91,15 @@ const schedule = new Swiper(".schedule", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".schedule-next",
     prevEl: ".schedule-prev",
+    nextEl: ".schedule-next",
   },
 
   // Default parameters
   slidesPerView: 1,
   spaceBetween: 32,
 });
+console.log(schedule)
 
 // Question Swiper
 const question = new Swiper(".question", {
@@ -110,6 +111,23 @@ const question = new Swiper(".question", {
   navigation: {
     nextEl: ".question-next",
     prevEl: ".question-prev",
+  },
+
+  // Default parameters
+  slidesPerView: 1,
+  spaceBetween: 32,
+});
+
+// Checkout Swiper
+const checkout = new Swiper(".checkout", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".checkout-next",
+    prevEl: ".checkout-prev",
   },
 
   // Default parameters
