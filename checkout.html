@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 
     <title>DoctOnline | Checkout</title>
     <link rel="stylesheet" href="./scss/main.css" />
@@ -43,7 +48,143 @@
     <!-- Header End -->
 
     <!-- Main Start -->
-
+    <main>
+      <section class="doctor-checkout">
+        <div class="container">
+          <div class="checkout-in">
+            <div class="checkout-carousel">
+              <!-- Slider main container -->
+              <div class="swiper checkout">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="question-box">
+                      <div class="box-up">
+                        <div class="doctor">
+                          <img src="./images/famous3.svg" alt="" />
+                          <div class="doctor-info">
+                            <p class="work">Cərrah</p>
+                            <h1 class="name">Həsən Mehdiyev</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="box-bottom">
+                        <h1 class="title">Ödəniş məlumatları</h1>
+                        <div class="price">
+                          <p class="text">Qiymət</p>
+                          <p class="number">34 AZN</p>
+                        </div>
+                        <div class="discount">
+                          <p class="text">Endirim kodu “FIRSTMEET”</p>
+                          <p class="number">- 7 AZN</p>
+                        </div>
+                        <div class="total">
+                          <p class="text">Cəmi</p>
+                          <p class="number">26 AZN</p>
+                        </div>
+                        <label class="privacy" for="prvc">
+                          <input type="checkbox" id="prvc" />
+                          <p class="text">
+                            <a href="">Xidmət Şərtlərini</a> qəbul edirəm
+                          </p>
+                        </label>
+                        <a href="./checkout.html" class="continue-btn">
+                          Davam et
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="question-box">
+                      <div class="box-up">
+                        <div class="doctor">
+                          <img src="./images/doctor-1.svg" alt="" />
+                          <div class="doctor-info">
+                            <p class="work">Stomotoloq</p>
+                            <h1 class="name">Fərid Zalov</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="box-bottom">
+                        <h1 class="title">Ödəniş məlumatları</h1>
+                        <div class="price">
+                          <p class="text">Qiymət</p>
+                          <p class="number">34 AZN</p>
+                        </div>
+                        <div class="discount">
+                          <p class="text">Endirim kodu “FIRSTMEET”</p>
+                          <p class="number">- 7 AZN</p>
+                        </div>
+                        <div class="total">
+                          <p class="text">Cəmi</p>
+                          <p class="number">26 AZN</p>
+                        </div>
+                        <label class="privacy" for="prvc">
+                          <input type="checkbox" id="prvc" />
+                          <p class="text">
+                            <a href="">Xidmət Şərtlərini</a> qəbul edirəm
+                          </p>
+                        </label>
+                        <a href="./checkout.html" class="continue-btn">
+                          Davam et
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="question-box">
+                      <div class="box-up">
+                        <div class="doctor">
+                          <img src="./images/famous1.svg" alt="" />
+                          <div class="doctor-info">
+                            <p class="work">Kardioloq</p>
+                            <h1 class="name">Nərmin Əlizadə</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="box-bottom">
+                        <h1 class="title">Ödəniş məlumatları</h1>
+                        <div class="price">
+                          <p class="text">Qiymət</p>
+                          <p class="number">34 AZN</p>
+                        </div>
+                        <div class="discount">
+                          <p class="text">Endirim kodu “FIRSTMEET”</p>
+                          <p class="number">- 7 AZN</p>
+                        </div>
+                        <div class="total">
+                          <p class="text">Cəmi</p>
+                          <p class="number">26 AZN</p>
+                        </div>
+                        <label class="privacy" for="prvc">
+                          <input type="checkbox" id="prvc" />
+                          <p class="text">
+                            <a href="">Xidmət Şərtlərini</a> qəbul edirəm
+                          </p>
+                        </label>
+                        <a href="./checkout.html" class="continue-btn">
+                          Davam et
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev checkout-prev"></div>
+              <div class="swiper-button-next checkout-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- Main End -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- My JS -->
+    <script src="./js/swiper.js"></script>
   </body>
 </html>

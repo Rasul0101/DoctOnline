@@ -84,7 +84,7 @@ const table = new Swiper(".table", {
 });
 
 // Suggestion Swiper
-const schedule = new Swiper(".schedule", {
+const schedule = new Swiper(".miyu", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
@@ -99,7 +99,6 @@ const schedule = new Swiper(".schedule", {
   slidesPerView: 1,
   spaceBetween: 32,
 });
-console.log(schedule)
 
 // Question Swiper
 const question = new Swiper(".question", {

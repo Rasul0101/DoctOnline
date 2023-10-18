@@ -149,5 +149,218 @@
 // Header End
 
 // Main Start
-
+.doctor-checkout {
+  padding-top: 32px;
+  .container {
+    .checkout-in {
+      display: flex;
+      justify-content: center;
+      .checkout-carousel {
+        position: relative;
+        width: 560px;
+        .swiper {
+          .swiper-wrapper {
+            .swiper-slide {
+              .question-box {
+                border: 1px solid $border;
+                border-radius: 8px;
+                background-color: #fff;
+                .box-up {
+                  border-bottom: 1px solid $border;
+                  padding: 24px 32px;
+                  .doctor {
+                    display: flex;
+                    align-items: center;
+                    img {
+                      width: 88px;
+                      height: 88px;
+                      margin-right: 16px;
+                    }
+                    .doctor-info {
+                      .work {
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        letter-spacing: -0.15000000596046448px;
+                        color: rgba(132, 139, 152, 1);
+                      }
+                      .name {
+                        font-size: 24px;
+                        font-weight: 400;
+                        line-height: 32px;
+                        letter-spacing: 0px;
+                        color: $fontColor;
+                      }
+                    }
+                  }
+                }
+                .box-bottom {
+                  padding: 24px 32px 32px;
+                  .title {
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 28px;
+                    letter-spacing: -0.15000000596046448px;
+                    color: $fontColor;
+                    margin-bottom: 16px;
+                  }
+                  .price {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 16px;
+                    .text,
+                    .number {
+                      font-size: 16px;
+                      font-weight: 400;
+                      line-height: 24px;
+                      letter-spacing: -0.15000000596046448px;
+                      color: rgba(132, 139, 152, 1);
+                    }
+                  }
+                  .discount {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 16px;
+                    .text,
+                    .number {
+                      font-size: 16px;
+                      font-weight: 400;
+                      line-height: 24px;
+                      letter-spacing: -0.15000000596046448px;
+                      color: rgba(132, 139, 152, 1);
+                    }
+                  }
+                  .total {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-bottom: 1px solid $border;
+                    padding-bottom: 16px;
+                    margin-bottom: 16px;
+                    .text,
+                    .number {
+                      font-size: 24px;
+                      font-weight: 400;
+                      line-height: 32px;
+                      color: $fontColor;
+                    }
+                  }
+                  .privacy {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 4px;
+                    cursor: pointer;
+                    width: fit-content;
+                    input {
+                      cursor: pointer;
+                      appearance: none;
+                      display: block;
+                      width: 14px;
+                      height: 14px;
+                      border-radius: 2px;
+                      border: 1px solid rgba(176, 183, 195, 1);
+                      transition: 0.3s;
+                      margin-right: 8px;
+                      &::after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 0.5px;
+                        left: 4px;
+                        width: 4px;
+                        height: 8px;
+                        border: 1px solid #fff;
+                        border-width: 0 3px 3px 0;
+                        transform: rotate(40deg);
+                      }
+                    }
+                    input:checked {
+                      cursor: pointer;
+                      appearance: none;
+                      background-color: rgba(76, 177, 71, 1);
+                      width: 14px;
+                      height: 14px;
+                      border: none;
+                      border-radius: 2px;
+                      transform: translateY(-0);
+                      margin-right: 8px;
+                    }
+                    .text {
+                      font-size: 16px;
+                      font-weight: 400;
+                      line-height: 24px;
+                      letter-spacing: -0.15000000596046448px;
+                      color: rgba(132, 139, 152, 1);
+                      a {
+                        color: $greenBtn;
+                      }
+                    }
+                  }
+                  .continue-btn {
+                    margin-top: 24px;
+                    display: block;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    color: #fff;
+                    text-align: center;
+                    padding: 10px 0;
+                    background-color: $greenBtn;
+                    border-radius: 8px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .swiper-button-prev {
+          position: absolute;
+          top: 22px;
+          left: -48px;
+          width: 40px;
+          height: 40px;
+          background-color: #fff;
+          border-radius: 8px;
+          border: 1px solid $border;
+          transition: all 0.3s ease-in-out;
+          &::after {
+            transition: all 0.3s ease-in-out;
+            font-size: 12px;
+            font-weight: 900;
+            color: rgba(176, 183, 195, 1);
+          }
+          &:hover {
+            &::after {
+              color: #000;
+            }
+          }
+        }
+        .swiper-button-next {
+          position: absolute;
+          top: 22px;
+          right: -48px;
+          width: 40px;
+          height: 40px;
+          background-color: #fff;
+          border-radius: 8px;
+          border: 1px solid $border;
+          transition: all 0.3s ease-in-out;
+          &::after {
+            transition: all 0.3s ease-in-out;
+            font-size: 12px;
+            font-weight: 900;
+            color: rgba(176, 183, 195, 1);
+          }
+          &:hover {
+            &::after {
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 // Main End
