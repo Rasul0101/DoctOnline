@@ -133,3 +133,20 @@ const checkout = new Swiper(".checkout", {
   slidesPerView: 1,
   spaceBetween: 32,
 });
+
+// Choose Plan Swiper
+const choose = new Swiper(".choose", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".choose-next",
+    prevEl: ".choose-prev",
+  },
+
+  // Default parameters
+  slidesPerView: 1,
+  spaceBetween: 32,
+});
