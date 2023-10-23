@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <title>DoctOnline | Auth</title>
+    <link rel="stylesheet" href="./scss/main.css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="header-auth">
+      <nav class="nav">
+        <div class="nav-start">
+          <div class="logo">
+            <a href="./schedule.html">
+              <img src="./icons/Logo1.svg" alt="logo" />
+            </a>
+          </div>
+          <div class="meet-information">
+            <p class="top">Görüş məlumatları</p>
+            <p class="bottom">Video görüş - 10 okt 13:00</p>
+            <span class="number">1</span>
+          </div>
+          <div class="questions">
+            <p class="top">Suallar</p>
+            <p class="bottom">Baş ağrısı</p>
+            <span class="number">2</span>
+          </div>
+          <div class="payment">
+            <p class="top">Ödəniş məlumatları</p>
+            <p class="bottom">Cəmi - 26 AZN</p>
+            <span class="number">3</span>
+          </div>
+          <div class="register">
+            <p class="top">Qeydiyyat</p>
+            <p class="bottom">Vilayət Müslümzadə</p>
+            <span class="number">4</span>
+          </div>
+        </div>
+        <div class="nav-end">
+          <a class="cancel-btn" href="./schedule.html">
+            <img src="./icons/cancel-btn.svg" alt="" />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <main>
+      <section class="doctor-auth">
+        <div class="container">
+          <div class="auth-in">
+            <div class="auth-carousel">
+              <!-- Slider main container -->
+              <div class="swiper auth">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="auth-box">
+                      <div class="box-up">
+                        <div class="doctor">
+                          <img src="./images/famous3.svg" alt="" />
+                          <div class="doctor-info">
+                            <p class="work">Cərrah</p>
+                            <h1 class="name">Həsən Mehdiyev</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="box-bottom">
+                        <h1 class="title">Qeydiyyat</h1>
+                        <div class="form-group">
+                          <label class="form-label" for="name">Ad</label>
+                          <input
+                            class="form-input"
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="Ad"
+                            required
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label class="form-label" for="surname">Soyad</label>
+                          <input
+                            class="form-input"
+                            type="text"
+                            name="surname"
+                            id="surname"
+                            placeholder="Soyad"
+                            required
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label class="form-label" for="email"
+                            >Elektron poçta</label
+                          >
+                          <input
+                            class="form-input"
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Elektron poçt"
+                            required
+                          />
+                        </div>
+                        <div class="phone">
+                          <div class="prefix">
+                            <label for="prefix" class="form-label"
+                              >Prefix</label
+                            >
+                            <input
+                              type="number"
+                              class="form-input"
+                              name="prefix"
+                              id="prefix"
+                              placeholder="099"
+                              required
+                            />
+                          </div>
+                          <div class="number">
+                            <label for="number" class="form-label">Nömrə</label>
+                            <input
+                              type="tel"
+                              class="form-input"
+                              name="number"
+                              id="number"
+                              placeholder="Sizin nömrəniz"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="form-label" for="password">Şifrə</label>
+                          <input
+                            class="form-input"
+                            type="password"
+                            name="password"
+                            id="password"
+                            placeholder="Şifrə"
+                            required
+                          />
+                          <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <a href="./auth.html" class="register-btn">
+                          Qeydiyyatı bitir və ödə
+                        </a>
+                        <div class="and-box">
+                          <span></span>
+                          <p>və ya</p>
+                          <span></span>
+                        </div>
+                        <div class="social-register">
+                          <a href="" class="google">
+                            <img src="./icons/google.svg" alt="" />
+                            <p class="text">Google ilə qeydiyyat</p>
+                          </a>
+                          <a href="" class="facebook">
+                            <img src="./icons/facebook-blue.svg" alt="" />
+                            <p class="text">Facebook ilə qeydiyyat</p>
+                          </a>
+                        </div>
+                        <div class="login">
+                          <p class="text">Hesabın var?</p>
+                          <a class="login-link" href="">Daxil ol</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="auth-box">
+                      <div class="box-up">
+                        <div class="doctor">
+                          <img src="./images/doctor-1.svg" alt="" />
+                          <div class="doctor-info">
+                            <p class="work">Stomotoloq</p>
+                            <h1 class="name">Fərid Zalov</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="box-bottom">
+                        <h1 class="title">Qeydiyyat</h1>
+                        <div class="form-group">
+                          <label class="form-label" for="name">Ad</label>
+                          <input
+                            class="form-input"
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="Ad"
+                            required
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label class="form-label" for="surname">Soyad</label>
+                          <input
+                            class="form-input"
+                            type="text"
+                            name="surname"
+                            id="surname"
+                            placeholder="Soyad"
+                            required
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label class="form-label" for="email"
+                            >Elektron poçta</label
+                          >
+                          <input
+                            class="form-input"
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Elektron poçt"
+                            required
+                          />
+                        </div>
+                        <div class="phone">
+                          <div class="prefix">
+                            <label for="prefix" class="form-label"
+                              >Prefix</label
+                            >
+                            <input
+                              type="number"
+                              class="form-input"
+                              name="prefix"
+                              id="prefix"
+                              placeholder="099"
+                              required
+                            />
+                          </div>
+                          <div class="number">
+                            <label for="number" class="form-label">Nömrə</label>
+                            <input
+                              type="tel"
+                              class="form-input"
+                              name="number"
+                              id="number"
+                              placeholder="Sizin nömrəniz"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="form-label" for="password">Şifrə</label>
+                          <input
+                            class="form-input"
+                            type="password"
+                            name="password"
+                            id="password"
+                            placeholder="Şifrə"
+                            required
+                          />
+                          <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <a href="./auth.html" class="register-btn">
+                          Qeydiyyatı bitir və ödə
+                        </a>
+                        <div class="and-box">
+                          <span></span>
+                          <p>və ya</p>
+                          <span></span>
+                        </div>
+                        <div class="social-register">
+                          <a href="" class="google">
+                            <img src="./icons/google.svg" alt="" />
+                            <p class="text">Google ilə qeydiyyat</p>
+                          </a>
+                          <a href="" class="facebook">
+                            <img src="./icons/facebook-blue.svg" alt="" />
+                            <p class="text">Facebook ilə qeydiyyat</p>
+                          </a>
+                        </div>
+                        <div class="login">
+                          <p class="text">Hesabın var?</p>
+                          <a class="login-link" href="">Daxil ol</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="auth-box">
+                      <div class="box-up">
+                        <div class="doctor">
+                          <img src="./images/famous1.svg" alt="" />
+                          <div class="doctor-info">
+                            <p class="work">Kardioloq</p>
+                            <h1 class="name">Nərmin Əlizadə</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="box-bottom">
+                        <h1 class="title">Qeydiyyat</h1>
+                        <div class="form-group">
+                          <label class="form-label" for="name">Ad</label>
+                          <input
+                            class="form-input"
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="Ad"
+                            required
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label class="form-label" for="surname">Soyad</label>
+                          <input
+                            class="form-input"
+                            type="text"
+                            name="surname"
+                            id="surname"
+                            placeholder="Soyad"
+                            required
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label class="form-label" for="email"
+                            >Elektron poçta</label
+                          >
+                          <input
+                            class="form-input"
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Elektron poçt"
+                            required
+                          />
+                        </div>
+                        <div class="phone">
+                          <div class="prefix">
+                            <label for="prefix" class="form-label"
+                              >Prefix</label
+                            >
+                            <input
+                              type="number"
+                              class="form-input"
+                              name="prefix"
+                              id="prefix"
+                              placeholder="099"
+                              required
+                            />
+                          </div>
+                          <div class="number">
+                            <label for="number" class="form-label">Nömrə</label>
+                            <input
+                              type="tel"
+                              class="form-input"
+                              name="number"
+                              id="number"
+                              placeholder="Sizin nömrəniz"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="form-label" for="password">Şifrə</label>
+                          <input
+                            class="form-input"
+                            type="password"
+                            name="password"
+                            id="password"
+                            placeholder="Şifrə"
+                            required
+                          />
+                          <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <a href="./auth.html" class="register-btn">
+                          Qeydiyyatı bitir və ödə
+                        </a>
+                        <div class="and-box">
+                          <span></span>
+                          <p>və ya</p>
+                          <span></span>
+                        </div>
+                        <div class="social-register">
+                          <a href="" class="google">
+                            <img src="./icons/google.svg" alt="" />
+                            <p class="text">Google ilə qeydiyyat</p>
+                          </a>
+                          <a href="" class="facebook">
+                            <img src="./icons/facebook-blue.svg" alt="" />
+                            <p class="text">Facebook ilə qeydiyyat</p>
+                          </a>
+                        </div>
+                        <div class="login">
+                          <p class="text">Hesabın var?</p>
+                          <a class="login-link" href="">Daxil ol</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev auth-prev"></div>
+              <div class="swiper-button-next auth-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Main End -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/46a0505f50.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- My JS -->
+    <script src="./js/swiper.js"></script>
+  </body>
+</html>

@@ -150,3 +150,20 @@ const choose = new Swiper(".choose", {
   slidesPerView: 1,
   spaceBetween: 32,
 });
+
+// Auth Swiper
+const auth = new Swiper(".auth", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".auth-next",
+    prevEl: ".auth-prev",
+  },
+
+  // Default parameters
+  slidesPerView: 1,
+  spaceBetween: 32,
+});
