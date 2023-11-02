@@ -8,15 +8,12 @@ footer {
       padding: 32px 0 40px;
     }
     .container {
-      @media (max-width: 1000px) {
-        width: auto;
-      }
       .footer-in {
         width: 100%;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        @media (max-width: 1000px) {
+        @media (max-width: 1180px) {
           padding: 0 16px;
         }
         .footer-left {
@@ -29,6 +26,12 @@ footer {
             height: 40px;
             @media (max-width: 768px) {
               margin-bottom: 16px;
+            }
+            img {
+              @media (max-width: 575px) {
+                width: 121px;
+                height: 32px;
+              }
             }
           }
           .app {

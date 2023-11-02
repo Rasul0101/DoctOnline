@@ -4,15 +4,31 @@ const swiper = new Swiper(".first", {
   direction: "horizontal",
   loop: true,
 
+  // If we need pagination
+  pagination: {
+    el: ".first-nav",
+  },
+
   // Navigation arrows
   navigation: {
     nextEl: ".first-next",
     prevEl: ".first-prev",
   },
 
-  // Default parameters
-  slidesPerView: 2,
-  spaceBetween: 32,
+  breakpoints: {
+    280: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 32,
+    },
+    1200: {
+      slidesPerView: 2,
+      spaceBetween: 32,
+    },
+  },
 });
 
 // Famous Swiper
@@ -21,15 +37,31 @@ const swiper2 = new Swiper(".second", {
   direction: "horizontal",
   loop: true,
 
+  // If we need pagination
+  pagination: {
+    el: ".famous-nav",
+  },
+
   // Navigation arrows
   navigation: {
     nextEl: ".second-next",
     prevEl: ".second-prev",
   },
 
-  // Default parameters
-  slidesPerView: 3,
-  spaceBetween: 32,
+  breakpoints: {
+    280: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    700: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+    1110: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+    },
+  },
 });
 
 // New Swiper
@@ -38,15 +70,31 @@ const swiper3 = new Swiper(".third", {
   direction: "horizontal",
   loop: true,
 
+  // If we need pagination
+  pagination: {
+    el: ".third-nav",
+  },
+
   // Navigation arrows
   navigation: {
     nextEl: ".third-next",
     prevEl: ".third-prev",
   },
 
-  // Default parameters
-  slidesPerView: 3,
-  spaceBetween: 32,
+  breakpoints: {
+    280: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    700: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+    1110: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+    },
+  },
 });
 
 // Suggestion Swiper

@@ -8,14 +8,14 @@ header {
       padding: 12px 0;
     }
     .container {
-      @media (max-width: 1000px) {
-        width: auto;
-      }
+      // @media (max-width: 1000px) {
+      //   width: auto;
+      // }
       .nav-center {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        @media (max-width: 1000px) {
+        @media (max-width: 1180px) {
           padding: 0 16px;
         }
         .nav-start {

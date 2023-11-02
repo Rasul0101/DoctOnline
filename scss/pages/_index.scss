@@ -188,15 +188,29 @@
 // First Info Start
 .first-info {
   padding-top: 56px;
+  padding-bottom: 23px;
+  @media (max-width: 768px) {
+    padding-top: 32px;
+  }
   .container {
     .info-slider {
       position: relative;
+      @media (min-width: 850px) and (max-width: 1200px) {
+        padding: 0 150px;
+      }
+      @media (max-width: 850px) {
+        padding: 0 50px;
+      }
+      @media (max-width: 575px) {
+        padding: 0 16px;
+      }
       .swiper {
         .swiper-wrapper {
           .swiper-slide {
             padding-bottom: 23px;
             .slide-card {
               background-color: #fff;
+              overflow: hidden;
               display: flex;
               justify-content: space-between;
               align-items: center;
@@ -210,12 +224,21 @@
                 padding: 24px;
                 display: flex;
                 flex-direction: column;
+                @media (max-width: 650px) {
+                  padding: 16px;
+                }
                 .card-title {
                   font-size: 24px;
                   font-weight: 500;
                   line-height: 32px;
                   color: $fontColor;
                   margin-bottom: 16px;
+                  @media (max-width: 630px) {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    margin-bottom: 8px;
+                  }
                 }
                 .card-btn {
                   width: fit-content;
@@ -227,6 +250,16 @@
                   padding: 5px 16px 6px;
                   border-radius: 8px;
                   margin-bottom: 44px;
+                  @media (max-width: 630px) {
+                    padding: 4px 8px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 16px;
+                    margin-bottom: 46px;
+                  }
+                  // @media (max-width:575px) {
+                  //  margin-bottom: 40px;
+                  // }
                 }
                 .card-date {
                   font-size: 16px;
@@ -234,6 +267,15 @@
                   line-height: 24px;
                   color: rgba(132, 139, 152, 1);
                   margin-bottom: 52px;
+                  @media (max-width: 630px) {
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 18px;
+                    margin-bottom: 70px;
+                  }
+                  @media (max-width: 420px) {
+                    margin-bottom: 30px;
+                  }
                 }
                 .card-more {
                   font-size: 16px;
@@ -241,13 +283,34 @@
                   line-height: 24px;
                   color: $fontColor;
                   margin-top: 44px;
+                  @media (max-width: 630px) {
+                    margin-top: 0;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                  }
                 }
               }
               .card-img {
                 border-left: 1px solid $border;
+                @media (max-width: 630px) {
+                  width: 136px;
+                  height: 100%;
+                }
               }
             }
           }
+        }
+      }
+      .swiper-pagination {
+        display: none;
+        position: absolute;
+        bottom: -5px;
+        @media (max-width: 1200px) {
+          display: block;
+        }
+        span {
+          background-color: $greenBtn;
         }
       }
       .swiper-button-prev {
@@ -259,6 +322,9 @@
         border-radius: 100%;
         border: 1px solid $border;
         transition: all 0.3s ease-in-out;
+        @media (max-width: 1200px) {
+          display: none;
+        }
         &::after {
           transition: all 0.3s ease-in-out;
           font-size: 14px;
@@ -281,6 +347,9 @@
         border-radius: 100%;
         border: 1px solid $border;
         transition: all 0.3s ease-in-out;
+        @media (max-width: 1200px) {
+          display: none;
+        }
         &::after {
           transition: all 0.3s ease-in-out;
           font-size: 14px;
@@ -301,17 +370,29 @@
 
 // Famous doctor Start
 .famous-doctor {
-  padding: 23px 0 0;
+  padding: 23px 0;
+  @media (max-width: 575px) {
+    padding-top: 25px;
+    padding-bottom: 24px;
+  }
   .container {
     .famous-head {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
+      @media (max-width: 1150px) {
+        padding: 0 16px;
+      }
       .title {
         font-size: 34px;
         font-weight: 500;
         line-height: 40px;
         color: $fontColor;
+        @media (max-width: 668px) {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 28px;
+        }
       }
       .famous-link {
         font-size: 16px;
@@ -319,6 +400,15 @@
         line-height: 24px;
         color: rgba(183, 187, 194, 1);
         transition: all 0.3s ease-in-out;
+        @media (max-width: 668px) {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 16px;
+          color: $greenBtn;
+          i {
+            display: none;
+          }
+        }
         i {
           font-size: 14px;
         }
@@ -329,10 +419,16 @@
     }
     .famous-slider {
       position: relative;
+      @media (max-width: 1200px) {
+        padding: 0 16px;
+      }
       .swiper {
         .swiper-wrapper {
           .swiper-slide {
             padding: 24px 0;
+            @media (max-width: 575px) {
+              padding: 16px 0;
+            }
             .famous-card {
               background-color: #fff;
               display: flex;
@@ -345,6 +441,9 @@
               }
               .card-content {
                 padding: 24px 24px 12px;
+                @media (max-width: 575px) {
+                  padding: 20px 20px 12px;
+                }
                 .doctor {
                   display: flex;
                   align-items: center;
@@ -354,6 +453,10 @@
                     img {
                       width: 72px;
                       height: 72px;
+                      @media (max-width: 575px) {
+                        width: 64px;
+                        height: 64px;
+                      }
                     }
                     span {
                       position: absolute;
@@ -390,12 +493,22 @@
                       font-weight: 400;
                       line-height: 24px;
                       color: rgba(132, 139, 152, 1);
+                      @media (max-width: 575px) {
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 20px;
+                      }
                     }
                     .name {
                       font-size: 20px;
                       font-weight: 400;
                       line-height: 28px;
                       color: $fontColor;
+                      @media (max-width: 575px) {
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 24px;
+                      }
                       img {
                         margin-left: 4px;
                       }
@@ -414,6 +527,11 @@
                   line-height: 24px;
                   color: rgba(39, 49, 66, 1);
                   margin-bottom: 8px;
+                  @media (max-width: 575px) {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                  }
                 }
                 .rating {
                   display: flex;
@@ -422,6 +540,10 @@
                     width: 20px;
                     height: 20px;
                     margin-right: 4px;
+                    @media (max-width: 575px) {
+                      width: 16px;
+                      height: 16px;
+                    }
                   }
                   .point {
                     color: rgba(255, 173, 13, 1);
@@ -429,27 +551,56 @@
                     font-weight: 400;
                     line-height: 24px;
                     margin-right: 8px;
+                    @media (max-width: 575px) {
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 20px;
+                    }
                   }
                   .value {
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 24px;
                     color: $listItemColor;
+                    @media (max-width: 575px) {
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 20px;
+                    }
                   }
                 }
               }
               .card-bottom {
                 padding: 12px 24px;
                 border-top: 1px solid $border;
+                @media (max-width: 575px) {
+                  padding: 12px 20px;
+                }
                 .text {
                   font-size: 14px;
                   font-weight: 400;
                   line-height: 20px;
                   color: rgba(183, 187, 194, 1);
+                  @media (max-width: 575px) {
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 16px;
+                  }
                 }
               }
             }
           }
+        }
+      }
+      .swiper-pagination {
+        display: none;
+        position: absolute;
+        bottom: -10px;
+        @media (max-width: 768px) {
+          display: block;
+        }
+        span {
+          background-color: $greenBtn;
         }
       }
       .swiper-button-prev {
@@ -461,6 +612,12 @@
         border-radius: 100%;
         border: 1px solid $border;
         transition: all 0.3s ease-in-out;
+        @media (max-width: 1200px) {
+          left: 5px;
+        }
+        @media (max-width: 768px) {
+          display: none;
+        }
         &::after {
           transition: all 0.3s ease-in-out;
           font-size: 14px;
@@ -483,6 +640,12 @@
         border-radius: 100%;
         border: 1px solid $border;
         transition: all 0.3s ease-in-out;
+        @media (max-width: 1200px) {
+          right: 5px;
+        }
+        @media (max-width: 768px) {
+          display: none;
+        }
         &::after {
           transition: all 0.3s ease-in-out;
           font-size: 14px;
@@ -504,16 +667,28 @@
 // New doctor Start
 .new-doctor {
   padding: 23px 0 56px;
+  @media (max-width: 575px) {
+    padding-top: 24px;
+    padding-bottom: 48px;
+  }
   .container {
     .new-head {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
+      @media (max-width: 1150px) {
+        padding: 0 16px;
+      }
       .title {
         font-size: 34px;
         font-weight: 500;
         line-height: 40px;
         color: $fontColor;
+        @media (max-width: 668px) {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 28px;
+        }
       }
       .new-link {
         font-size: 16px;
@@ -521,6 +696,15 @@
         line-height: 24px;
         color: rgba(183, 187, 194, 1);
         transition: all 0.3s ease-in-out;
+        @media (max-width: 668px) {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 16px;
+          color: $greenBtn;
+          i {
+            display: none;
+          }
+        }
         i {
           font-size: 14px;
         }
@@ -531,10 +715,16 @@
     }
     .new-slider {
       position: relative;
+      @media (max-width: 1200px) {
+        padding: 0 16px;
+      }
       .swiper {
         .swiper-wrapper {
           .swiper-slide {
             padding: 24px 0;
+            @media (max-width: 575px) {
+              padding: 16px 0;
+            }
             .new-card {
               background-color: #fff;
               display: flex;
@@ -547,6 +737,9 @@
               }
               .card-content {
                 padding: 24px 24px 12px;
+                @media (max-width: 575px) {
+                  padding: 20px 20px 12px;
+                }
                 .doctor {
                   display: flex;
                   align-items: center;
@@ -556,6 +749,10 @@
                     img {
                       width: 72px;
                       height: 72px;
+                      @media (max-width: 575px) {
+                        width: 64px;
+                        height: 64px;
+                      }
                     }
                     span {
                       position: absolute;
@@ -592,12 +789,22 @@
                       font-weight: 400;
                       line-height: 24px;
                       color: rgba(132, 139, 152, 1);
+                      @media (max-width: 575px) {
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 20px;
+                      }
                     }
                     .name {
                       font-size: 20px;
                       font-weight: 400;
                       line-height: 28px;
                       color: $fontColor;
+                      @media (max-width: 575px) {
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 24px;
+                      }
                       img {
                         margin-left: 4px;
                       }
@@ -615,21 +822,44 @@
                   font-weight: 400;
                   line-height: 24px;
                   color: rgba(39, 49, 66, 1);
-                  // margin-bottom: 8px;
+                  @media (max-width: 575px) {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                  }
                 }
               }
               .card-bottom {
                 padding: 12px 24px;
                 border-top: 1px solid $border;
+                @media (max-width: 575px) {
+                  padding: 12px 20px;
+                }
                 .text {
                   font-size: 14px;
                   font-weight: 400;
                   line-height: 20px;
                   color: rgba(183, 187, 194, 1);
+                  @media (max-width: 575px) {
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 16px;
+                  }
                 }
               }
             }
           }
+        }
+      }
+      .swiper-pagination {
+        display: none;
+        position: absolute;
+        bottom: -10px;
+        @media (max-width: 768px) {
+          display: block;
+        }
+        span {
+          background-color: $greenBtn;
         }
       }
       .swiper-button-prev {
@@ -641,6 +871,12 @@
         border-radius: 100%;
         border: 1px solid $border;
         transition: all 0.3s ease-in-out;
+        @media (max-width: 1200px) {
+          left: 5px;
+        }
+        @media (max-width: 768px) {
+          display: none;
+        }
         &::after {
           transition: all 0.3s ease-in-out;
           font-size: 14px;
@@ -663,6 +899,12 @@
         border-radius: 100%;
         border: 1px solid $border;
         transition: all 0.3s ease-in-out;
+        @media (max-width: 1200px) {
+          right: 5px;
+        }
+        @media (max-width: 768px) {
+          display: none;
+        }
         &::after {
           transition: all 0.3s ease-in-out;
           font-size: 14px;
