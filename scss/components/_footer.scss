@@ -4,11 +4,21 @@ footer {
   .footer-main {
     padding: 40px 0 56px;
     background-color: $fontColor;
+    @media (max-width: 768px) {
+      padding: 32px 0 40px;
+    }
     .container {
+      @media (max-width: 1000px) {
+        width: auto;
+      }
       .footer-in {
         width: 100%;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        @media (max-width: 1000px) {
+          padding: 0 16px;
+        }
         .footer-left {
           width: 50%;
           text-align: start;
@@ -17,6 +27,9 @@ footer {
             margin-bottom: 42px;
             width: 154px;
             height: 40px;
+            @media (max-width: 768px) {
+              margin-bottom: 16px;
+            }
           }
           .app {
             margin-top: 42px;
@@ -29,11 +42,19 @@ footer {
                 object-fit: cover;
               }
             }
+            @media (max-width: 768px) {
+              margin-top: 0;
+            }
+          }
+          @media (max-width: 768px) {
+            width: 100%;
+            margin-bottom: 40px;
           }
         }
         .footer-right {
           width: 50%;
           display: flex;
+          flex-wrap: wrap;
           padding: 0 20px;
           .links,
           .contact {
@@ -58,6 +79,38 @@ footer {
                 }
               }
             }
+            @media (max-width: 575px) {
+              width: 100%;
+            }
+          }
+          .contact {
+            @media (max-width: 575px) {
+              margin-top: 40px;
+            }
+          }
+          @media (max-width: 768px) {
+            width: 100%;
+            padding: 0;
+          }
+          @media (max-width: 575px) {
+            padding-bottom: 40px;
+          }
+        }
+        .social {
+          display: flex;
+          align-items: center;
+          display: none;
+          a {
+            display: inline;
+            width: 24px;
+            height: 24px;
+            margin-right: 24px;
+            img {
+              object-fit: cover;
+            }
+          }
+          @media (max-width: 575px) {
+            display: block;
           }
         }
       }
@@ -67,6 +120,9 @@ footer {
     padding: 28px 0;
     background-color: rgb(26, 33, 46);
     .container {
+      @media (max-width: 1000px) {
+        width: auto;
+      }
       .bottom-in {
         display: flex;
         align-items: center;
@@ -83,14 +139,26 @@ footer {
               object-fit: cover;
             }
           }
+          @media (max-width: 575px) {
+            display: none;
+          }
         }
         .copyright {
           font-size: 16px;
           font-weight: 400;
           line-height: 24px;
           color: #fff;
+          @media (max-width: 575px) {
+            font-size: 14px;
+          }
+        }
+        @media (max-width: 1000px) {
+          padding: 0 16px;
         }
       }
+    }
+    @media (max-width: 575px) {
+      padding: 20px 0;
     }
   }
 }

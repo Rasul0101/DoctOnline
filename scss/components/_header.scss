@@ -1,14 +1,23 @@
 // Header Start
 header {
   background-color: #fff;
+  border-bottom: 1px solid $border;
   .nav {
     padding: 16px 0;
-    border-bottom: 1px solid $border;
+    @media (max-width: 575px) {
+      padding: 12px 0;
+    }
     .container {
+      @media (max-width: 1000px) {
+        width: auto;
+      }
       .nav-center {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media (max-width: 1000px) {
+          padding: 0 16px;
+        }
         .nav-start {
           display: flex;
           align-items: center;
@@ -19,6 +28,12 @@ header {
           }
           .logo {
             margin-top: 4px;
+            img {
+              @media (max-width: 575px) {
+                width: 121px;
+                height: 32px;
+              }
+            }
           }
         }
         .nav-end {
@@ -44,6 +59,9 @@ header {
             .lang-icon {
               margin-top: 1px;
             }
+            @media (max-width: 768px) {
+              display: none;
+            }
           }
           .login-btn {
             border: 1px solid $border;
@@ -53,6 +71,9 @@ header {
             line-height: 20px;
             color: $fontColor;
             border-radius: 8px;
+            @media (max-width: 768px) {
+              display: none;
+            }
           }
           .register-btn {
             padding: 10px 24px;
@@ -62,6 +83,11 @@ header {
             color: #fff;
             background-color: $greenBtn;
             border-radius: 8px;
+            @media (max-width: 575px) {
+              font-size: 12px;
+              line-height: 16px;
+              padding: 8px 16px;
+            }
           }
         }
       }
