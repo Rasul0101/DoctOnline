@@ -528,6 +528,7 @@
                   color: rgba(39, 49, 66, 1);
                   margin-bottom: 8px;
                   @media (max-width: 575px) {
+                    margin-bottom: 4px;
                     font-size: 14px;
                     font-weight: 400;
                     line-height: 20px;
@@ -929,6 +930,9 @@
   background-color: #fff;
   border-top: 1px solid $border;
   border-bottom: 1px solid $border;
+  @media (max-width: 768px) {
+    padding: 32px 0;
+  }
   .container {
     .title {
       font-size: 34px;
@@ -936,14 +940,30 @@
       line-height: 40px;
       color: $fontColor;
       margin-bottom: 40px;
+      @media (max-width: 1160px) {
+        padding: 0 16px;
+      }
+      @media (max-width: 668px) {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28px;
+        margin-bottom: 24px;
+      }
     }
     .category-main {
       display: flex;
       align-items: center;
+      overflow-x: scroll;
+      @media (max-width: 1180px) {
+        padding: 0 16px;
+      }
       .category-item {
         text-align: center;
         padding: 0 16px;
         margin-right: 8px;
+        @media (max-width: 575px) {
+          padding: 0 4px;
+        }
         .category-img {
           cursor: pointer;
           width: 80px;
@@ -956,6 +976,11 @@
           font-weight: 500;
           line-height: 24px;
           color: $fontColor;
+          @media (max-width: 1000px) {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+          }
         }
       }
     }
@@ -963,19 +988,31 @@
 }
 // Categories End
 
-// Famous doctor Start
+// Suggestion doctor Start
 .suggestion-doctor {
   padding: 56px 0 23px;
+  @media (max-width: 575px) {
+    padding-top: 48px;
+    padding-bottom: 24px;
+  }
   .container {
     .suggestion-head {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
+      @media (max-width: 1150px) {
+        padding: 0 16px;
+      }
       .title {
         font-size: 34px;
         font-weight: 500;
         line-height: 40px;
         color: $fontColor;
+        @media (max-width: 668px) {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 28px;
+        }
       }
       .suggestion-link {
         font-size: 16px;
@@ -983,6 +1020,15 @@
         line-height: 24px;
         color: rgba(183, 187, 194, 1);
         transition: all 0.3s ease-in-out;
+        @media (max-width: 668px) {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 16px;
+          color: $greenBtn;
+          i {
+            display: none;
+          }
+        }
         i {
           font-size: 14px;
         }
@@ -993,10 +1039,16 @@
     }
     .suggestion-slider {
       position: relative;
+      @media (max-width: 1200px) {
+        padding: 0 16px;
+      }
       .swiper {
         .swiper-wrapper {
           .swiper-slide {
             padding: 24px 0;
+            @media (max-width: 575px) {
+              padding: 16px 0;
+            }
             .suggestion-card {
               background-color: #fff;
               display: flex;
@@ -1009,6 +1061,9 @@
               }
               .card-content {
                 padding: 24px 24px 12px;
+                @media (max-width: 575px) {
+                  padding: 20px 20px 12px;
+                }
                 .doctor {
                   display: flex;
                   align-items: center;
@@ -1018,6 +1073,10 @@
                     img {
                       width: 72px;
                       height: 72px;
+                      @media (max-width: 575px) {
+                        width: 64px;
+                        height: 64px;
+                      }
                     }
                     span {
                       position: absolute;
@@ -1054,12 +1113,22 @@
                       font-weight: 400;
                       line-height: 24px;
                       color: rgba(132, 139, 152, 1);
+                      @media (max-width: 575px) {
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 20px;
+                      }
                     }
                     .name {
                       font-size: 20px;
                       font-weight: 400;
                       line-height: 28px;
                       color: $fontColor;
+                      @media (max-width: 575px) {
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 24px;
+                      }
                       img {
                         margin-left: 4px;
                       }
@@ -1078,6 +1147,12 @@
                   line-height: 24px;
                   color: rgba(39, 49, 66, 1);
                   margin-bottom: 8px;
+                  @media (max-width: 575px) {
+                    margin-bottom: 4px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                  }
                 }
                 .rating {
                   display: flex;
@@ -1086,6 +1161,10 @@
                     width: 20px;
                     height: 20px;
                     margin-right: 4px;
+                    @media (max-width: 575px) {
+                      width: 16px;
+                      height: 16px;
+                    }
                   }
                   .point {
                     color: rgba(255, 173, 13, 1);
@@ -1093,12 +1172,22 @@
                     font-weight: 400;
                     line-height: 24px;
                     margin-right: 8px;
+                    @media (max-width: 575px) {
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 20px;
+                    }
                   }
                   .value {
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 24px;
                     color: $listItemColor;
+                    @media (max-width: 575px) {
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 20px;
+                    }
                   }
                 }
               }
@@ -1116,6 +1205,17 @@
           }
         }
       }
+      .swiper-pagination {
+        display: none;
+        position: absolute;
+        bottom: -10px;
+        @media (max-width: 768px) {
+          display: block;
+        }
+        span {
+          background-color: $greenBtn;
+        }
+      }
       .swiper-button-prev {
         position: absolute;
         left: -20px;
@@ -1125,6 +1225,12 @@
         border-radius: 100%;
         border: 1px solid $border;
         transition: all 0.3s ease-in-out;
+        @media (max-width: 1200px) {
+          left: 5px;
+        }
+        @media (max-width: 768px) {
+          display: none;
+        }
         &::after {
           transition: all 0.3s ease-in-out;
           font-size: 14px;
@@ -1147,6 +1253,12 @@
         border-radius: 100%;
         border: 1px solid $border;
         transition: all 0.3s ease-in-out;
+        @media (max-width: 1200px) {
+          right: 5px;
+        }
+        @media (max-width: 768px) {
+          display: none;
+        }
         &::after {
           transition: all 0.3s ease-in-out;
           font-size: 14px;
@@ -1163,11 +1275,15 @@
     }
   }
 }
-// Famous doctor End
+// Suggestion doctor End
 
 // Connect Start
 .connect {
   padding: 23px 0 60px;
+  @media (max-width: 575px) {
+    padding-top: 24px;
+    padding-bottom: 4px;
+  }
   .container {
     .title {
       text-align: center;
@@ -1176,16 +1292,35 @@
       line-height: 40px;
       color: $fontColor;
       margin-bottom: 24px;
+      @media (max-width: 668px) {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28px;
+        margin-bottom: 16px;
+      }
     }
     .connect-cards {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
+      @media (max-width: 575px) {
+        padding: 0 16px;
+      }
       .card {
+        overflow: hidden;
         border: 1px solid $border;
         border-radius: 8px;
         margin: 0 16px;
         transition: all 0.3s ease-in-out;
+        @media (max-width: 980px) {
+          margin-bottom: 16px;
+        }
+        @media (max-width: 900px) {
+          margin-left: 0;
+          margin-right: 0;
+        }
+
         &:hover {
           box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.05);
         }
@@ -1193,15 +1328,29 @@
           object-fit: cover;
           width: 456px;
           height: 198px;
+          @media (max-width: 575px) {
+            width: 328px;
+            height: 158px;
+            object-fit: cover;
+          }
         }
         .card-content {
           padding: 18px 20px;
+          @media (max-width: 575px) {
+            padding: 12px 20px;
+          }
           .card-title {
             font-size: 16px;
             font-weight: 500;
             line-height: 24px;
             color: $fontColor;
             margin-bottom: 8px;
+            @media (max-width: 575px) {
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 20px;
+              margin-bottom: 4px;
+            }
           }
           .card-link {
             font-size: 14px;
@@ -1209,6 +1358,9 @@
             line-height: 20px;
             color: rgba(132, 139, 152, 1);
             transition: all 0.3s ease-in-out;
+            @media (max-width: 575px) {
+              color: $greenBtn;
+            }
             &:hover {
               color: $greenBtn;
             }

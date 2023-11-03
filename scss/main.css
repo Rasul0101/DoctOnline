@@ -644,6 +644,7 @@ html {
 }
 @media (max-width: 575px) {
   .famous-doctor .container .famous-slider .swiper .swiper-wrapper .swiper-slide .famous-card .card-content .hospital {
+    margin-bottom: 4px;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -1084,6 +1085,11 @@ html {
   border-top: 1px solid rgb(237, 240, 244);
   border-bottom: 1px solid rgb(237, 240, 244);
 }
+@media (max-width: 768px) {
+  .categories {
+    padding: 32px 0;
+  }
+}
 .categories .container .title {
   font-size: 34px;
   font-weight: 500;
@@ -1091,14 +1097,38 @@ html {
   color: rgb(16, 24, 37);
   margin-bottom: 40px;
 }
+@media (max-width: 1160px) {
+  .categories .container .title {
+    padding: 0 16px;
+  }
+}
+@media (max-width: 668px) {
+  .categories .container .title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 24px;
+  }
+}
 .categories .container .category-main {
   display: flex;
   align-items: center;
+  overflow-x: scroll;
+}
+@media (max-width: 1180px) {
+  .categories .container .category-main {
+    padding: 0 16px;
+  }
 }
 .categories .container .category-main .category-item {
   text-align: center;
   padding: 0 16px;
   margin-right: 8px;
+}
+@media (max-width: 575px) {
+  .categories .container .category-main .category-item {
+    padding: 0 4px;
+  }
 }
 .categories .container .category-main .category-item .category-img {
   cursor: pointer;
@@ -1113,14 +1143,32 @@ html {
   line-height: 24px;
   color: rgb(16, 24, 37);
 }
+@media (max-width: 1000px) {
+  .categories .container .category-main .category-item .text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}
 
 .suggestion-doctor {
   padding: 56px 0 23px;
+}
+@media (max-width: 575px) {
+  .suggestion-doctor {
+    padding-top: 48px;
+    padding-bottom: 24px;
+  }
 }
 .suggestion-doctor .container .suggestion-head {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+@media (max-width: 1150px) {
+  .suggestion-doctor .container .suggestion-head {
+    padding: 0 16px;
+  }
 }
 .suggestion-doctor .container .suggestion-head .title {
   font-size: 34px;
@@ -1128,12 +1176,30 @@ html {
   line-height: 40px;
   color: rgb(16, 24, 37);
 }
+@media (max-width: 668px) {
+  .suggestion-doctor .container .suggestion-head .title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+}
 .suggestion-doctor .container .suggestion-head .suggestion-link {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   color: rgb(183, 187, 194);
   transition: all 0.3s ease-in-out;
+}
+@media (max-width: 668px) {
+  .suggestion-doctor .container .suggestion-head .suggestion-link {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgb(76, 177, 71);
+  }
+  .suggestion-doctor .container .suggestion-head .suggestion-link i {
+    display: none;
+  }
 }
 .suggestion-doctor .container .suggestion-head .suggestion-link i {
   font-size: 14px;
@@ -1144,8 +1210,18 @@ html {
 .suggestion-doctor .container .suggestion-slider {
   position: relative;
 }
+@media (max-width: 1200px) {
+  .suggestion-doctor .container .suggestion-slider {
+    padding: 0 16px;
+  }
+}
 .suggestion-doctor .container .suggestion-slider .swiper .swiper-wrapper .swiper-slide {
   padding: 24px 0;
+}
+@media (max-width: 575px) {
+  .suggestion-doctor .container .suggestion-slider .swiper .swiper-wrapper .swiper-slide {
+    padding: 16px 0;
+  }
 }
 .suggestion-doctor .container .suggestion-slider .swiper .swiper-wrapper .swiper-slide .suggestion-card {
   background-color: #fff;
@@ -1161,6 +1237,11 @@ html {
 .suggestion-doctor .container .suggestion-slider .swiper .swiper-wrapper .swiper-slide .suggestion-card .card-content {
   padding: 24px 24px 12px;
 }
+@media (max-width: 575px) {
+  .suggestion-doctor .container .suggestion-slider .swiper .swiper-wrapper .swiper-slide .suggestion-card .card-content {
+    padding: 20px 20px 12px;
+  }
+}
 .suggestion-doctor .container .suggestion-slider .swiper .swiper-wrapper .swiper-slide .suggestion-card .card-content .doctor {
   display: flex;
   align-items: center;
@@ -1172,6 +1253,12 @@ html {
 .suggestion-doctor .container .suggestion-slider .swiper .swiper-wrapper .swiper-slide .suggestion-card .card-content .doctor .doctor-img img {
   width: 72px;
   height: 72px;
+}
+@media (max-width: 575px) {
+  .suggestion-doctor .container .suggestion-slider .swiper .swiper-wrapper .swiper-slide .suggestion-card .card-content .doctor .doctor-img img {
+    width: 64px;
+    height: 64px;
+  }
 }
 .suggestion-doctor .container .suggestion-slider .swiper .swiper-wrapper .swiper-slide .suggestion-card .card-content .doctor .doctor-img span {
   position: absolute;
@@ -1209,11 +1296,25 @@ html {
   line-height: 24px;
   color: rgb(132, 139, 152);
 }
+@media (max-width: 575px) {
+  .suggestion-doctor .container .suggestion-slider .swiper .swiper-wrapper .swiper-slide .suggestion-card .card-content .doctor .doctor-info .work {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}
 .suggestion-doctor .container .suggestion-slider .swiper .swiper-wrapper .swiper-slide .suggestion-card .card-content .doctor .doctor-info .name {
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
   color: rgb(16, 24, 37);
+}
+@media (max-width: 575px) {
+  .suggestion-doctor .container .suggestion-slider .swiper .swiper-wrapper .swiper-slide .suggestion-card .card-content .doctor .doctor-info .name {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
 }
 .suggestion-doctor .container .suggestion-slider .swiper .swiper-wrapper .swiper-slide .suggestion-card .card-content .doctor .doctor-info .name img {
   margin-left: 4px;
@@ -1231,6 +1332,14 @@ html {
   color: rgb(39, 49, 66);
   margin-bottom: 8px;
 }
+@media (max-width: 575px) {
+  .suggestion-doctor .container .suggestion-slider .swiper .swiper-wrapper .swiper-slide .suggestion-card .card-content .hospital {
+    margin-bottom: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
 .suggestion-doctor .container .suggestion-slider .swiper .swiper-wrapper .swiper-slide .suggestion-card .card-content .rating {
   display: flex;
   align-items: center;
@@ -1240,6 +1349,12 @@ html {
   height: 20px;
   margin-right: 4px;
 }
+@media (max-width: 575px) {
+  .suggestion-doctor .container .suggestion-slider .swiper .swiper-wrapper .swiper-slide .suggestion-card .card-content .rating img {
+    width: 16px;
+    height: 16px;
+  }
+}
 .suggestion-doctor .container .suggestion-slider .swiper .swiper-wrapper .swiper-slide .suggestion-card .card-content .rating .point {
   color: rgb(255, 173, 13);
   font-size: 16px;
@@ -1247,11 +1362,25 @@ html {
   line-height: 24px;
   margin-right: 8px;
 }
+@media (max-width: 575px) {
+  .suggestion-doctor .container .suggestion-slider .swiper .swiper-wrapper .swiper-slide .suggestion-card .card-content .rating .point {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
 .suggestion-doctor .container .suggestion-slider .swiper .swiper-wrapper .swiper-slide .suggestion-card .card-content .rating .value {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: rgb(39, 49, 66);
+}
+@media (max-width: 575px) {
+  .suggestion-doctor .container .suggestion-slider .swiper .swiper-wrapper .swiper-slide .suggestion-card .card-content .rating .value {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
 }
 .suggestion-doctor .container .suggestion-slider .swiper .swiper-wrapper .swiper-slide .suggestion-card .card-bottom {
   padding: 12px 24px;
@@ -1263,6 +1392,19 @@ html {
   line-height: 20px;
   color: rgb(183, 187, 194);
 }
+.suggestion-doctor .container .suggestion-slider .swiper-pagination {
+  display: none;
+  position: absolute;
+  bottom: -10px;
+}
+@media (max-width: 768px) {
+  .suggestion-doctor .container .suggestion-slider .swiper-pagination {
+    display: block;
+  }
+}
+.suggestion-doctor .container .suggestion-slider .swiper-pagination span {
+  background-color: rgb(76, 177, 71);
+}
 .suggestion-doctor .container .suggestion-slider .swiper-button-prev {
   position: absolute;
   left: -20px;
@@ -1272,6 +1414,16 @@ html {
   border-radius: 100%;
   border: 1px solid rgb(237, 240, 244);
   transition: all 0.3s ease-in-out;
+}
+@media (max-width: 1200px) {
+  .suggestion-doctor .container .suggestion-slider .swiper-button-prev {
+    left: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .suggestion-doctor .container .suggestion-slider .swiper-button-prev {
+    display: none;
+  }
 }
 .suggestion-doctor .container .suggestion-slider .swiper-button-prev::after {
   transition: all 0.3s ease-in-out;
@@ -1295,6 +1447,16 @@ html {
   border: 1px solid rgb(237, 240, 244);
   transition: all 0.3s ease-in-out;
 }
+@media (max-width: 1200px) {
+  .suggestion-doctor .container .suggestion-slider .swiper-button-next {
+    right: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .suggestion-doctor .container .suggestion-slider .swiper-button-next {
+    display: none;
+  }
+}
 .suggestion-doctor .container .suggestion-slider .swiper-button-next::after {
   transition: all 0.3s ease-in-out;
   font-size: 14px;
@@ -1311,6 +1473,12 @@ html {
 .connect {
   padding: 23px 0 60px;
 }
+@media (max-width: 575px) {
+  .connect {
+    padding-top: 24px;
+    padding-bottom: 4px;
+  }
+}
 .connect .container .title {
   text-align: center;
   font-size: 34px;
@@ -1319,16 +1487,42 @@ html {
   color: rgb(16, 24, 37);
   margin-bottom: 24px;
 }
+@media (max-width: 668px) {
+  .connect .container .title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+}
 .connect .container .connect-cards {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 575px) {
+  .connect .container .connect-cards {
+    padding: 0 16px;
+  }
 }
 .connect .container .connect-cards .card {
+  overflow: hidden;
   border: 1px solid rgb(237, 240, 244);
   border-radius: 8px;
   margin: 0 16px;
   transition: all 0.3s ease-in-out;
+}
+@media (max-width: 980px) {
+  .connect .container .connect-cards .card {
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 900px) {
+  .connect .container .connect-cards .card {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 .connect .container .connect-cards .card:hover {
   box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.05);
@@ -1339,8 +1533,21 @@ html {
   width: 456px;
   height: 198px;
 }
+@media (max-width: 575px) {
+  .connect .container .connect-cards .card .card-img {
+    width: 328px;
+    height: 158px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 .connect .container .connect-cards .card .card-content {
   padding: 18px 20px;
+}
+@media (max-width: 575px) {
+  .connect .container .connect-cards .card .card-content {
+    padding: 12px 20px;
+  }
 }
 .connect .container .connect-cards .card .card-content .card-title {
   font-size: 16px;
@@ -1349,12 +1556,25 @@ html {
   color: rgb(16, 24, 37);
   margin-bottom: 8px;
 }
+@media (max-width: 575px) {
+  .connect .container .connect-cards .card .card-content .card-title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 4px;
+  }
+}
 .connect .container .connect-cards .card .card-content .card-link {
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
   color: rgb(132, 139, 152);
   transition: all 0.3s ease-in-out;
+}
+@media (max-width: 575px) {
+  .connect .container .connect-cards .card .card-content .card-link {
+    color: rgb(76, 177, 71);
+  }
 }
 .connect .container .connect-cards .card .card-content .card-link:hover {
   color: rgb(76, 177, 71);

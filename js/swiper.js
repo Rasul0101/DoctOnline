@@ -103,15 +103,31 @@ const swiper4 = new Swiper(".fourth", {
   direction: "horizontal",
   loop: true,
 
+  // If we need pagination
+  pagination: {
+    el: ".fourth-nav",
+  },
+
   // Navigation arrows
   navigation: {
     nextEl: ".fourth-next",
     prevEl: ".fourth-prev",
   },
 
-  // Default parameters
-  slidesPerView: 3,
-  spaceBetween: 32,
+  breakpoints: {
+    280: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    700: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+    1110: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+    },
+  },
 });
 
 // Suggestion Swiper
