@@ -1588,8 +1588,28 @@ html {
   padding: 32px 0;
   border-bottom: 1px solid rgb(237, 240, 244);
 }
+@media (max-width: 1180px) {
+  .search {
+    padding: 32px 16px;
+  }
+}
+@media (max-width: 575px) {
+  .search {
+    padding: 24px 16px;
+  }
+}
 .search .container .search-in {
   width: 66%;
+}
+@media (max-width: 1090px) {
+  .search .container .search-in {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .search .container .search-in {
+    width: 100%;
+  }
 }
 .search .container .search-in .search-head {
   display: flex;
@@ -1597,26 +1617,44 @@ html {
   align-items: center;
   margin-bottom: 16px;
 }
+@media (max-width: 575px) {
+  .search .container .search-in .search-head {
+    margin-bottom: 8px;
+  }
+}
 .search .container .search-in .search-head .title {
   font-size: 34px;
   font-weight: 400;
   line-height: 40px;
   color: rgb(16, 24, 37);
 }
+@media (max-width: 575px) {
+  .search .container .search-in .search-head .title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+}
 .search .container .search-in .search-head .filter {
   display: flex;
   align-items: center;
   display: none;
 }
+@media (max-width: 575px) {
+  .search .container .search-in .search-head .filter {
+    display: block;
+  }
+}
 .search .container .search-in .search-head .filter img {
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
 }
 .search .container .search-in .search-head .filter span {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   color: rgb(76, 177, 71);
+  margin-top: -10px;
 }
 .search .container .search-in .search-input {
   position: relative;
@@ -1634,6 +1672,13 @@ html {
   color: rgb(16, 24, 37);
   transition: all 0.3s ease-in-out;
 }
+@media (max-width: 575px) {
+  .search .container .search-in .search-input input {
+    padding: 12px 16px 12px 44px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 .search .container .search-in .search-input input::-moz-placeholder {
   font-size: 16px;
   font-weight: 500;
@@ -1646,6 +1691,16 @@ html {
   line-height: 24px;
   color: rgb(132, 139, 152);
 }
+@media (max-width: 575px) {
+  .search .container .search-in .search-input input::-moz-placeholder {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .search .container .search-in .search-input input::placeholder {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 .search .container .search-in .search-input input:focus {
   border: 1px solid rgb(76, 177, 71);
 }
@@ -1656,6 +1711,12 @@ html {
   left: 16px;
   top: 12px;
 }
+@media (max-width: 575px) {
+  .search .container .search-in .search-input img {
+    width: 20px;
+    height: 20px;
+  }
+}
 .search .container .search-in .search-result {
   font-size: 48px;
   font-weight: 400;
@@ -1663,9 +1724,21 @@ html {
   color: rgb(183, 187, 194);
   margin-bottom: 24px;
 }
+@media (max-width: 575px) {
+  .search .container .search-in .search-result {
+    margin: 0;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
 .search .container .search-in .info-bar {
   display: flex;
   align-items: center;
+}
+@media (max-width: 903px) {
+  .search .container .search-in .info-bar {
+    display: none;
+  }
 }
 .search .container .search-in .info-bar .info {
   background-color: #fff;
@@ -1877,6 +1950,23 @@ html {
 .reservation {
   padding: 32px 0;
 }
+@media (max-width: 1180px) {
+  .reservation {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .reservation {
+    padding-top: 0;
+  }
+}
+@media (max-width: 575px) {
+  .reservation {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .reservation .container .reserve-box {
   border: 1px solid rgb(237, 240, 244);
   border-radius: 8px;
@@ -1885,10 +1975,30 @@ html {
   display: flex;
   align-items: self-start;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 16px;
+}
+@media (max-width: 768px) {
+  .reservation .container .reserve-box {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgb(237, 240, 244);
+    margin-bottom: 0;
+    padding: 24px 16px;
+  }
+}
+@media (max-width: 575px) {
+  .reservation .container .reserve-box {
+    justify-content: center;
+  }
 }
 .reservation .container .reserve-box .doctor {
   display: flex;
+}
+@media (max-width: 575px) {
+  .reservation .container .reserve-box .doctor {
+    display: none;
+  }
 }
 .reservation .container .reserve-box .doctor .doctor-left {
   display: flex;
@@ -2070,6 +2180,11 @@ html {
   width: 360px;
   position: relative;
 }
+@media (max-width: 870px) {
+  .reservation .container .reserve-box .table-carousel {
+    display: none;
+  }
+}
 .reservation .container .reserve-box .table-carousel .swiper .swiper-wrapper .swiper-slide .table .day-head {
   display: flex;
   align-items: center;
@@ -2235,6 +2350,11 @@ html {
   align-items: center;
   margin-bottom: 16px;
 }
+@media (max-width: 870px) {
+  .reservation .container .reserve-box .table .day-head {
+    display: none;
+  }
+}
 .reservation .container .reserve-box .table .day-head .day {
   cursor: pointer;
   width: 64px;
@@ -2286,6 +2406,11 @@ html {
 .reservation .container .reserve-box .table .table-hours {
   display: flex;
 }
+@media (max-width: 870px) {
+  .reservation .container .reserve-box .table .table-hours {
+    display: none;
+  }
+}
 .reservation .container .reserve-box .table .table-hours .column {
   margin-left: 8px;
 }
@@ -2313,6 +2438,18 @@ html {
   border-radius: 8px;
   margin-left: 8px;
 }
+@media (max-width: 850px) {
+  .reservation .container .reserve-box .table .empty-box {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 12px;
+  }
+}
+@media (max-width: 575px) {
+  .reservation .container .reserve-box .table .empty-box {
+    margin-top: 4px;
+  }
+}
 .reservation .container .reserve-box .table .empty-box .info {
   text-align: center;
   font-size: 14px;
@@ -2322,11 +2459,21 @@ html {
   padding: 16px;
   border-bottom: 1px solid rgb(237, 240, 244);
 }
+@media (max-width: 575px) {
+  .reservation .container .reserve-box .table .empty-box .info {
+    padding: 12px 16px;
+  }
+}
 .reservation .container .reserve-box .table .empty-box .link {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 12px 0;
+}
+@media (max-width: 575px) {
+  .reservation .container .reserve-box .table .empty-box .link {
+    padding: 10px 0;
+  }
 }
 .reservation .container .reserve-box .table .empty-box .link a {
   font-size: 14px;
@@ -2338,11 +2485,199 @@ html {
   margin-left: 4px;
   font-size: 14px;
 }
+.reservation .container .reserve-box .mobile-doctor {
+  display: none;
+  text-align: left;
+}
+@media (max-width: 575px) {
+  .reservation .container .reserve-box .mobile-doctor {
+    display: block;
+  }
+}
+.reservation .container .reserve-box .mobile-doctor .doctor {
+  display: flex;
+  margin-bottom: 16px;
+}
+.reservation .container .reserve-box .mobile-doctor .doctor .left {
+  position: relative;
+  margin-right: 16px;
+}
+.reservation .container .reserve-box .mobile-doctor .doctor .left .doctor-img {
+  width: 80px;
+  height: 80px;
+}
+.reservation .container .reserve-box .mobile-doctor .doctor .left .heart {
+  position: absolute;
+  background-color: #fff;
+  top: -4px;
+  left: -2px;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgb(237, 240, 244);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2px;
+  transition: all 0.3s ease-in-out;
+}
+.reservation .container .reserve-box .mobile-doctor .doctor .left .heart:hover {
+  border: none;
+  background-color: rgb(76, 177, 71);
+}
+.reservation .container .reserve-box .mobile-doctor .doctor .left .heart:hover i {
+  color: #fff;
+}
+.reservation .container .reserve-box .mobile-doctor .doctor .left .heart i {
+  transition: all 0.3s ease-in-out;
+  color: rgb(132, 139, 152);
+  font-weight: 300;
+  font-size: 14px;
+}
+.reservation .container .reserve-box .mobile-doctor .doctor .right .work {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.150000006px;
+  color: rgb(132, 139, 152);
+}
+.reservation .container .reserve-box .mobile-doctor .doctor .right .name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.150000006px;
+  color: rgb(16, 24, 37);
+  margin-bottom: 4px;
+}
+.reservation .container .reserve-box .mobile-doctor .doctor .right .profile {
+  display: flex;
+  align-items: center;
+}
+.reservation .container .reserve-box .mobile-doctor .doctor .right .profile img {
+  margin-right: 4px;
+}
+.reservation .container .reserve-box .mobile-doctor .doctor .right .profile span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: rgb(76, 177, 71);
+}
+.reservation .container .reserve-box .mobile-doctor .doctor-info .hospital {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(39, 49, 66);
+  margin-bottom: 8px;
+}
+.reservation .container .reserve-box .mobile-doctor .doctor-info .rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.reservation .container .reserve-box .mobile-doctor .doctor-info .rating img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+.reservation .container .reserve-box .mobile-doctor .doctor-info .rating .point {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: rgb(255, 173, 13);
+  margin-right: 8px;
+}
+.reservation .container .reserve-box .mobile-doctor .doctor-info .rating .value {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(39, 49, 66);
+}
+.reservation .container .reserve-box .mobile-doctor .doctor-info .text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(183, 187, 194);
+  margin-bottom: 12px;
+}
+.reservation .container .reserve-box .mobile-doctor .meet-buttons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.reservation .container .reserve-box .mobile-doctor .meet-buttons .clinic {
+  border: 1px solid rgb(237, 240, 244);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  width: 160px;
+  height: 48px;
+  padding: 8px;
+  margin-right: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.reservation .container .reserve-box .mobile-doctor .meet-buttons .clinic:hover {
+  border: 1px solid rgb(76, 177, 71);
+  background-color: rgb(242, 250, 242);
+}
+.reservation .container .reserve-box .mobile-doctor .meet-buttons .clinic img {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+.reservation .container .reserve-box .mobile-doctor .meet-buttons .clinic .text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgb(16, 24, 37);
+}
+.reservation .container .reserve-box .mobile-doctor .meet-buttons .video {
+  border: 1px solid rgb(237, 240, 244);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  width: 160px;
+  height: 48px;
+  padding: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.reservation .container .reserve-box .mobile-doctor .meet-buttons .video:hover {
+  border: 1px solid rgb(212, 90, 90);
+  background-color: rgb(250, 236, 236);
+}
+.reservation .container .reserve-box .mobile-doctor .meet-buttons .video img {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+.reservation .container .reserve-box .mobile-doctor .meet-buttons .video .text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgb(16, 24, 37);
+}
+.reservation .container .reserve-box .mobile-doctor .btn {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.25px;
+  background-color: rgb(76, 177, 71);
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+}
 .reservation .container .pagination {
   display: flex;
   justify-content: center;
   padding: 40px 0;
   margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .reservation .container .pagination {
+    display: none;
+  }
 }
 .reservation .container .pagination .page-box {
   display: flex;
