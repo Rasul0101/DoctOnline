@@ -170,6 +170,11 @@ const question = new Swiper(".question", {
   direction: "horizontal",
   loop: true,
 
+  // If we need pagination
+  pagination: {
+    el: ".question-nav",
+  },
+
   // Navigation arrows
   navigation: {
     nextEl: ".question-next",

@@ -115,7 +115,7 @@
     display: block;
     display: flex;
   }
-  .num {
+  .num-active {
     width: 24px;
     height: 24px;
     border-radius: 100%;
@@ -147,6 +147,9 @@
 // Main Start
 .schedule-meet {
   padding: 32px 0;
+  @media (max-width: 768px) {
+    padding-top: 16px;
+  }
   @media (max-width: 575px) {
     padding-top: 0;
     padding-bottom: 16px;
@@ -163,7 +166,7 @@
         }
         @media (max-width: 575px) {
           padding: 0;
-          max-width: 100%;
+          width: 100%;
         }
         .swiper {
           .swiper-wrapper {
@@ -173,15 +176,17 @@
                 border-radius: 8px;
                 background-color: #fff;
                 @media (max-width: 575px) {
-                  border-radius: none;
+                  border-radius: 0;
                   border: none;
                   border-top: 1px solid $border;
+                  background-color: transparent;
                 }
                 .box-up {
                   border-bottom: 1px solid $border;
                   padding: 24px 32px;
                   @media (max-width: 575px) {
                     padding: 16px;
+                    background-color: #fff;
                   }
                   .doctor {
                     display: flex;
