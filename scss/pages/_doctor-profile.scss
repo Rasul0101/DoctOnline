@@ -3,9 +3,19 @@
 // Doctor Profile Start
 .doctor-profile {
   padding: 32px 0;
+  @media (max-width: 768px) {
+    padding-top: 24px;
+    padding-bottom: 16px;
+  }
   .container {
     .profile {
       position: relative;
+      @media (max-width: 1180px) {
+        padding: 0 16px;
+      }
+      @media (max-width: 1034px) {
+        display: none;
+      }
       .doctor-left {
         display: flex;
         .doctor-img {
@@ -79,6 +89,12 @@
         top: 24px;
         right: 0;
         position: absolute;
+        @media (max-width: 1180px) {
+          right: 16px;
+        }
+        @media (max-width: 1034px) {
+          display: none;
+        }
         .meet-box {
           border: 1px solid $border;
           border-radius: 8px;
@@ -325,6 +341,172 @@
         }
       }
     }
+    .mobile-doctor {
+      display: none;
+      text-align: left;
+      @media (max-width: 1034px) {
+        display: block;
+        padding: 0 16px;
+      }
+      .doctor {
+        display: flex;
+        margin-bottom: 16px;
+        .left {
+          position: relative;
+          margin-right: 16px;
+          .doctor-img {
+            width: 80px;
+            height: 80px;
+          }
+          .heart {
+            position: absolute;
+            background-color: #fff;
+            top: -4px;
+            left: -2px;
+            width: 32px;
+            height: 32px;
+            border: 1px solid $border;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 2px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              border: none;
+              background-color: $greenBtn;
+              i {
+                color: #fff;
+              }
+            }
+            i {
+              transition: all 0.3s ease-in-out;
+              color: rgba(132, 139, 152, 1);
+              font-weight: 300;
+              font-size: 14px;
+            }
+          }
+        }
+        .right {
+          .work {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: -0.15000000596046448px;
+            color: rgba(132, 139, 152, 1);
+          }
+          .name {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 28px;
+            letter-spacing: -0.15000000596046448px;
+            color: $fontColor;
+            margin-bottom: 4px;
+          }
+          .profile {
+            display: flex;
+            align-items: center;
+            img {
+              margin-right: 4px;
+            }
+            span {
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 20px;
+              color: $greenBtn;
+            }
+          }
+        }
+      }
+      .doctor-info {
+        .hospital {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          color: $listItemColor;
+          margin-bottom: 8px;
+        }
+        .text {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          color: rgba(132, 139, 152, 1);
+          margin-bottom: 12px;
+        }
+      }
+      .meet-buttons {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        .clinic {
+          border: 1px solid $border;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          width: 160px;
+          height: 48px;
+          padding: 8px;
+          margin-right: 8px;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            border: 1px solid rgba(76, 177, 71, 1);
+            background-color: rgb(242, 250, 242);
+          }
+          img {
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+          }
+          .text {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            color: $fontColor;
+          }
+        }
+        .video {
+          border: 1px solid $border;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          width: 160px;
+          height: 48px;
+          padding: 8px;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            border: 1px solid rgba(212, 90, 90, 1);
+            background-color: rgb(250, 236, 236);
+          }
+          img {
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+          }
+          .text {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            color: $fontColor;
+          }
+        }
+      }
+      .btn {
+        display: block;
+        width: 328px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: -0.25px;
+        background-color: $greenBtn;
+        border-radius: 8px;
+        text-align: center;
+        padding: 10px 0;
+        color: #fff;
+        @media (max-width:668px) {
+          width: 100%;
+        }
+      }
+    }
   }
 }
 // Doctor Profile End
@@ -332,6 +514,9 @@
 // Doctor About Start
 .doctor-about {
   padding-bottom: 60px;
+  @media (max-width: 575px) {
+    padding-bottom: 4px;
+  }
   .about-nav {
     background-color: #fff;
     border-top: 1px solid $border;
@@ -340,6 +525,10 @@
       .list {
         display: flex;
         align-items: center;
+        @media (max-width: 1180px) {
+          overflow-x: auto;
+          padding: 0 16px;
+        }
         .list-item {
           margin-right: 32px;
           transition: all 0.3s ease-in-out;
@@ -347,6 +536,7 @@
             border-bottom: 2px solid $greenBtn;
           }
           a {
+            min-width: max-content;
             padding: 14px 0;
             display: block;
             font-size: 14px;
@@ -364,16 +554,32 @@
   }
   .about-main {
     padding-top: 32px;
+    @media (max-width: 1180px) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    @media (max-width: 768px) {
+      padding-top: 24px;
+    }
     .container {
       .about {
         padding-bottom: 24px;
-        width: fit-content;
+        max-width: 654px;
+        @media (max-width: 575px) {
+          padding-bottom: 16px;
+        }
         .title {
           font-size: 24px;
           font-weight: 400;
           line-height: 32px;
           color: $fontColor;
           margin-bottom: 16px;
+          @media (max-width: 575px) {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 28px;
+            letter-spacing: -0.15000000596046448px;
+          }
         }
         .rating {
           margin-bottom: 16px;
@@ -459,13 +665,22 @@
       }
       .education {
         padding: 24px 0;
-        width: 640px;
+        max-width: 640px;
+        @media (max-width: 575px) {
+          padding: 16px 0;
+        }
         .title {
           font-size: 24px;
           font-weight: 400;
           line-height: 32px;
           color: $fontColor;
           margin-bottom: 16px;
+          @media (max-width: 575px) {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 28px;
+            letter-spacing: -0.15000000596046448px;
+          }
         }
         .university {
           margin-bottom: 16px;
@@ -532,14 +747,23 @@
         }
       }
       .work-hour {
-        width: 654px;
+        max-width: 654px;
         padding: 24px 0;
+        @media (max-width: 575px) {
+          padding: 16px 0;
+        }
         .title {
           font-size: 24px;
           font-weight: 500;
           line-height: 32px;
           color: $fontColor;
           margin-bottom: 8px;
+          @media (max-width: 575px) {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 28px;
+            letter-spacing: -0.15000000596046448px;
+          }
         }
         .text {
           font-size: 16px;
@@ -554,6 +778,9 @@
           .weekdays {
             padding: 24px 24px 0px;
             border-bottom: 1px solid $border;
+            @media (max-width: 575px) {
+              padding: 16px 16px 0;
+            }
             .day {
               display: flex;
               align-items: center;
@@ -575,6 +802,9 @@
           }
           .weekend {
             padding: 0px 24px 24px;
+            @media (max-width: 575px) {
+              padding: 0 16px 16px;
+            }
             .day {
               display: flex;
               justify-content: space-between;
@@ -597,8 +827,11 @@
         }
       }
       .location {
-        width: 654px;
+        max-width: 654px;
         padding: 24px 0;
+        @media (max-width: 575px) {
+          padding: 16px 0;
+        }
         .head {
           margin-bottom: 8px;
           display: flex;
@@ -608,10 +841,19 @@
             font-weight: 500;
             line-height: 32px;
             color: $fontColor;
+            @media (max-width: 575px) {
+              font-size: 20px;
+              font-weight: 500;
+              line-height: 28px;
+              letter-spacing: -0.15000000596046448px;
+            }
           }
           .buttons {
             display: flex;
             align-items: center;
+            @media (max-width: 575px) {
+              display: none;
+            }
             .prev,
             .next {
               width: 40px;
@@ -650,25 +892,81 @@
           line-height: 24px;
           color: $listItemColor;
           margin-bottom: 16px;
+          @media (max-width: 575px) {
+            margin-bottom: 12px;
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+        .mobile-buttons {
+          margin-bottom: 16px;
+          display: none;
+          @media (max-width: 575px) {
+            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .prev,
+          .next {
+            width: 32px;
+            height: 32px;
+            border: 1px solid $border;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              background-color: $greenBtn;
+              i {
+                color: #fff;
+              }
+            }
+            i {
+              transition: all 0.3s ease-in-out;
+              font-size: 12px;
+              color: rgba(183, 187, 194, 1);
+            }
+          }
+          .number {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: rgba(132, 139, 152, 1);
+          }
         }
         .map {
           height: 360px;
+          @media (max-width: 575px) {
+            height: 200px;
+          }
           iframe {
-            height: 360px;
+            height: 100%;
             width: 100%;
             border-radius: 8px;
           }
         }
       }
       .courses {
-        width: 35%;
+        max-width: 360px;
         padding: 24px 0;
+        @media (max-width: 575px) {
+          padding: 16px 0;
+        }
         .title {
           font-size: 24px;
           font-weight: 500;
           line-height: 32px;
           color: $fontColor;
           margin-bottom: 16px;
+          @media (max-width: 575px) {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 28px;
+            letter-spacing: -0.15000000596046448px;
+          }
         }
         .course {
           margin-bottom: 24px;
@@ -703,14 +1001,23 @@
         }
       }
       .insurance {
-        width: 654px;
+        max-width: 654px;
         padding: 24px 0;
+        @media (max-width: 575px) {
+          padding: 16px 0;
+        }
         .title {
           font-size: 24px;
           font-weight: 500;
           line-height: 32px;
           color: $fontColor;
           margin-bottom: 16px;
+          @media (max-width: 575px) {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 28px;
+            letter-spacing: -0.15000000596046448px;
+          }
         }
         .pasha {
           display: flex;
@@ -721,15 +1028,28 @@
           padding: 12px 24px;
           background-color: rgb(251, 251, 252);
           margin-bottom: 8px;
+          @media (max-width: 575px) {
+            padding: 12px 16px;
+          }
           .text {
             font-size: 16px;
             font-weight: 500;
             line-height: 24px;
             color: $fontColor;
+            @media (max-width: 575px) {
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 20px;
+              letter-spacing: -0.10000000149011612px;
+            }
           }
           img {
             width: 84px;
             height: 32px;
+            @media (max-width: 575px) {
+              width: 63px;
+              height: 24px;
+            }
           }
         }
         .xalg {
@@ -740,27 +1060,49 @@
           border-radius: 8px;
           padding: 12px 24px;
           background-color: rgb(251, 251, 252);
+          @media (max-width: 575px) {
+            padding: 12px 16px;
+          }
           .text {
             font-size: 16px;
             font-weight: 500;
             line-height: 24px;
             color: $fontColor;
+            @media (max-width: 575px) {
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 20px;
+              letter-spacing: -0.10000000149011612px;
+            }
           }
           img {
             width: 92px;
             height: 32px;
+            @media (max-width: 575px) {
+              width: 69px;
+              height: 24px;
+            }
           }
         }
       }
       .comments {
         padding-top: 24px;
-        width: 654px;
+        max-width: 654px;
+        @media (max-width: 575px) {
+          padding-top: 16px;
+        }
         .title {
           font-size: 24px;
           font-weight: 500;
           line-height: 32px;
           color: $fontColor;
           margin-bottom: 16px;
+          @media (max-width: 575px) {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 28px;
+            letter-spacing: -0.15000000596046448px;
+          }
         }
         .common {
           display: flex;
@@ -772,6 +1114,13 @@
             line-height: 24px;
             color: $fontColor;
             margin-right: 16px;
+            @media (max-width: 575px) {
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 20px;
+              letter-spacing: -0.10000000149011612px;
+              margin-right: 8px;
+            }
           }
           .stars {
             display: flex;
@@ -780,6 +1129,10 @@
             img {
               width: 24px;
               height: 24px;
+              @media (max-width: 575px) {
+                width: 20px;
+                height: 20px;
+              }
             }
           }
           span {
@@ -787,12 +1140,28 @@
             font-weight: 500;
             line-height: 24px;
             color: rgba(255, 173, 13, 1);
+            @media (max-width: 575px) {
+              font-size: 14px;
+              line-height: 20px;
+              letter-spacing: -0.10000000149011612px;
+            }
           }
         }
         .person-comment {
           margin-bottom: 32px;
+          @media (max-width: 575px) {
+            margin-bottom: 24px;
+          }
           &:nth-child(5) {
             margin-bottom: 24px;
+            @media (max-width: 575px) {
+              display: none;
+            }
+          }
+          &:nth-child(4) {
+            @media (max-width: 575px) {
+              display: none;
+            }
           }
           .text {
             font-size: 16px;
@@ -800,6 +1169,12 @@
             line-height: 24px;
             color: $fontColor;
             margin-bottom: 8px;
+            @media (max-width: 575px) {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 20px;
+              letter-spacing: -0.25px;
+            }
           }
           .person-rate {
             display: flex;
@@ -809,10 +1184,18 @@
               font-weight: 500;
               line-height: 20px;
               color: rgba(132, 139, 152, 1);
+              @media (max-width: 575px) {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16px;
+              }
             }
             .dot {
               margin: 0px 8px;
               color: rgba(132, 139, 152, 1);
+              @media (max-width: 575px) {
+                margin: 0 4px;
+              }
             }
             .stars {
               display: flex;
@@ -820,6 +1203,10 @@
               img {
                 width: 20px;
                 height: 20px;
+                @media (max-width: 575px) {
+                  width: 16px;
+                  height: 16px;
+                }
               }
             }
             .date {
@@ -827,6 +1214,11 @@
               font-weight: 400;
               line-height: 20px;
               color: rgba(132, 139, 152, 1);
+              @media (max-width: 575px) {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16px;
+              }
             }
           }
         }

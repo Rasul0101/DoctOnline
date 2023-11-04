@@ -2717,8 +2717,24 @@ html {
 .doctor-profile {
   padding: 32px 0;
 }
+@media (max-width: 768px) {
+  .doctor-profile {
+    padding-top: 24px;
+    padding-bottom: 16px;
+  }
+}
 .doctor-profile .container .profile {
   position: relative;
+}
+@media (max-width: 1180px) {
+  .doctor-profile .container .profile {
+    padding: 0 16px;
+  }
+}
+@media (max-width: 1034px) {
+  .doctor-profile .container .profile {
+    display: none;
+  }
 }
 .doctor-profile .container .profile .doctor-left {
   display: flex;
@@ -2793,6 +2809,16 @@ html {
   top: 24px;
   right: 0;
   position: absolute;
+}
+@media (max-width: 1180px) {
+  .doctor-profile .container .profile .select-meet {
+    right: 16px;
+  }
+}
+@media (max-width: 1034px) {
+  .doctor-profile .container .profile .select-meet {
+    display: none;
+  }
 }
 .doctor-profile .container .profile .select-meet .meet-box {
   border: 1px solid rgb(237, 240, 244);
@@ -3038,9 +3064,180 @@ html {
   background-color: rgb(76, 177, 71);
   border-radius: 8px;
 }
+.doctor-profile .container .mobile-doctor {
+  display: none;
+  text-align: left;
+}
+@media (max-width: 1034px) {
+  .doctor-profile .container .mobile-doctor {
+    display: block;
+    padding: 0 16px;
+  }
+}
+.doctor-profile .container .mobile-doctor .doctor {
+  display: flex;
+  margin-bottom: 16px;
+}
+.doctor-profile .container .mobile-doctor .doctor .left {
+  position: relative;
+  margin-right: 16px;
+}
+.doctor-profile .container .mobile-doctor .doctor .left .doctor-img {
+  width: 80px;
+  height: 80px;
+}
+.doctor-profile .container .mobile-doctor .doctor .left .heart {
+  position: absolute;
+  background-color: #fff;
+  top: -4px;
+  left: -2px;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgb(237, 240, 244);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2px;
+  transition: all 0.3s ease-in-out;
+}
+.doctor-profile .container .mobile-doctor .doctor .left .heart:hover {
+  border: none;
+  background-color: rgb(76, 177, 71);
+}
+.doctor-profile .container .mobile-doctor .doctor .left .heart:hover i {
+  color: #fff;
+}
+.doctor-profile .container .mobile-doctor .doctor .left .heart i {
+  transition: all 0.3s ease-in-out;
+  color: rgb(132, 139, 152);
+  font-weight: 300;
+  font-size: 14px;
+}
+.doctor-profile .container .mobile-doctor .doctor .right .work {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.150000006px;
+  color: rgb(132, 139, 152);
+}
+.doctor-profile .container .mobile-doctor .doctor .right .name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.150000006px;
+  color: rgb(16, 24, 37);
+  margin-bottom: 4px;
+}
+.doctor-profile .container .mobile-doctor .doctor .right .profile {
+  display: flex;
+  align-items: center;
+}
+.doctor-profile .container .mobile-doctor .doctor .right .profile img {
+  margin-right: 4px;
+}
+.doctor-profile .container .mobile-doctor .doctor .right .profile span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: rgb(76, 177, 71);
+}
+.doctor-profile .container .mobile-doctor .doctor-info .hospital {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(39, 49, 66);
+  margin-bottom: 8px;
+}
+.doctor-profile .container .mobile-doctor .doctor-info .text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(132, 139, 152);
+  margin-bottom: 12px;
+}
+.doctor-profile .container .mobile-doctor .meet-buttons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.doctor-profile .container .mobile-doctor .meet-buttons .clinic {
+  border: 1px solid rgb(237, 240, 244);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  width: 160px;
+  height: 48px;
+  padding: 8px;
+  margin-right: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.doctor-profile .container .mobile-doctor .meet-buttons .clinic:hover {
+  border: 1px solid rgb(76, 177, 71);
+  background-color: rgb(242, 250, 242);
+}
+.doctor-profile .container .mobile-doctor .meet-buttons .clinic img {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+.doctor-profile .container .mobile-doctor .meet-buttons .clinic .text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgb(16, 24, 37);
+}
+.doctor-profile .container .mobile-doctor .meet-buttons .video {
+  border: 1px solid rgb(237, 240, 244);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  width: 160px;
+  height: 48px;
+  padding: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.doctor-profile .container .mobile-doctor .meet-buttons .video:hover {
+  border: 1px solid rgb(212, 90, 90);
+  background-color: rgb(250, 236, 236);
+}
+.doctor-profile .container .mobile-doctor .meet-buttons .video img {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+.doctor-profile .container .mobile-doctor .meet-buttons .video .text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgb(16, 24, 37);
+}
+.doctor-profile .container .mobile-doctor .btn {
+  display: block;
+  width: 328px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.25px;
+  background-color: rgb(76, 177, 71);
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+}
+@media (max-width: 668px) {
+  .doctor-profile .container .mobile-doctor .btn {
+    width: 100%;
+  }
+}
 
 .doctor-about {
   padding-bottom: 60px;
+}
+@media (max-width: 575px) {
+  .doctor-about {
+    padding-bottom: 4px;
+  }
 }
 .doctor-about .about-nav {
   background-color: #fff;
@@ -3051,6 +3248,12 @@ html {
   display: flex;
   align-items: center;
 }
+@media (max-width: 1180px) {
+  .doctor-about .about-nav .container .list {
+    overflow-x: auto;
+    padding: 0 16px;
+  }
+}
 .doctor-about .about-nav .container .list .list-item {
   margin-right: 32px;
   transition: all 0.3s ease-in-out;
@@ -3059,6 +3262,8 @@ html {
   border-bottom: 2px solid rgb(76, 177, 71);
 }
 .doctor-about .about-nav .container .list .list-item a {
+  min-width: -moz-max-content;
+  min-width: max-content;
   padding: 14px 0;
   display: block;
   font-size: 14px;
@@ -3073,10 +3278,25 @@ html {
 .doctor-about .about-main {
   padding-top: 32px;
 }
+@media (max-width: 1180px) {
+  .doctor-about .about-main {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .doctor-about .about-main {
+    padding-top: 24px;
+  }
+}
 .doctor-about .about-main .container .about {
   padding-bottom: 24px;
-  width: -moz-fit-content;
-  width: fit-content;
+  max-width: 654px;
+}
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .about {
+    padding-bottom: 16px;
+  }
 }
 .doctor-about .about-main .container .about .title {
   font-size: 24px;
@@ -3084,6 +3304,14 @@ html {
   line-height: 32px;
   color: rgb(16, 24, 37);
   margin-bottom: 16px;
+}
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .about .title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.150000006px;
+  }
 }
 .doctor-about .about-main .container .about .rating {
   margin-bottom: 16px;
@@ -3166,7 +3394,12 @@ html {
 }
 .doctor-about .about-main .container .education {
   padding: 24px 0;
-  width: 640px;
+  max-width: 640px;
+}
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .education {
+    padding: 16px 0;
+  }
 }
 .doctor-about .about-main .container .education .title {
   font-size: 24px;
@@ -3174,6 +3407,14 @@ html {
   line-height: 32px;
   color: rgb(16, 24, 37);
   margin-bottom: 16px;
+}
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .education .title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.150000006px;
+  }
 }
 .doctor-about .about-main .container .education .university {
   margin-bottom: 16px;
@@ -3237,8 +3478,13 @@ html {
   color: rgb(16, 24, 37);
 }
 .doctor-about .about-main .container .work-hour {
-  width: 654px;
+  max-width: 654px;
   padding: 24px 0;
+}
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .work-hour {
+    padding: 16px 0;
+  }
 }
 .doctor-about .about-main .container .work-hour .title {
   font-size: 24px;
@@ -3246,6 +3492,14 @@ html {
   line-height: 32px;
   color: rgb(16, 24, 37);
   margin-bottom: 8px;
+}
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .work-hour .title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.150000006px;
+  }
 }
 .doctor-about .about-main .container .work-hour .text {
   font-size: 16px;
@@ -3261,6 +3515,11 @@ html {
 .doctor-about .about-main .container .work-hour .work-table .weekdays {
   padding: 24px 24px 0px;
   border-bottom: 1px solid rgb(237, 240, 244);
+}
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .work-hour .work-table .weekdays {
+    padding: 16px 16px 0;
+  }
 }
 .doctor-about .about-main .container .work-hour .work-table .weekdays .day {
   display: flex;
@@ -3283,6 +3542,11 @@ html {
 .doctor-about .about-main .container .work-hour .work-table .weekend {
   padding: 0px 24px 24px;
 }
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .work-hour .work-table .weekend {
+    padding: 0 16px 16px;
+  }
+}
 .doctor-about .about-main .container .work-hour .work-table .weekend .day {
   display: flex;
   justify-content: space-between;
@@ -3302,8 +3566,13 @@ html {
   color: rgb(16, 24, 37);
 }
 .doctor-about .about-main .container .location {
-  width: 654px;
+  max-width: 654px;
   padding: 24px 0;
+}
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .location {
+    padding: 16px 0;
+  }
 }
 .doctor-about .about-main .container .location .head {
   margin-bottom: 8px;
@@ -3316,9 +3585,22 @@ html {
   line-height: 32px;
   color: rgb(16, 24, 37);
 }
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .location .head .title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.150000006px;
+  }
+}
 .doctor-about .about-main .container .location .head .buttons {
   display: flex;
   align-items: center;
+}
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .location .head .buttons {
+    display: none;
+  }
 }
 .doctor-about .about-main .container .location .head .buttons .prev,
 .doctor-about .about-main .container .location .head .buttons .next {
@@ -3360,17 +3642,78 @@ html {
   color: rgb(39, 49, 66);
   margin-bottom: 16px;
 }
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .location .text {
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.doctor-about .about-main .container .location .mobile-buttons {
+  margin-bottom: 16px;
+  display: none;
+}
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .location .mobile-buttons {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.doctor-about .about-main .container .location .mobile-buttons .prev,
+.doctor-about .about-main .container .location .mobile-buttons .next {
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgb(237, 240, 244);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.doctor-about .about-main .container .location .mobile-buttons .prev:hover,
+.doctor-about .about-main .container .location .mobile-buttons .next:hover {
+  background-color: rgb(76, 177, 71);
+}
+.doctor-about .about-main .container .location .mobile-buttons .prev:hover i,
+.doctor-about .about-main .container .location .mobile-buttons .next:hover i {
+  color: #fff;
+}
+.doctor-about .about-main .container .location .mobile-buttons .prev i,
+.doctor-about .about-main .container .location .mobile-buttons .next i {
+  transition: all 0.3s ease-in-out;
+  font-size: 12px;
+  color: rgb(183, 187, 194);
+}
+.doctor-about .about-main .container .location .mobile-buttons .number {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(132, 139, 152);
+}
 .doctor-about .about-main .container .location .map {
   height: 360px;
 }
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .location .map {
+    height: 200px;
+  }
+}
 .doctor-about .about-main .container .location .map iframe {
-  height: 360px;
+  height: 100%;
   width: 100%;
   border-radius: 8px;
 }
 .doctor-about .about-main .container .courses {
-  width: 35%;
+  max-width: 360px;
   padding: 24px 0;
+}
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .courses {
+    padding: 16px 0;
+  }
 }
 .doctor-about .about-main .container .courses .title {
   font-size: 24px;
@@ -3378,6 +3721,14 @@ html {
   line-height: 32px;
   color: rgb(16, 24, 37);
   margin-bottom: 16px;
+}
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .courses .title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.150000006px;
+  }
 }
 .doctor-about .about-main .container .courses .course {
   margin-bottom: 24px;
@@ -3409,8 +3760,13 @@ html {
   color: rgb(16, 24, 37);
 }
 .doctor-about .about-main .container .insurance {
-  width: 654px;
+  max-width: 654px;
   padding: 24px 0;
+}
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .insurance {
+    padding: 16px 0;
+  }
 }
 .doctor-about .about-main .container .insurance .title {
   font-size: 24px;
@@ -3418,6 +3774,14 @@ html {
   line-height: 32px;
   color: rgb(16, 24, 37);
   margin-bottom: 16px;
+}
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .insurance .title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.150000006px;
+  }
 }
 .doctor-about .about-main .container .insurance .pasha {
   display: flex;
@@ -3429,15 +3793,34 @@ html {
   background-color: rgb(251, 251, 252);
   margin-bottom: 8px;
 }
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .insurance .pasha {
+    padding: 12px 16px;
+  }
+}
 .doctor-about .about-main .container .insurance .pasha .text {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   color: rgb(16, 24, 37);
 }
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .insurance .pasha .text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.1000000015px;
+  }
+}
 .doctor-about .about-main .container .insurance .pasha img {
   width: 84px;
   height: 32px;
+}
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .insurance .pasha img {
+    width: 63px;
+    height: 24px;
+  }
 }
 .doctor-about .about-main .container .insurance .xalg {
   display: flex;
@@ -3448,19 +3831,43 @@ html {
   padding: 12px 24px;
   background-color: rgb(251, 251, 252);
 }
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .insurance .xalg {
+    padding: 12px 16px;
+  }
+}
 .doctor-about .about-main .container .insurance .xalg .text {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   color: rgb(16, 24, 37);
 }
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .insurance .xalg .text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.1000000015px;
+  }
+}
 .doctor-about .about-main .container .insurance .xalg img {
   width: 92px;
   height: 32px;
 }
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .insurance .xalg img {
+    width: 69px;
+    height: 24px;
+  }
+}
 .doctor-about .about-main .container .comments {
   padding-top: 24px;
-  width: 654px;
+  max-width: 654px;
+}
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .comments {
+    padding-top: 16px;
+  }
 }
 .doctor-about .about-main .container .comments .title {
   font-size: 24px;
@@ -3468,6 +3875,14 @@ html {
   line-height: 32px;
   color: rgb(16, 24, 37);
   margin-bottom: 16px;
+}
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .comments .title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.150000006px;
+  }
 }
 .doctor-about .about-main .container .comments .common {
   display: flex;
@@ -3481,6 +3896,15 @@ html {
   color: rgb(16, 24, 37);
   margin-right: 16px;
 }
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .comments .common .text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.1000000015px;
+    margin-right: 8px;
+  }
+}
 .doctor-about .about-main .container .comments .common .stars {
   display: flex;
   align-items: center;
@@ -3490,17 +3914,45 @@ html {
   width: 24px;
   height: 24px;
 }
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .comments .common .stars img {
+    width: 20px;
+    height: 20px;
+  }
+}
 .doctor-about .about-main .container .comments .common span {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   color: rgb(255, 173, 13);
 }
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .comments .common span {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.1000000015px;
+  }
+}
 .doctor-about .about-main .container .comments .person-comment {
   margin-bottom: 32px;
 }
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .comments .person-comment {
+    margin-bottom: 24px;
+  }
+}
 .doctor-about .about-main .container .comments .person-comment:nth-child(5) {
   margin-bottom: 24px;
+}
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .comments .person-comment:nth-child(5) {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .comments .person-comment:nth-child(4) {
+    display: none;
+  }
 }
 .doctor-about .about-main .container .comments .person-comment .text {
   font-size: 16px;
@@ -3508,6 +3960,14 @@ html {
   line-height: 24px;
   color: rgb(16, 24, 37);
   margin-bottom: 8px;
+}
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .comments .person-comment .text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.25px;
+  }
 }
 .doctor-about .about-main .container .comments .person-comment .person-rate {
   display: flex;
@@ -3519,9 +3979,21 @@ html {
   line-height: 20px;
   color: rgb(132, 139, 152);
 }
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .comments .person-comment .person-rate .person {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
 .doctor-about .about-main .container .comments .person-comment .person-rate .dot {
   margin: 0px 8px;
   color: rgb(132, 139, 152);
+}
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .comments .person-comment .person-rate .dot {
+    margin: 0 4px;
+  }
 }
 .doctor-about .about-main .container .comments .person-comment .person-rate .stars {
   display: flex;
@@ -3531,11 +4003,24 @@ html {
   width: 20px;
   height: 20px;
 }
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .comments .person-comment .person-rate .stars img {
+    width: 16px;
+    height: 16px;
+  }
+}
 .doctor-about .about-main .container .comments .person-comment .person-rate .date {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   color: rgb(132, 139, 152);
+}
+@media (max-width: 575px) {
+  .doctor-about .about-main .container .comments .person-comment .person-rate .date {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
 }
 .doctor-about .about-main .container .comments .more-btn {
   font-size: 16px;
