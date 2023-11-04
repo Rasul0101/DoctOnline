@@ -130,7 +130,7 @@ const swiper4 = new Swiper(".fourth", {
   },
 });
 
-// Suggestion Swiper
+// Table Swiper
 const table = new Swiper(".table", {
   // Optional parameters
   direction: "horizontal",
@@ -148,21 +148,21 @@ const table = new Swiper(".table", {
 });
 
 // Suggestion Swiper
-const schedule = new Swiper(".miyu", {
-  // Optional parameters
-  direction: "horizontal",
-  loop: true,
+// const schedule = new Swiper(".miyu", {
+//   // Optional parameters
+//   direction: "horizontal",
+//   loop: true,
 
-  // Navigation arrows
-  navigation: {
-    prevEl: ".schedule-prev",
-    nextEl: ".schedule-next",
-  },
+//   // Navigation arrows
+//   navigation: {
+//     prevEl: ".schedule-prev",
+//     nextEl: ".schedule-next",
+//   },
 
-  // Default parameters
-  slidesPerView: 1,
-  spaceBetween: 32,
-});
+//   // Default parameters
+//   slidesPerView: 1,
+//   spaceBetween: 32,
+// });
 
 // Question Swiper
 const question = new Swiper(".question", {

@@ -3,7 +3,6 @@
   position: relative;
   background-color: #fff;
   .nav {
-    border-bottom: 1px solid $border;
     padding: 0;
     display: flex;
     align-items: center;
@@ -14,16 +13,40 @@
       .logo {
         padding: 20px 0 20px 32px;
         border-bottom: 1px solid $greenBtn;
+        @media (max-width: 1060px) {
+          padding-left: 16px;
+        }
+        @media (max-width: 768px) {
+          border-bottom: none;
+        }
+        @media (max-width: 575px) {
+          padding: 16px 0 16px 16px;
+        }
         a {
           display: block;
           margin-right: 78px;
           width: 154px;
           height: 40px;
+          @media (max-width: 575px) {
+            width: 123px;
+            height: 32px;
+          }
+          img {
+            width: 154px;
+            height: 40px;
+            @media (max-width: 575px) {
+              width: 123px;
+              height: 32px;
+            }
+          }
         }
       }
       .meet-information {
         padding: 18px 0;
         position: relative;
+        @media (max-width: 768px) {
+          display: none;
+        }
         .top {
           font-size: 16px;
           font-weight: 400;
@@ -60,6 +83,12 @@
     }
     .nav-end {
       padding: 22px 32px 22px 0;
+      @media (max-width: 1060px) {
+        padding-right: 16px;
+      }
+      @media (max-width: 575px) {
+        padding: 16px 16px 16px 0;
+      }
       a {
         width: 36px;
         height: 36px;
@@ -68,22 +97,74 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @media (max-width: 575px) {
+          width: 32px;
+          height: 32px;
+        }
       }
     }
   }
 }
 // Header End
 
+// Mobile Information
+.mobile-information {
+  padding: 16px;
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+    display: flex;
+  }
+  .num {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    border: 1px solid $greenBtn;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $greenBtn;
+    background-color: #fff;
+    margin-right: 8px;
+  }
+  .info {
+    .up {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: -0.10000000149011612px;
+      color: $fontColor;
+    }
+    .bottom {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      color: rgba(132, 139, 152, 1);
+    }
+  }
+}
+
 // Main Start
 .schedule-meet {
   padding: 32px 0;
+  @media (max-width: 575px) {
+    padding-top: 0;
+    padding-bottom: 16px;
+  }
   .container {
     .meet-in {
       display: flex;
       justify-content: center;
       .select-meet-carousel {
         position: relative;
-        width: 560px;
+        max-width: 560px;
+        @media (max-width: 768px) {
+          padding: 0 16px;
+        }
+        @media (max-width: 575px) {
+          padding: 0;
+          max-width: 100%;
+        }
         .swiper {
           .swiper-wrapper {
             .swiper-slide {
@@ -91,9 +172,17 @@
                 border: 1px solid $border;
                 border-radius: 8px;
                 background-color: #fff;
+                @media (max-width: 575px) {
+                  border-radius: none;
+                  border: none;
+                  border-top: 1px solid $border;
+                }
                 .box-up {
                   border-bottom: 1px solid $border;
                   padding: 24px 32px;
+                  @media (max-width: 575px) {
+                    padding: 16px;
+                  }
                   .doctor {
                     display: flex;
                     align-items: center;
@@ -101,6 +190,10 @@
                       width: 88px;
                       height: 88px;
                       margin-right: 16px;
+                      @media (max-width: 575px) {
+                        width: 48px;
+                        height: 48px;
+                      }
                     }
                     .doctor-info {
                       .work {
@@ -109,6 +202,13 @@
                         line-height: 28px;
                         letter-spacing: -0.15000000596046448px;
                         color: rgba(132, 139, 152, 1);
+                        @media (max-width: 575px) {
+                          font-size: 14px;
+                          font-weight: 400;
+                          line-height: 20px;
+                          letter-spacing: -0.10000000149011612px;
+                          color: $greenBtn;
+                        }
                       }
                       .name {
                         font-size: 24px;
@@ -116,12 +216,23 @@
                         line-height: 32px;
                         letter-spacing: 0px;
                         color: $fontColor;
+                        @media (max-width: 575px) {
+                          font-size: 16px;
+                          font-weight: 400;
+                          line-height: 24px;
+                          letter-spacing: -0.15000000596046448px;
+                          color: #000;
+                        }
                       }
                     }
                   }
                 }
                 .box-bottom {
                   padding: 24px 32px 32px 32px;
+                  @media (max-width: 575px) {
+                    padding: 16px;
+                    background-color: transparent;
+                  }
                   .title {
                     font-size: 20px;
                     font-weight: 400;
@@ -129,11 +240,17 @@
                     letter-spacing: -0.15000000596046448px;
                     color: $fontColor;
                     margin-bottom: 16px;
+                    @media (max-width: 575px) {
+                      display: none;
+                    }
                   }
                   .call {
                     display: flex;
                     align-items: center;
                     margin-bottom: 16px;
+                    @media (max-width: 575px) {
+                      margin-bottom: 8px;
+                    }
                     .clinic {
                       width: 242px;
                       display: flex;
@@ -146,6 +263,9 @@
                       background-color: #fff;
                       padding: 12px 16px;
                       transition: all 0.3s ease-in-out;
+                      @media (max-width: 575px) {
+                        padding: 8px;
+                      }
                       &:hover {
                         border: 1px solid rgba(76, 177, 71, 1);
                         background-color: rgb(242, 250, 242);
@@ -164,11 +284,19 @@
                           line-height: 20px;
                           letter-spacing: -0.10000000149011612px;
                           color: $fontColor;
+                          @media (max-width: 575px) {
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 16px;
+                          }
                         }
                       }
                       .info-icon {
                         width: 16px;
                         height: 16px;
+                        @media (max-width: 575px) {
+                          display: none;
+                        }
                       }
                     }
                     .video {
@@ -182,9 +310,12 @@
                       background-color: #fff;
                       padding: 12px 16px;
                       transition: all 0.3s ease-in-out;
+                      @media (max-width: 575px) {
+                        padding: 8px;
+                      }
                       &:hover {
-                        border: 1px solid rgba(76, 177, 71, 1);
-                        background-color: rgb(242, 250, 242);
+                        border: 1px solid rgba(212, 90, 90, 1);
+                        background-color: #faecec;
                       }
                       .box-in {
                         display: flex;
@@ -200,11 +331,19 @@
                           line-height: 20px;
                           letter-spacing: -0.10000000149011612px;
                           color: $fontColor;
+                          @media (max-width: 575px) {
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 16px;
+                          }
                         }
                       }
                       .info-icon {
                         width: 16px;
                         height: 16px;
+                        @media (max-width: 575px) {
+                          display: none;
+                        }
                       }
                     }
                   }
@@ -217,6 +356,9 @@
                     padding: 18px 16px;
                     margin-bottom: 8px;
                     transition: all 0.3s ease-in-out;
+                    @media (max-width: 575px) {
+                      padding: 14px 16px;
+                    }
                     &:hover {
                       border: 1px solid rgba(76, 177, 71, 1);
                       background-color: rgb(242, 250, 242);
@@ -261,11 +403,27 @@
                       font-weight: 400;
                       line-height: 20px;
                       color: $listItemColor;
+                      @media (max-width: 575px) {
+                        font-size: 12px;
+                        line-height: 18px;
+                      }
                     }
                   }
                   .table {
                     padding-top: 8px;
                     margin-bottom: 16px;
+                    overflow-x: auto;
+                    .day-text {
+                      font-size: 12px;
+                      font-weight: 400;
+                      line-height: 16px;
+                      color: rgba(132, 139, 152, 1);
+                      margin-bottom: 8px;
+                      display: none;
+                      @media (max-width: 575px) {
+                        display: block;
+                      }
+                    }
                     .day-head {
                       width: 100%;
                       display: flex;
@@ -278,9 +436,14 @@
                         padding: 2px 0;
                         border: 1px solid $border;
                         border-radius: 7px;
-                        // margin-right: 8px;
                         text-align: center;
                         transition: all 0.4s ease-in-out;
+                        @media (max-width: 768px) {
+                          margin-right: 8px;
+                          &:nth-last-child(1) {
+                            margin-right: 0;
+                          }
+                        }
                         &:hover {
                           border: 1px solid rgba(201, 206, 214, 1);
                           background-color: rgba(251, 251, 252, 1);
@@ -304,9 +467,11 @@
                         padding: 2px 0;
                         border: 1px solid $greenBtn;
                         border-radius: 7px;
-                        // margin-right: 8px;
                         text-align: center;
                         background-color: rgba(76, 177, 71, 1);
+                        @media (max-width: 768px) {
+                          margin-right: 8px;
+                        }
                         .num {
                           font-size: 14px;
                           font-weight: 400;
@@ -321,6 +486,17 @@
                         }
                       }
                     }
+                    .table-text {
+                      font-size: 12px;
+                      font-weight: 400;
+                      line-height: 16px;
+                      color: rgba(132, 139, 152, 1);
+                      margin-bottom: 8px;
+                      display: none;
+                      @media (max-width: 575px) {
+                        display: block;
+                      }
+                    }
                     .table-hours {
                       width: 100%;
                       display: flex;
@@ -330,9 +506,9 @@
                           cursor: pointer;
                           background-color: $border;
                           text-align: center;
-                          padding: 5px 28.5px;
-                          // width: 92px;
-                          // height: 30px;
+                          padding: 5px 0;
+                          width: 92px;
+                          height: 30px;
                           margin-bottom: 8px;
                           border-radius: 7px;
                           font-size: 14px;
@@ -340,6 +516,12 @@
                           line-height: 20px;
                           color: $fontColor;
                           transition: all 0.4s ease-in-out;
+                          @media (max-width: 768px) {
+                            margin-right: 8px;
+                          }
+                          @media (max-width: 575px) {
+                            width: 76px;
+                          }
                           &:hover {
                             background-color: rgba(76, 177, 71, 1);
                             color: #fff;
@@ -374,6 +556,9 @@
           border-radius: 8px;
           border: 1px solid $border;
           transition: all 0.3s ease-in-out;
+          @media (max-width: 768px) {
+            display: none;
+          }
           &::after {
             transition: all 0.3s ease-in-out;
             font-size: 12px;
@@ -396,6 +581,9 @@
           border-radius: 8px;
           border: 1px solid $border;
           transition: all 0.3s ease-in-out;
+          @media (max-width: 768px) {
+            display: none;
+          }
           &::after {
             transition: all 0.3s ease-in-out;
             font-size: 12px;
