@@ -237,6 +237,11 @@ const auth = new Swiper(".auth", {
   direction: "horizontal",
   loop: true,
 
+  // If we need pagination
+  pagination: {
+    el: ".auth-nav",
+  },
+
   // Navigation arrows
   navigation: {
     nextEl: ".auth-next",
