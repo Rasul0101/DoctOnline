@@ -214,6 +214,12 @@ const choose = new Swiper(".choose", {
   direction: "horizontal",
   loop: true,
 
+  // If we need pagination
+  pagination: {
+    el: ".choose-nav",
+  },
+
+
   // Navigation arrows
   navigation: {
     nextEl: ".choose-next",

@@ -5751,7 +5751,6 @@ html {
   background-color: #fff;
 }
 .header-choose .nav {
-  border-bottom: 1px solid rgb(237, 240, 244);
   padding: 0;
   display: flex;
   align-items: center;
@@ -5765,17 +5764,53 @@ html {
   padding: 20px 0 20px 32px;
   border-bottom: 1px solid rgb(76, 177, 71);
 }
+@media (max-width: 1060px) {
+  .header-choose .nav .nav-start .logo {
+    padding-left: 16px;
+  }
+}
+@media (max-width: 850px) {
+  .header-choose .nav .nav-start .logo {
+    border-bottom: none;
+  }
+}
+@media (max-width: 575px) {
+  .header-choose .nav .nav-start .logo {
+    padding: 16px 0 16px 16px;
+  }
+}
 .header-choose .nav .nav-start .logo a {
   display: block;
   margin-right: 78px;
   width: 154px;
   height: 40px;
 }
+@media (max-width: 575px) {
+  .header-choose .nav .nav-start .logo a {
+    width: 123px;
+    height: 32px;
+  }
+}
+.header-choose .nav .nav-start .logo a img {
+  width: 154px;
+  height: 40px;
+}
+@media (max-width: 575px) {
+  .header-choose .nav .nav-start .logo a img {
+    width: 123px;
+    height: 32px;
+  }
+}
 .header-choose .nav .nav-start .meet-information {
   position: relative;
   padding: 18px 0;
   padding-right: 72px;
   border-bottom: 1px solid rgb(76, 177, 71);
+}
+@media (max-width: 850px) {
+  .header-choose .nav .nav-start .meet-information {
+    display: none;
+  }
 }
 .header-choose .nav .nav-start .meet-information .top {
   font-size: 16px;
@@ -5815,6 +5850,11 @@ html {
   padding-right: 72px;
   border-bottom: 1px solid rgb(76, 177, 71);
 }
+@media (max-width: 850px) {
+  .header-choose .nav .nav-start .questions {
+    display: none;
+  }
+}
 .header-choose .nav .nav-start .questions .top {
   font-size: 16px;
   font-weight: 400;
@@ -5850,6 +5890,11 @@ html {
   position: relative;
   padding: 18px 0;
 }
+@media (max-width: 850px) {
+  .header-choose .nav .nav-start .payment {
+    display: none;
+  }
+}
 .header-choose .nav .nav-start .payment .top {
   font-size: 16px;
   font-weight: 400;
@@ -5884,6 +5929,16 @@ html {
 .header-choose .nav .nav-end {
   padding: 22px 32px 22px 0;
 }
+@media (max-width: 1060px) {
+  .header-choose .nav .nav-end {
+    padding-right: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .header-choose .nav .nav-end {
+    padding: 16px 16px 16px 0;
+  }
+}
 .header-choose .nav .nav-end a {
   width: 36px;
   height: 36px;
@@ -5893,9 +5948,82 @@ html {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 575px) {
+  .header-choose .nav .nav-end a {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.mobile-information {
+  padding: 16px;
+  display: none;
+}
+@media (max-width: 850px) {
+  .mobile-information {
+    display: block;
+    display: flex;
+  }
+}
+.mobile-information .num {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  border: 1px solid rgb(76, 177, 71);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: rgb(76, 177, 71);
+  margin-right: 12px;
+  padding-bottom: 1px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.mobile-information .num-active {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  border: 1px solid rgb(76, 177, 71);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(76, 177, 71);
+  background-color: #fff;
+  margin-right: 8px;
+  padding-bottom: 1px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.mobile-information .info .up {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.1000000015px;
+  color: rgb(16, 24, 37);
+}
+.mobile-information .info .bottom {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgb(132, 139, 152);
+}
 
 .doctor-choose {
   padding-top: 32px;
+  padding-bottom: 64px;
+}
+@media (max-width: 768px) {
+  .doctor-choose {
+    padding-top: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .doctor-choose {
+    padding-top: 0;
+  }
 }
 .doctor-choose .container .choose-in {
   display: flex;
@@ -5905,14 +6033,31 @@ html {
   position: relative;
   width: 560px;
 }
+@media (max-width: 575px) {
+  .doctor-choose .container .choose-in .choose-carousel {
+    width: 100%;
+  }
+}
 .doctor-choose .container .choose-in .choose-carousel .swiper .swiper-wrapper .swiper-slide .choose-plan-box {
   border: 1px solid rgb(237, 240, 244);
   border-radius: 8px;
   background-color: #fff;
 }
+@media (max-width: 575px) {
+  .doctor-choose .container .choose-in .choose-carousel .swiper .swiper-wrapper .swiper-slide .choose-plan-box {
+    border-radius: 0;
+    background-color: transparent;
+  }
+}
 .doctor-choose .container .choose-in .choose-carousel .swiper .swiper-wrapper .swiper-slide .choose-plan-box .box-up {
   border-bottom: 1px solid rgb(237, 240, 244);
   padding: 24px 32px;
+}
+@media (max-width: 575px) {
+  .doctor-choose .container .choose-in .choose-carousel .swiper .swiper-wrapper .swiper-slide .choose-plan-box .box-up {
+    padding: 16px;
+    background-color: #fff;
+  }
 }
 .doctor-choose .container .choose-in .choose-carousel .swiper .swiper-wrapper .swiper-slide .choose-plan-box .box-up .doctor {
   display: flex;
@@ -5923,12 +6068,27 @@ html {
   height: 88px;
   margin-right: 16px;
 }
+@media (max-width: 575px) {
+  .doctor-choose .container .choose-in .choose-carousel .swiper .swiper-wrapper .swiper-slide .choose-plan-box .box-up .doctor img {
+    width: 48px;
+    height: 48px;
+  }
+}
 .doctor-choose .container .choose-in .choose-carousel .swiper .swiper-wrapper .swiper-slide .choose-plan-box .box-up .doctor .doctor-info .work {
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: -0.150000006px;
   color: rgb(132, 139, 152);
+}
+@media (max-width: 575px) {
+  .doctor-choose .container .choose-in .choose-carousel .swiper .swiper-wrapper .swiper-slide .choose-plan-box .box-up .doctor .doctor-info .work {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.1000000015px;
+    color: rgb(76, 177, 71);
+  }
 }
 .doctor-choose .container .choose-in .choose-carousel .swiper .swiper-wrapper .swiper-slide .choose-plan-box .box-up .doctor .doctor-info .name {
   font-size: 24px;
@@ -5937,8 +6097,22 @@ html {
   letter-spacing: 0px;
   color: rgb(16, 24, 37);
 }
+@media (max-width: 575px) {
+  .doctor-choose .container .choose-in .choose-carousel .swiper .swiper-wrapper .swiper-slide .choose-plan-box .box-up .doctor .doctor-info .name {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.150000006px;
+    color: #000;
+  }
+}
 .doctor-choose .container .choose-in .choose-carousel .swiper .swiper-wrapper .swiper-slide .choose-plan-box .box-bottom {
   padding: 24px 32px 32px;
+}
+@media (max-width: 575px) {
+  .doctor-choose .container .choose-in .choose-carousel .swiper .swiper-wrapper .swiper-slide .choose-plan-box .box-bottom {
+    padding: 16px;
+  }
 }
 .doctor-choose .container .choose-in .choose-carousel .swiper .swiper-wrapper .swiper-slide .choose-plan-box .box-bottom .title {
   font-size: 20px;
@@ -5947,6 +6121,11 @@ html {
   letter-spacing: -0.150000006px;
   color: rgb(16, 24, 37);
   margin-bottom: 16px;
+}
+@media (max-width: 575px) {
+  .doctor-choose .container .choose-in .choose-carousel .swiper .swiper-wrapper .swiper-slide .choose-plan-box .box-bottom .title {
+    display: none;
+  }
 }
 .doctor-choose .container .choose-in .choose-carousel .swiper .swiper-wrapper .swiper-slide .choose-plan-box .box-bottom .plan-box {
   display: flex;
@@ -6014,6 +6193,11 @@ html {
   letter-spacing: -0.1000000015px;
   color: rgb(39, 49, 66);
 }
+@media (max-width: 575px) {
+  .doctor-choose .container .choose-in .choose-carousel .swiper .swiper-wrapper .swiper-slide .choose-plan-box .box-bottom .plan-box .left-side p {
+    font-weight: 400;
+  }
+}
 .doctor-choose .container .choose-in .choose-carousel .swiper .swiper-wrapper .swiper-slide .choose-plan-box .box-bottom .plan-box .right-side {
   display: flex;
   align-items: center;
@@ -6027,12 +6211,27 @@ html {
   color: rgb(132, 139, 152);
   margin-right: 4px;
 }
+@media (max-width: 575px) {
+  .doctor-choose .container .choose-in .choose-carousel .swiper .swiper-wrapper .swiper-slide .choose-plan-box .box-bottom .plan-box .right-side .currency {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
 .doctor-choose .container .choose-in .choose-carousel .swiper .swiper-wrapper .swiper-slide .choose-plan-box .box-bottom .plan-box .right-side .number {
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: -0.150000006px;
   color: rgb(39, 49, 66);
+}
+@media (max-width: 575px) {
+  .doctor-choose .container .choose-in .choose-carousel .swiper .swiper-wrapper .swiper-slide .choose-plan-box .box-bottom .plan-box .right-side .number {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.150000006px;
+  }
 }
 .doctor-choose .container .choose-in .choose-carousel .swiper .swiper-wrapper .swiper-slide .choose-plan-box .box-bottom .continue-btn {
   margin-top: 16px;
@@ -6046,6 +6245,19 @@ html {
   background-color: rgb(76, 177, 71);
   border-radius: 8px;
 }
+.doctor-choose .container .choose-in .choose-carousel .swiper-pagination {
+  display: none;
+  position: absolute;
+  bottom: -30px;
+}
+@media (max-width: 700px) {
+  .doctor-choose .container .choose-in .choose-carousel .swiper-pagination {
+    display: block;
+  }
+}
+.doctor-choose .container .choose-in .choose-carousel .swiper-pagination span {
+  background-color: rgb(76, 177, 71);
+}
 .doctor-choose .container .choose-in .choose-carousel .swiper-button-prev {
   position: absolute;
   top: 22px;
@@ -6056,6 +6268,11 @@ html {
   border-radius: 8px;
   border: 1px solid rgb(237, 240, 244);
   transition: all 0.3s ease-in-out;
+}
+@media (max-width: 700px) {
+  .doctor-choose .container .choose-in .choose-carousel .swiper-button-prev {
+    display: none;
+  }
 }
 .doctor-choose .container .choose-in .choose-carousel .swiper-button-prev::after {
   transition: all 0.3s ease-in-out;
@@ -6076,6 +6293,11 @@ html {
   border-radius: 8px;
   border: 1px solid rgb(237, 240, 244);
   transition: all 0.3s ease-in-out;
+}
+@media (max-width: 700px) {
+  .doctor-choose .container .choose-in .choose-carousel .swiper-button-next {
+    display: none;
+  }
 }
 .doctor-choose .container .choose-in .choose-carousel .swiper-button-next::after {
   transition: all 0.3s ease-in-out;

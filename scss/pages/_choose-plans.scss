@@ -3,7 +3,6 @@
   position: relative;
   background-color: #fff;
   .nav {
-    border-bottom: 1px solid $border;
     padding: 0;
     display: flex;
     align-items: center;
@@ -14,11 +13,32 @@
       .logo {
         padding: 20px 0 20px 32px;
         border-bottom: 1px solid $greenBtn;
+        @media (max-width: 1060px) {
+          padding-left: 16px;
+        }
+        @media (max-width: 850px) {
+          border-bottom: none;
+        }
+        @media (max-width: 575px) {
+          padding: 16px 0 16px 16px;
+        }
         a {
           display: block;
           margin-right: 78px;
           width: 154px;
           height: 40px;
+          @media (max-width: 575px) {
+            width: 123px;
+            height: 32px;
+          }
+          img {
+            width: 154px;
+            height: 40px;
+            @media (max-width: 575px) {
+              width: 123px;
+              height: 32px;
+            }
+          }
         }
       }
       .meet-information {
@@ -26,6 +46,9 @@
         padding: 18px 0;
         padding-right: 72px;
         border-bottom: 1px solid $greenBtn;
+        @media (max-width: 850px) {
+          display: none;
+        }
         .top {
           font-size: 16px;
           font-weight: 400;
@@ -64,6 +87,9 @@
         padding: 18px 0;
         padding-right: 72px;
         border-bottom: 1px solid $greenBtn;
+        @media (max-width: 850px) {
+          display: none;
+        }
         .top {
           font-size: 16px;
           font-weight: 400;
@@ -99,6 +125,9 @@
       .payment {
         position: relative;
         padding: 18px 0;
+        @media (max-width: 850px) {
+          display: none;
+        }
         .top {
           font-size: 16px;
           font-weight: 400;
@@ -134,6 +163,12 @@
     }
     .nav-end {
       padding: 22px 32px 22px 0;
+      @media (max-width: 1060px) {
+        padding-right: 16px;
+      }
+      @media (max-width: 575px) {
+        padding: 16px 16px 16px 0;
+      }
       a {
         width: 36px;
         height: 36px;
@@ -142,15 +177,84 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @media (max-width: 575px) {
+          width: 32px;
+          height: 32px;
+        }
       }
     }
   }
 }
 // Header End
 
+// Mobile Information
+.mobile-information {
+  padding: 16px;
+  display: none;
+  @media (max-width: 850px) {
+    display: block;
+    display: flex;
+  }
+  .num {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    border: 1px solid $greenBtn;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: $greenBtn;
+    margin-right: 12px;
+    padding-bottom: 1px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  .num-active {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    border: 1px solid $greenBtn;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $greenBtn;
+    background-color: #fff;
+    margin-right: 8px;
+    padding-bottom: 1px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  .info {
+    .up {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: -0.10000000149011612px;
+      color: $fontColor;
+    }
+    .bottom {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      color: rgba(132, 139, 152, 1);
+    }
+  }
+}
+// Mobile Information
+
 // Main Start
 .doctor-choose {
   padding-top: 32px;
+  padding-bottom: 64px;
+  @media (max-width: 768px) {
+    padding-top: 16px;
+  }
+  @media (max-width: 575px) {
+    padding-top: 0;
+  }
   .container {
     .choose-in {
       display: flex;
@@ -158,6 +262,9 @@
       .choose-carousel {
         position: relative;
         width: 560px;
+        @media (max-width: 575px) {
+          width: 100%;
+        }
         .swiper {
           .swiper-wrapper {
             .swiper-slide {
@@ -165,9 +272,17 @@
                 border: 1px solid $border;
                 border-radius: 8px;
                 background-color: #fff;
+                @media (max-width: 575px) {
+                  border-radius: 0;
+                  background-color: transparent;
+                }
                 .box-up {
                   border-bottom: 1px solid $border;
                   padding: 24px 32px;
+                  @media (max-width: 575px) {
+                    padding: 16px;
+                    background-color: #fff;
+                  }
                   .doctor {
                     display: flex;
                     align-items: center;
@@ -175,6 +290,10 @@
                       width: 88px;
                       height: 88px;
                       margin-right: 16px;
+                      @media (max-width: 575px) {
+                        width: 48px;
+                        height: 48px;
+                      }
                     }
                     .doctor-info {
                       .work {
@@ -183,6 +302,13 @@
                         line-height: 28px;
                         letter-spacing: -0.15000000596046448px;
                         color: rgba(132, 139, 152, 1);
+                        @media (max-width: 575px) {
+                          font-size: 14px;
+                          font-weight: 400;
+                          line-height: 20px;
+                          letter-spacing: -0.10000000149011612px;
+                          color: $greenBtn;
+                        }
                       }
                       .name {
                         font-size: 24px;
@@ -190,12 +316,22 @@
                         line-height: 32px;
                         letter-spacing: 0px;
                         color: $fontColor;
+                        @media (max-width: 575px) {
+                          font-size: 16px;
+                          font-weight: 400;
+                          line-height: 24px;
+                          letter-spacing: -0.15000000596046448px;
+                          color: #000;
+                        }
                       }
                     }
                   }
                 }
                 .box-bottom {
                   padding: 24px 32px 32px;
+                  @media (max-width: 575px) {
+                    padding: 16px;
+                  }
                   .title {
                     font-size: 20px;
                     font-weight: 500;
@@ -203,6 +339,9 @@
                     letter-spacing: -0.15000000596046448px;
                     color: $fontColor;
                     margin-bottom: 16px;
+                    @media (max-width: 575px) {
+                      display: none;
+                    }
                   }
                   .plan-box {
                     display: flex;
@@ -263,6 +402,9 @@
                         line-height: 20px;
                         letter-spacing: -0.10000000149011612px;
                         color: $listItemColor;
+                        @media (max-width: 575px) {
+                          font-weight: 400;
+                        }
                       }
                     }
                     .right-side {
@@ -276,6 +418,11 @@
                         letter-spacing: -0.5px;
                         color: rgba(132, 139, 152, 1);
                         margin-right: 4px;
+                        @media (max-width: 575px) {
+                          font-size: 12px;
+                          font-weight: 400;
+                          line-height: 16px;
+                        }
                       }
                       .number {
                         font-size: 20px;
@@ -283,6 +430,12 @@
                         line-height: 28px;
                         letter-spacing: -0.15000000596046448px;
                         color: $listItemColor;
+                        @media (max-width: 575px) {
+                          font-size: 16px;
+                          font-weight: 500;
+                          line-height: 24px;
+                          letter-spacing: -0.15000000596046448px;
+                        }
                       }
                     }
                   }
@@ -303,6 +456,17 @@
             }
           }
         }
+        .swiper-pagination {
+          display: none;
+          position: absolute;
+          bottom: -30px;
+          @media (max-width: 700px) {
+            display: block;
+          }
+          span {
+            background-color: $greenBtn;
+          }
+        }
         .swiper-button-prev {
           position: absolute;
           top: 22px;
@@ -313,6 +477,9 @@
           border-radius: 8px;
           border: 1px solid $border;
           transition: all 0.3s ease-in-out;
+          @media (max-width: 700px) {
+            display: none;
+          }
           &::after {
             transition: all 0.3s ease-in-out;
             font-size: 12px;
@@ -335,6 +502,9 @@
           border-radius: 8px;
           border: 1px solid $border;
           transition: all 0.3s ease-in-out;
+          @media (max-width: 700px) {
+            display: none;
+          }
           &::after {
             transition: all 0.3s ease-in-out;
             font-size: 12px;
