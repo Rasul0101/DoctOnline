@@ -192,6 +192,11 @@ const checkout = new Swiper(".checkout", {
   direction: "horizontal",
   loop: true,
 
+  // If we need pagination
+  pagination: {
+    el: ".checkout-nav",
+  },
+
   // Navigation arrows
   navigation: {
     nextEl: ".checkout-next",

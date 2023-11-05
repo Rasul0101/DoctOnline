@@ -166,6 +166,10 @@
     color: #fff;
     background-color: $greenBtn;
     margin-right: 12px;
+    padding-bottom: 1px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
   }
   .num-active {
     width: 24px;
@@ -178,8 +182,12 @@
     color: $greenBtn;
     background-color: #fff;
     margin-right: 8px;
+    padding-bottom: 1px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
   }
-  .num .info {
+  .info {
     .up {
       font-size: 14px;
       font-weight: 500;
@@ -195,6 +203,7 @@
     }
   }
 }
+// Mobile Information
 
 // Main Start
 .doctor-question {
@@ -212,11 +221,7 @@
       .question-carousel {
         position: relative;
         width: 560px;
-        @media (max-width: 768px) {
-          padding: 0 16px;
-        }
         @media (max-width: 575px) {
-          padding: 0;
           width: 100%;
         }
         .swiper {
@@ -368,9 +373,6 @@
           border-radius: 8px;
           border: 1px solid $border;
           transition: all 0.3s ease-in-out;
-          @media (max-width: 768px) {
-            left: -30px;
-          }
           @media (max-width: 700px) {
             display: none;
           }
@@ -396,9 +398,6 @@
           border-radius: 8px;
           border: 1px solid $border;
           transition: all 0.3s ease-in-out;
-          @media (max-width: 768px) {
-            right: -30px;
-          }
           @media (max-width: 700px) {
             display: none;
           }
