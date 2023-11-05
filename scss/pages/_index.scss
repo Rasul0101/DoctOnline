@@ -257,9 +257,6 @@
                     line-height: 16px;
                     margin-bottom: 46px;
                   }
-                  // @media (max-width:575px) {
-                  //  margin-bottom: 40px;
-                  // }
                 }
                 .card-date {
                   font-size: 16px;
@@ -954,7 +951,7 @@
       display: flex;
       align-items: center;
       overflow-x: scroll;
-      @media (max-width: 1180px) {
+      @media (max-width: 575px) {
         padding: 0 16px;
       }
       .category-item {

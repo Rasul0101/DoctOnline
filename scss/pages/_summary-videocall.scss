@@ -2,11 +2,14 @@
 .header-summary {
   position: relative;
   background-color: #fff;
-  .nav {
+  .summary-nav {
     padding: 20px 32px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 575px) {
+      padding: 16px;
+    }
     .nav-start {
       display: flex;
       align-items: center;
@@ -16,6 +19,14 @@
           margin-right: 78px;
           width: 154px;
           height: 40px;
+          @media (max-width: 575px) {
+            width: 123px;
+            height: 32px;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+          }
         }
       }
     }
@@ -28,6 +39,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @media (max-width: 575px) {
+          width: 32px;
+          height: 32px;
+        }
       }
     }
   }

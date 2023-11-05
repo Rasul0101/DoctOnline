@@ -8,6 +8,10 @@
     padding-bottom: 16px;
   }
   .container {
+    @media (max-width:1034px) {
+      display: flex;
+      justify-content: center;
+    }
     .profile {
       position: relative;
       @media (max-width: 1180px) {
@@ -502,9 +506,6 @@
         text-align: center;
         padding: 10px 0;
         color: #fff;
-        @media (max-width:668px) {
-          width: 100%;
-        }
       }
     }
   }

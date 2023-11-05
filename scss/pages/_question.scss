@@ -15,8 +15,6 @@
         border-bottom: 1px solid $greenBtn;
         @media (max-width: 1060px) {
           padding-left: 16px;
-        }
-        @media (max-width: 768px) {
           border-bottom: none;
         }
         @media (max-width: 575px) {
@@ -46,7 +44,7 @@
         padding: 18px 0;
         padding-right: 72px;
         border-bottom: 1px solid $greenBtn;
-        @media (max-width: 768px) {
+        @media (max-width: 1060px) {
           display: none;
         }
         .top {
@@ -85,7 +83,7 @@
       .questions {
         padding: 18px 0;
         position: relative;
-        @media (max-width: 768px) {
+        @media (max-width: 1060px) {
           display: none;
         }
         .top {
